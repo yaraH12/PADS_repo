@@ -1,0 +1,2654 @@
+	\documentclass{article}
+	\usepackage{graphicx} 
+	\usepackage{fontenc}
+	\usepackage{hyperref}
+	\usepackage{pdflscape}
+	\usepackage{array}
+	\usepackage[table]{xcolor}
+	\usepackage{adjustbox}
+	\usepackage{todonotes}
+	\usepackage{xcolor}
+	\usepackage{subcaption}
+
+	\definecolor{level0}{RGB}{220,220,220}
+	\definecolor{level1}{RGB}{255,200,200}
+	\definecolor{level2}{RGB}{255,230,180}
+	\definecolor{level3}{RGB}{200,255,200}
+
+	\title{Assurance Case Report DynamicVehicleAEB5g}
+	\author{x}
+	\begin{document}
+	\maketitle
+	\section{Introduction}
+	This assurance-case report presents the results of the 
+	representativity evaluation performed on the different model variants considered for 
+	the simulation need. The document is structured to provide a clear and traceable view of how 
+	each model was assessed. For every model variant, the report lists all associated requirements
+	 and specifies whether each requirement has been successfully satisfied. Based on these 
+	individual outcomes, the report then summarizes the performance of each model using the 
+	representativity factors defined in our framework, expressed both as percentage scores 
+	and corresponding levels on the assessment scale. These elements allow the reader to understand 
+	the strengths and limitations of each variant.
+	 
+	\section{Model Results}
+    Found 1 modelResults
+		
+			\section{Model Result Details} 
+			\paragraph{Model Summary}
+			Number of claims: 131
+			Number of subsystems: 11
+			Metrics:
+			- Success: 203
+			- Fail: 10
+			- Error: 0
+			
+	
+
+					\subsection{Category Success Ratios}
+						
+						\begin{table}
+						\centering
+						\caption{Score Ratio table for each factor with total nb of requirements and achieved nb of requirements}
+						\begin{tabular}{|l|c|c|c|}
+						\hline
+						Category & Total Reqs & Successful Reqs & Success Ratio (\%) \\
+						\hline
+
+							    FunctionsCoverage & 14 & 11 & 79 \% \\
+							 
+
+							    Maturity & 1 & 1 & 100 \% \\
+							 
+
+							    Validity & 9 & 9 & 100 \% \\
+							 
+
+							    Interfacesexistance & 82 & 82 & 100 \% \\
+							 
+
+							    SimulatorCompatibility & 7 & 5 & 71 \% \\
+							 
+
+							    ModelVerification & 17 & 12 & 71 \% \\
+							 
+					
+						
+						\hline
+						\end{tabular}
+						\end{table}
+
+
+
+
+										
+								
+
+			
+
+
+
+		\subsection{Representativity Assessment Scale}
+			\begin{table}
+			    \centering
+				\caption{Representativity Assessment Scale with achieved levels highlighted}
+			    \adjustbox{max width=\textwidth}{
+			    \renewcommand{\arraystretch}{3}
+			    \begin{tabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2cm}|}
+			    \hline
+			    Level - Factor & Function coverage & Model Verification & Interface existence & Maturity & Validity & Simulation Mean Compatibility 
+			    \\
+			    \hline			
+							
+				    Level 3 & Full Coverage , Realistic Behavior 
+							& No or minor numerical error 
+							& \cellcolor{level3}All interfaces,  correctly typed 
+							& \cellcolor{level3}Operational 
+							& \cellcolor{level3}Valid in required context	
+							& Fully compatible
+						
+
+				    \\
+				    \hline
+				    Level 2	& \cellcolor{level2}Enough Coverage for Ideal Behavior
+							& \cellcolor{level2}Formal error estimation 
+							& Missing interfaces,  correctly typed 
+							& Pre-deployment 
+							& Valid in similar context 
+							& \cellcolor{level2}Compatible with minor adaptions
+							
+				    \\
+				    \hline
+				    Level 1	& Partial Coverage 
+							& Passes some tests 
+							& Missing interfaces, Incorrectly typed 
+							& Prototype  
+							& Validation in progress 
+							& Partially Compatible
+							
+				    \\
+				    \hline
+				    Level 0	& Insufficient Evidence	
+							& Insufficient Evidence 
+							& Insufficient Evidence 
+							& Experimental 
+							& Insufficient Evidence 
+							& Not Compatible
+							
+				    \\
+				    \hline			
+						
+
+			    \end{tabular} 
+			    }
+			\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			\subsection{Claims details}
+			\begin{itemize}
+  				  \item Claim 1
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In001 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0. Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In001 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0. Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 2
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In002 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In002 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 3
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In003 
+						\item \textbf{Requirement category}:  
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In003 
+						\item \textbf{Requirement category}:  
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 4
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In004 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In004 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 5
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In005 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In005 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 6
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In006 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In006 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 7
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In007 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In007 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 8
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In008 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In008 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 9
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In009 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In009 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 10
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In010 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In010 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 11
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In011 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In011 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 12
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In012 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In012 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 13
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In013 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In013 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 14
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In014 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: It represents the presence of an AEB brake torque request. Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In014 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: It represents the presence of an AEB brake torque request. Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 15
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In015 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In015 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 16
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In016 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In016 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 17
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In017 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In017 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 18
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In018 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In018 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 19
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In019 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In019 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 20
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In020 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In020 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 21
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In021 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In021 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 22
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In022 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In022 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 23
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In023 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In023 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 24
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In024 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be scenarioDefault Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In024 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be scenarioDefault Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 25
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In025 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In025 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 26
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In026 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In026 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 27
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In027 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In027 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 28
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In028 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In028 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 29
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In029 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In029 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 0 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 30
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In030 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: In030 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its initial value shall be set to 1 Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 31
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out001 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out001 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 32
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out002 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out002 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 33
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out003 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out003 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 34
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out004 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out004 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 35
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out005 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out005 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 36
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out006 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be percent Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out006 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be percent Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 37
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out007 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be percent Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out007 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be percent Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 38
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out008 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out008 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 39
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out009 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out009 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 40
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out010 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out010 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 41
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out011 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out011 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 42
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out012 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out012 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 43
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out013 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out013 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 44
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out014 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Degree Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out014 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Degree Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 45
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out015 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out015 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 46
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out016 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out016 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 47
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out017 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Degree Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out017 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Degree Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 48
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out018 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be DegreePerSecond Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out018 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be DegreePerSecond Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 49
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out019 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out019 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 50
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out020 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out020 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 51
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out021 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out021 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 52
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out022 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out022 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 53
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out023 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out023 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 54
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out024 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out024 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 55
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out025 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out025 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 56
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out026 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out026 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 57
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out027 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out027 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 58
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out028 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out028 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be rad/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 59
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out029 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out029 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 60
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out030 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out030 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 61
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out031 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out031 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 62
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out032 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out032 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 63
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out033 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out033 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 64
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out034 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out034 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 65
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out035 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out035 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 66
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out036 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out036 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 67
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out037 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out037 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 68
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out038 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out038 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 69
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out039 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out039 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 70
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out040 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out040 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 71
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out041 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out041 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Nm Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 72
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out042 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out042 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 73
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out043 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out043 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 74
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out044 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out044 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 75
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out045 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out045 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 76
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out046 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out046 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 77
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out047 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out047 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Rad Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 78
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out048 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be m/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out048 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be m/s Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 79
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out049 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be m/s^2 Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out049 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be m/s^2 Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 80
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out050 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out050 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be Bar Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 81
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out051 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out051 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be noUnit Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 82
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out052 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be m/s^2 Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Out052 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Its unit shall be m/s^2 Defining the output interface ensures correct integration and consistent communication with the simulation platform.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 83
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RNoLessInterfaces 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Check that there is no less interfaces ,as inputs or outputs, than required  less interfaces affect the behavior of the system
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 84
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: StoppingDistanceAccuracyVal1 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The stopping distance computation shall remain within a ±X% error margin when compared to validated reference measurements across all relevant initial speeds. .
+					\end{itemize}
+
+  				  \item Claim 85
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: BrakingCapabilityWithCustomInputsVal2 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall accept external braking commands (e.g., brake pressure, brake torque, deceleration request) and compute the corresponding braking response. It shall support user defined or scenario defined inputs for simulation, testing, and validation purposes.
+					\end{itemize}
+
+  				  \item Claim 86
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateReachSpeedScenarioVal3 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall reproduce vehicle behavior when accelerating to a specified target speed under normal conditions.
+					\end{itemize}
+
+  				  \item Claim 87
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateReachSpeedTurningRightScenarioVal4 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall simulate reaching a target speed while performing right steering inputs.
+					\end{itemize}
+
+  				  \item Claim 88
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateReachSpeedTurningLeftScenarioVal5 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall simulate reaching a target speed while performing left steering inputs.
+					\end{itemize}
+
+  				  \item Claim 89
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateAccelerationScenarioVal6 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall simulate acceleration maneuvers across the relevant operating range.
+					\end{itemize}
+
+  				  \item Claim 90
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateAEBModerateBrakingScenarioVal7 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall simulate moderate deceleration events triggered by AEB logic.
+					\end{itemize}
+
+  				  \item Claim 91
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateAEBFullBrakingScenarioVal8 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall reproduce full force braking events initiated by AEB activation.
+					\end{itemize}
+
+  				  \item Claim 92
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ValidateAEBPrefillScenarioVal9 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: The model shall simulate prefill activation and its effect on braking response time.
+					\end{itemize}
+
+  				  \item Claim 93
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TechnicalCheckValidationVer1 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall reproduce the vehicle behavior required to validate technical inspection criteria such as braking performance, stability, and standardized test responses.
+					\end{itemize}
+
+  				  \item Claim 94
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: VehicleAdaptationVer2 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall incorporate the physical, geometric, and dynamic characteristics specific to the B1318 vehicle variant.
+					\end{itemize}
+
+  				  \item Claim 95
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: EngineIntegrationVer3 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall include the torque characteristics, inertia, and dynamic response of the ICE engine.
+					\end{itemize}
+
+  				  \item Claim 96
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: PrototypeCorrelationVer4_1 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall be calibrated and validated using prototype data for the TT100 performance domains.
+					\end{itemize}
+
+  				  \item Claim 97
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: PrototypeCorrelationVer4_2 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall be calibrated and validated using prototype data for the TTL performance domains.
+					\end{itemize}
+
+  				  \item Claim 98
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: CommunicationFrequencyVer5 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall update and transmit its state variables, forces, and kinematic outputs at a fixed rate of 100 Hz.
+					\end{itemize}
+
+  				  \item Claim 99
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: TotalMassVer6 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall be parameterized with a total mass of 1715 kg for all dynamic computations.
+					\end{itemize}
+
+  				  \item Claim 100
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: FrontMassDistributionVer7 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall allocate 51% of the total mass to the front axle.
+					\end{itemize}
+
+  				  \item Claim 101
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: RearMassDistributionVer8 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall allocate 49% of the total mass to the rear axle.
+					\end{itemize}
+
+  				  \item Claim 102
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TireBrandVer9 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The tire model shall be parameterized using Continental tire characteristics.
+					\end{itemize}
+
+  				  \item Claim 103
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TireModelVer10 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall incorporate the Ecocontact7 tire characteristics for force generation.
+					\end{itemize}
+
+  				  \item Claim 104
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TireDimensionsWidthVer11 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The tire model shall be configured with a width of 195 mm.
+					\end{itemize}
+
+  				  \item Claim 105
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TireDimensionsAspectRatioVer11 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The tire model shall be configured with an aspect ratio 60.
+					\end{itemize}
+
+  				  \item Claim 106
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TireDimensionsRimDiameterVer11 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The tire model shall be configured with a 16-inch rim diameter.
+					\end{itemize}
+
+  				  \item Claim 107
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: TirePressureVer12 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall apply a uniform pressure of 2.5 bar to all tires for stiffness and load distribution calculations.
+					\end{itemize}
+
+  				  \item Claim 108
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: DavidStandaloneVer13 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall be a standalone version .
+					\end{itemize}
+
+  				  \item Claim 109
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: CompatibleADASVer14 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: The model shall be constructed to support ADAS related functionalities and system behaviors.
+					\end{itemize}
+
+  				  \item Claim 110
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: ModelMaturityMat1 
+					\item \textbf{Requirement category}: Maturity
+					\item \textbf{Requirement description}: The model shall demonstrate a high level of development maturity, including stable behavior, complete functional implementation, and readiness for operational use.
+					\end{itemize}
+
+  				  \item Claim 111
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func1 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Prefill management prepares the hydraulic circuit when a potential braking event is detected, improving reaction time. Reducing braking latency enhances vehicle safety during emergency maneuvers.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 112
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func2 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: MSR monitors wheel speed and adjusts torque to maintain traction when the vehicle decelerates on low_grip surfaces. Preventing wheel slip during deceleration improves stability and control.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 113
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func3 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: ASR monitors wheel traction and reduces torque when slip exceeds defined limits. Limiting wheel slip during acceleration improves drivability and stability.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 114
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func4 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Vehicle dynamic control adjusts braking and torque distribution to counteract understeer or oversteer. Maintaining stability reduces the risk of loss_of_control accidents.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 115
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func5 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: The anti_blocking function modulates brake pressure to maintain wheel rotation during heavy braking. Preventing wheel lock preserves steering capability and reduces stopping distance.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 116
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: Func6 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: This includes detecting pedal travel, force, and activation state for braking logic and diagnostics. Accurate pedal status is essential for correct braking behavior and safety monitoring.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 117
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: Func7 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Vehicle speed is derived from wheel sensors or other sources and distributed to control modules. Accurate speed information is required for braking, stability, and torque control functions.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 118
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func8 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Mileage is accumulated from validated speed and distance measurements. Odometer information is required for maintenance, diagnostics, and regulatory compliance.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 119
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: Func9 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: This includes automatic engagement under defined conditions and controlled release when driving off. Automated parking brake improves safety and user convenience.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 120
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func10 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Steering angle is measured and distributed to dynamic control and torque management functions. Steering angle is essential for stability control and trajectory estimation.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 121
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func11 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Driver intent is interpreted from accelerator, brake, and mode selections to generate control targets. Correct interpretation of driver intent ensures predictable and safe vehicle behavior.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 122
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func12 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Torque setpoints consider traction, stability, and powertrain constraints. Accurate torque setpoints ensure smooth and safe propulsion.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 123
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func13 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Shift requests are checked for plausibility and translated into actionable commands. Correct gear selection is essential for drivability and safety.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 124
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: Func14 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Torque limitations ensure that commanded torque remains within safe and feasible bounds. Limiting torque prevents loss of traction, component overload, and unsafe behavior.
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 125
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: SimulationToolCompatibilitySim1 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: The model shall be executable within the SimTool1 v_2304 simulation environment without functional degradation.
+					\end{itemize}
+
+  				  \item Claim 126
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: SimulationToolCompatibilityVersionSim2 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: The model shall be executable within the SimTool1 v_2304 simulation environment without functional degradation.
+					\end{itemize}
+
+  				  \item Claim 127
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: PlatformInterfaceCompatibilityScanerSim3 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: The model shall correctly implement and exchange data through all required SimTool2 interface definitions.
+					\end{itemize}
+
+  				  \item Claim 128
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: NonRealTimeOperationSim4 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: The model shall be able to execute without realtime constraints, allowing offline or accelerated simulations.
+					\end{itemize}
+
+  				  \item Claim 129
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: ModelInstantiabilitySim5 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: The model shall support instantiation as a reusable component within the simulation environment.
+					\end{itemize}
+
+  				  \item Claim 130
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: RelativePathsSim6 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: All file references used by the model shall rely on relative paths rather than absolute paths.
+					\end{itemize}
+
+  				  \item Claim 131
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: WindowsCompatibilitySim7 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: The model shall execute correctly on Windows operating systems, including all required dependencies.
+					\end{itemize}
+
+			\end{itemize}
+
+		\end{document}

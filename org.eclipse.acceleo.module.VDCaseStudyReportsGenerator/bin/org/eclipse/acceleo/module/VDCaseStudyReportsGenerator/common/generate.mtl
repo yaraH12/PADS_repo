@@ -1,0 +1,339 @@
+[comment encoding = UTF-8 /]
+[module generate('http://aadl.info/AADL/2.0', 'http://www.eclipse.org/emf/2002/Ecore', 'http://www.osate.org/assure/Assure', 'http://www.osate.org/categories/Categories', 'http://www.osate.org/organization/Organization', 'http://www.osate.org/reqspec/ReqSpec', 'http://www.osate.org/result/Result', 'http://www.osate.org/verify/Verify')]
+
+
+[**
+<query documentation>
+@param class <documentation of the parameter>
+/]
+	[query public levelfromRatio(r: Real) : Integer =
+		if r <= 10 then
+		0
+		else if r <= 60 then
+		1
+		else if r < 100 then
+		2
+		else
+		3
+		endif
+		endif
+		endif
+	/]
+[**
+<query documentation>
+@param class <documentation of the parameter>
+/]
+	[query public colorCell(level : Integer, expected : Integer) : String =
+	    if level = expected then
+	        if level = 3 then 
+					'\\cellcolor{level3}'
+	        else
+				 if level = 2 then 
+					'\\cellcolor{level2}'
+	       		 else 
+					if level = 1 then 
+							'\\cellcolor{level1}'
+	      			else 
+							'\\cellcolor{level0}'
+	       			endif
+				endif
+		   endif
+	    else ''
+	    endif
+	/]
+
+
+
+[template public generateElement(a : AssuranceCaseResult)]
+
+[comment @main /]
+	
+	[file ('AEBMathWorksDEVp.tex', false, 'UTF-8')]
+	\documentclass{article}
+	\usepackage{graphicx} 
+	\usepackage{fontenc}
+	\usepackage{hyperref}
+	\usepackage{pdflscape}
+	\usepackage{array}
+	\usepackage{adjustbox}
+	\usepackage{todonotes}
+	\usepackage{xcolor}
+[comment]	\usepackage[table]{xcolor}[/comment]
+	\usepackage{subcaption}
+
+	\definecolor{level0}{RGB}{220,220,220}
+	\definecolor{level1}{RGB}{255,200,200}
+	\definecolor{level2}{RGB}{255,230,180}
+	\definecolor{level3}{RGB}{200,255,200}
+
+	\title{Assurance Case Report [a.name/]}
+	\author{x}
+	\begin{document}
+	\maketitle
+	\section{Introduction}
+	This assurance-case report presents the results of the 
+	representativity evaluation performed on the different model variants considered for 
+	the simulation need. The document is structured to provide a clear and traceable view of how 
+	each model was assessed. For every model variant, the report lists all associated requirements
+	 and specifies whether each requirement has been successfully satisfied. Based on these 
+	individual outcomes, the report then summarizes the performance of each model using the 
+	representativity factors defined in our framework, expressed both as percentage scores 
+	and corresponding levels on the assessment scale. These elements allow the reader to understand 
+	the strengths and limitations of each variant.
+	 
+	\section{Model Results}
+    Found [a.modelResult->size()/] modelResults
+		
+		[for (mr : ModelResult | a.modelResult)]
+			\section{Model Result Details} 
+			\paragraph{Model Summary}
+			Number of claims: [mr.claimResult->size()/]
+			Number of subsystems: [mr.subsystemResult->size()/]
+			Metrics:
+			- Success: [mr.metrics.successCount/]
+			- Fail: [mr.metrics.failCount/]
+			- Error: [mr.metrics.errorCount/]
+			- weight: [mr.metrics.weight/]
+			
+			[let allReqs : Sequence(Requirement) = 
+			    mr.claimResult.targetReference.requirement.requirement
+			]
+			[let allVAR: Sequence(VerificationActivityResult) = mr.claimResult.verificationActivityResult]
+			[let successfulReqsAll: Sequence(Requirement) = allVAR->select(va | va.type.toString() = 'SUCCESS')
+											.targetReference.requirement.requirement->asSet()->asSequence()]
+			[let allPredicates: Sequence(PredicateResult) = mr.claimResult.predicateResult]
+			[let allSuccessfulPredicatesReqs: Sequence(Requirement) = allPredicates->select(p|p.type.toString()='SUCCESS')
+											.targetReference.requirement.requirement->asSet()->asSequence()]
+			[let factorsRAS: Sequence(String) = allReqs.category.name ->asSet()->asSequence()]
+			[factorsRAS/]
+
+					\subsection{Category Success Ratios}
+						
+						\begin{table}
+						\centering
+						\caption{Score Ratio table for each factor with total nb of requirements and achieved nb of requirements}
+						\begin{tabular}{|l|c|c|c|}
+						\hline
+						Category & Total Reqs & Successful Reqs & Success Ratio (\%) \\
+						\hline
+							[for (cat : String | factorsRAS)]
+									[let reqsInCat: Sequence(Requirement) = allReqs.category.name ->select(r|r=cat)]
+									[let successfulReqsInCat: Sequence(Requirement) = successfulReqsAll.category.name ->select(sr |sr=cat)
+																							->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= cat))]
+									[let total : Integer = reqsInCat ->size()]
+									[let success : Integer = successfulReqsInCat->size()]
+								    [let ratio : Real = 
+									if total > 0 then
+										success * 100.0 / total
+								    else
+								             0.0
+								    endif]
+
+							    [cat/] & [total/] & [success/] & [ratio.round()/] \% \\
+							 
+								[/let]
+							    [/let]	
+							    [/let]
+								[/let]
+								[/let]
+							[/for]
+					
+						
+						\hline
+						\end{tabular}
+						\end{table}
+
+
+
+					[comment]	Variables preparation for table cells coloring		[/comment]
+					[comment]	 factor 1 Interfaces existance		[/comment]
+					[let totalFc : Integer  = allReqs.category.name ->select(r|r='FunctionsCoverage')->size()]
+					[let successFc : Integer  = successfulReqsAll.category.name ->select(sr |sr='FunctionsCoverage')->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= 'FunctionsCoverage')) ->size()]
+					[let ratioFc : Real = 
+						if totalFc > 0 then
+							successFc * 100.0 / totalFc
+					    else
+					             0.0
+					    endif]
+					[let fcLevel: Integer = levelfromRatio(ratioFc)]
+					[comment]	 factor 2 Interfaces existance		[/comment]
+					[let totalic : Integer  = allReqs.category.name ->select(r|r='Interfacesexistance')->size()]
+					[let successic : Integer  = successfulReqsAll.category.name ->select(sr |sr='Interfacesexistance') ->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= 'Interfacesexistance'))->size()]
+					[let ratioic : Real = 
+						if totalic > 0 then
+							successic * 100.0 / totalic
+					    else
+					             0.0
+					    endif] 
+					[let interfaceLevel: Integer = levelfromRatio(ratioic)]
+					[comment]	 factor 3 Validity		[/comment]
+					[let totalval : Integer  = allReqs.category.name ->select(r|r='Validity')->size()]
+					[let successval : Integer  = successfulReqsAll.category.name ->select(sr |sr='Validity') ->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= 'Validity'))->size()]
+					[let ratioval : Real = 
+						if totalval > 0 then
+							successval * 100.0 / totalval
+					    else
+					             0.0
+					    endif] 
+					[let validityLevel: Integer = levelfromRatio(ratioval)]
+					[comment]	 factor 4 Code Verification	[/comment]
+					[let totalver : Integer  = allReqs.category.name ->select(r|r='ModelVerification')->size()]
+					[let successver : Integer  = successfulReqsAll.category.name ->select(sr |sr='ModelVerification')->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= 'ModelVerification')) ->size()]
+					[let ratiover : Real = 
+						if totalver > 0 then
+							successver * 100.0 / totalver
+					    else
+					             0.0
+					    endif] 
+					[let verifLevel: Integer = levelfromRatio(ratiover)]
+					[comment]	 factor 5 Maturity		[/comment]
+					[let totalm : Integer  = allReqs.category.name ->select(r|r='Maturity')->size()]
+					[let successm : Integer  = successfulReqsAll.category.name ->select(sr |sr='Maturity')->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= 'Maturity')) ->size()]
+					[let ratiom : Real = 
+						if totalm > 0 then
+							successm * 100.0 / totalm
+					    else
+					             0.0
+					    endif]
+					[let maturityLevel: Integer = levelfromRatio(ratiom)]			
+					[comment]	 factor 8 Simulation compatibility	[/comment]
+					[let totalsc : Integer  = allReqs.category.name ->select(r|r='SimulatorCompatibility')->size()]
+					[let successsc : Integer  = successfulReqsAll.category.name ->select(sr |sr='SimulatorCompatibility')->union(allSuccessfulPredicatesReqs.category.name -> select(sp |sp= 'SimulatorCompatibility')) ->size()]
+					[let ratiosc : Real = 
+						if totalsc > 0 then
+							successsc * 100.0 / totalsc
+					    else
+					             0.0
+					    endif] 
+					[let SCLevel: Integer = levelfromRatio(ratiosc)]
+
+										
+								
+
+			
+
+
+
+		\subsection{Representativity Assessment Scale}
+			\begin{table}
+			    \centering
+				\caption{Representativity Assessment Scale with achieved levels highlighted}
+			    \adjustbox{max width=\textwidth}{
+			    \renewcommand{\arraystretch}{3}
+			    \begin{tabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2cm}|}
+			    \hline
+			    Level - Factor & Function coverage & Model Verification & Interface existence & Maturity & Validity & Simulation Mean Compatibility 
+			    \\
+			    \hline			
+							
+				    Level 3 & [colorCell(fcLevel,3)/]Full Coverage , Realistic Behavior 
+							& [colorCell(verifLevel,3)/]No or minor numerical error 
+							& [colorCell(interfaceLevel,3)/]All interfaces,  correctly typed 
+							& [colorCell(maturityLevel,3)/]Operational 
+							& [colorCell(validityLevel,3)/]Valid in required context	
+							& [colorCell(SCLevel,3)/]Fully compatible
+						
+
+				    \\
+				    \hline
+				    Level 2	& [colorCell(fcLevel,2)/]Enough Coverage for Ideal Behavior
+							& [colorCell(verifLevel,2)/]Formal error estimation 
+							& [colorCell(interfaceLevel,2)/]Missing interfaces,  correctly typed 
+							& [colorCell(maturityLevel,2)/]Pre-deployment 
+							& [colorCell(validityLevel,2)/]Valid in similar context 
+							& [colorCell(SCLevel,2)/]Compatible with minor adaptions
+							
+				    \\
+				    \hline
+				    Level 1	& [colorCell(fcLevel,1)/]Partial Coverage 
+							& [colorCell(verifLevel,1)/]Passes some tests 
+							& [colorCell(interfaceLevel,1)/]Missing interfaces, Incorrectly typed 
+							& [colorCell(maturityLevel,1)/]Prototype  
+							& [colorCell(validityLevel,1)/]Validation in progress 
+							& [colorCell(SCLevel,1)/]Partially Compatible
+							
+				    \\
+				    \hline
+				    Level 0	& [colorCell(fcLevel,0)/]Insufficient Evidence	
+							& [colorCell(verifLevel,0)/]Insufficient Evidence 
+							& [colorCell(interfaceLevel,0)/]Insufficient Evidence 
+							& [colorCell(maturityLevel,0)/]Experimental 
+							& [colorCell(validityLevel,0)/]Insufficient Evidence 
+							& [colorCell(SCLevel,0)/]Not Compatible
+							
+				    \\
+				    \hline			
+						
+
+			    \end{tabular} 
+			    }
+			\end{table}
+
+
+			[/let][/let][/let][/let]
+			[/let][/let][/let][/let]
+			[/let][/let][/let][/let]
+			[/let][/let][/let][/let]
+			[/let][/let][/let][/let]
+			[/let][/let][/let][/let]
+			[/let][/let][/let][/let][/let][/let]
+
+
+
+
+
+
+
+
+
+
+
+
+
+			\subsection{Claims details}
+			\begin{itemize}
+			[for (c : ClaimResult | mr.claimResult)]				
+			[let index : Integer = mr.claimResult->indexOf(c) ]
+  				  \item Claim [index/]
+  			[/let]
+				\begin{itemize}
+			    	\item Success Count: [c.metrics.successCount/] 
+			    	\item Verification Activities: [c.verificationActivityResult->size()/]
+				[for (va : VerificationActivityResult | c.verificationActivityResult )]				
+					\item Verification activity SUCCESS or FAILURE? [va.type/]
+					[let claim: Claim = va.targetReference.verificationActivity.eContainer().oclAsType(Claim)]
+					\item \textbf{Claim Weight}: [claim.weight/]
+					[/let]
+					[let var : Requirement = va.targetReference.requirement.requirement]
+						\item \textbf{Requirement}: [var.name/] 
+						\item \textbf{Requirement category}: [var.category.name/] 
+						\item \textbf{Requirement description}: [var.description.description.text/] [var.rationale.text/]
+					[/let]
+					
+				[/for]	
+				\end{itemize}
+				
+									    
+				\item Predicate Results: [c.predicateResult->size()/]
+				[for (p : PredicateResult | c.predicateResult )]
+					\begin{itemize}				
+					\item Verification activity SUCCESS or FAILURE? [p.type/]
+					DEBUG DEBUG [p.targetReference.requirement.requirement.eClass().eAllStructuralFeatures->collect(f| f.name)->sep (',')/]
+     				[let claim: Claim = p.targetReference.requirement.requirement]
+					\item \textbf{Claim Weight} tartara: [claim/]
+					[/let]
+					[for (req : Requirement | p.targetReference.requirement.requirement)]
+					\item \textbf{Requirement}: [req.name/] 
+					\item \textbf{Requirement category}: [req.category.name/]
+					\item \textbf{Requirement description}: [req.description.description.text/]
+					[/for]
+					\end{itemize}
+				[/for]
+
+			[/for]
+			\end{itemize}
+
+		[/for]
+		\end{document}
+    [/file]
+[/template]

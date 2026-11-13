@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="generate" name="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator">
+    <property name="ECLIPSE_HOME" value="../../.."/>
+    <property name="ECLIPSE_WORKSPACE" value="../.."/>
+
+    <!-- The classpath with only the dependencies used by the project -->
+    <path id="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/org.eclipse.acceleo.module.VDCaseStudyReportsGenerator/bin"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.runtime_3.13.0.v20170207-1030.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/javax.inject_1.0.0.v20091030.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/javax.transaction_1.1.1.v201105210645.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi.compatibility.state_1.1.0.v20170516-1513.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.common_3.9.0.v20170207-1454.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.jobs_3.9.3.v20180115-1757.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.registry_3.7.0.v20170222-1344.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.preferences_3.7.0.v20170126-2132.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.contenttype_3.6.0.v20170207-1037.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.app_1.3.400.v20150715-1528.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.aadl2_1.0.0.v20181012-1423.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore_2.13.0.v20170609-0707.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.common_2.13.0.v20170609-0707.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore.xmi_2.13.0.v20170609-0707.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.uml2.uml_5.3.0.v20170605-1616.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.uml2.common_2.1.0.v20170605-1616.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.uml2.types_2.0.0.v20170605-1616.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.mapping.ecore2xml_2.9.0.v20170609-0928.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.categories_1.0.0.v20180830-1928.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.xtext_2.12.0.v20170518-0959.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.antlr.runtime_3.2.0.v201101311130.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.inject_3.0.0.v201312141243.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.mwe.core_1.3.21.201705291011.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.apache.commons.cli_1.2.0.v201404270220.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.mwe2.runtime_2.9.1.201705291011.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.mwe.utils_1.3.21.201705291011.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.xtext.util_2.12.0.v20170518-0959.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_21.0.0.v20170206-1425.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.organization_1.0.0.v20180724-2122.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.reqspec_1.0.0.v20180912-1810.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.alisa.common_1.0.0.v20181114-1443.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.results_1.0.0.v20181017-1722.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.verify_1.0.0.v20181026-1441.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl_3.6.200.v20170522-1736.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.common_1.4.200.v20160613-1518.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.ecore_3.6.200.v20170522-1736.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.common_3.7.4.201807201001.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.model_3.7.4.201807201001.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.profiler_3.7.4.201807201001.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.engine_3.7.4.201807201001.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen.ecore_2.13.0.v20170609-0928.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen_2.12.0.v20170609-0928.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.rockwellcollins.atc.resolute_1.0.0.v20180816-0259.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/it.xsemantics.runtime_1.12.1.v20170704-1334.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.apache.log4j_1.2.15.v201012070815.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.xtext.xbase.lib_2.12.0.v20170518-0757.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.alisa.workbench_1.0.0.v20180830-1928.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.osate.assure_1.0.0.v20181114-1443.jar"/>
+    </path>
+
+    <path id="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.classpath">
+        <path refid="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.libraryclasspath"/>
+    </path>
+
+    <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
+    <path id="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.libraryclasspath.alljars">
+        <pathelement location="../org.eclipse.acceleo.module.VDCaseStudyReportsGenerator/bin"/>
+        <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
+    </path>
+
+    <path id="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.classpath.alljars">
+        <path refid="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.libraryclasspath.alljars"/>
+    </path>
+
+    <!-- The default task with the jars used by this project -->
+    <target name="generate">
+        <java classname="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.common.Generate" classpathref="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.classpath">
+            <arg value="${model}"/>
+            <arg value="${target}"/>
+        </java>
+    </target>
+
+    <!--
+        In case of problem you can also try with all the jar available in your Eclipse
+        Keep in mind that having two versions of the same jar can create problems
+    -->
+    <target name="generate.alljars">
+        <java classname="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.common.Generate" classpathref="org.eclipse.acceleo.module.VDCaseStudyReportsGenerator.classpath">
+            <arg value="${model}"/>
+            <arg value="${target}"/>
+        </java>
+    </target>
+</project>
