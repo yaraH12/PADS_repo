@@ -1,0 +1,426 @@
+//requirements for the 3DOF model abstract component (features, flows,..) in UPSTREAM phase
+system requirements UpStreamReqComp3DOF for aebsystem::VD3DOFVariant::VehicleDynamics3DOF[
+	
+	requirement RSteeringAngle: "VDM-UPSTREAM-FID-INTERFACE-01-Exists" [
+		description "The model must have (steering angle) interface"
+		rationale "To get (steering angle) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RAcceleration: "VDM-UPSTREAM-FID-INTERFACE-02-Exists" [
+		description "The model must have (Acceleration) interface"
+		rationale "To get (Acceleration) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RLongitudinal_Velocity: "VDM-UPSTREAM-FID-INTERFACE-03-Exists" [
+		description "The model must have (Longitudinal_Velocity) interface"
+		rationale "To get (Longitudinal_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RLateral_Velocity: "VDM-UPSTREAM-FID-INTERFACE-04-Exists" [
+		description "The model must have (Lateral_Velocity) interface"
+		rationale "To get (Lateral_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RPose: "VDM-UPSTREAM-FID-INTERFACE-05-Exists" [
+		description "The model must have (Pose) interface"
+		rationale "To get (Pose) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	
+	requirement RSteeringAngleTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-01-typedirection" for Steering_Angle[
+		val type = "double"
+		val direction = "in"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (steering angle) input port typed as double"
+		rationale "To get (steering angle) value as input"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+		
+	]
+	
+		
+	requirement RAccelerationTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-02-typedirection" for Acceleration[
+	    val type = "double"
+		val direction = "in"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (acceleration) input port typed as double"
+		rationale "To get (acceleration) value as input"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+
+	
+	requirement RLongitudinal_VelocityTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-03-typedirection" for Longitudinal_Velocity[
+		val type = "double"
+		val direction = "out"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (longitudinal velocity) input port typed as double"
+		rationale "To send (longitudinal velocity) value as output"
+		//value predicate ExpectedType = typeof<type>
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	requirement RLateral_VelocityTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-04-typedirection" for Lateral_Velocity[
+		val type = "double"
+		val direction = "out"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (lateral velocity) input port typed as double"
+		rationale "To send (lateral velocity) value as output"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+
+	
+		requirement RPoseTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-05-typedirection" for Pose[
+		val type = "BusVehiclePose"
+		val direction = "out"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (Pose) input port typed as BusVehiclePose"
+		rationale "To get (Pose) value as input"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	  requirement RNoExtraInterfaces: "VDM-UPSTREAM-FID-NO-EXTRA-INTERFACES"[
+	  	description "Check that there is no extra interfaces ,as inputs or outputs, than required"
+	  	rationale " extra interfaces can take memory space and can affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	  
+	   requirement RNoLessInterfaces: "VDM-UPSTREAM-FID-NO-LESS-INTERFACES"[
+	  	description "Check that there is no less interfaces ,as inputs or outputs, than required"
+	  	rationale " less interfaces affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	
+	
+]
+
+
+system requirements UpStreamReq for aebsystem::VD3DOFVariant::VehicleDynamics3DOF.ImplForUpStream[ 
+	//we should these requirements on both variants
+	description "These are requirements for the Dynamic Vehicle model in the upstream phase"
+		
+	
+		requirement R1FeatureControlPedal: "VDM-UPSTREAM-FID-FUN-01"[
+		description "The model must control the braking pedal"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To prevent collision when obstacle is detected"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R2FeatureCalcTTC: "VDM-UPSTREAM-FID-FUN-02"[
+		val MinTTC = 5 
+		description "The model must calculate the Time to collision"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To stop the vehicle if TTC is equal to MinTTC" 
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R3Validity:"VDM-UPSTREAM-VAL-01"[
+		val ExpectedConcordance = 90.0 //%
+		//compute #MIC_Properties::ValidityValue
+		description "The model must be validated under AEB operational conditions in the target context"
+		description "Evidence Solution (Verification Activity): Validation against scenarios"
+		rationale "Ensure results are relevant in the target context"
+		value predicate  #MIC_Properties::ValidityValue >= ExpectedConcordance 
+		category Validation.Validity
+		see goal AEBSystemGoals.goalgeneral1	
+	]
+	
+	requirement R4Verification:"VDM-UPSTREAM-VERIF-01"[
+		val coverage = 50.0 //%
+		//compute ExpectedCoverage : integer
+		description "The model must support unit testing and coverage reporting"
+		description "Evidence Solution (Verification Activity): Report generation with Unit Tests or Equivalent"
+		rationale "Allows feasibility testing and correct functional behavior"
+		value predicate #MIC_Properties::VerificationValue >= coverage
+		category Fidelity.CodeVerification
+		see goal AEBSystemGoals.goalgeneral2	
+	]
+	
+	
+	requirement R5Maturity:"VDM-UPSTREAM-MAT-01"[
+		val maturity = 1
+		//compute ExpectedMaturityLevel : integer
+		description "The model must have a prototype, documented version history and comments"
+		description "Evidence Solution (Verification Activity): Presence of a Git or other history tracking"
+		rationale "Facilitates maintenance and certification and maturity estimation"
+		value predicate #MIC_Properties::MaturityValue == maturity
+		category Fidelity.Maturity
+		see goal AEBSystemGoals.goalgeneral3		
+	]
+	
+	
+	requirement RPerformaceSimuTime: "VDM-UP-PERF-01"[
+		val simuTime = 100ms
+		//compute ExpectedSimutime : integer 
+		description "The model should be executed during the defined runTime"
+		description "Evidence Solution (Verification Activity): Measurement of simulation time on a standard scenario"
+		rationale "Allows you to quickly test several concepts with few resources"
+		value predicate #SimultionParametres::SimulationTime <= simuTime
+		see goal AEBSystemGoals.g1
+		category Quality.Timing Quality.CPUUtilization
+	]
+
+	requirement RPerformanceMemSpace: "VDM-UP-PERF-02"[
+		val MemorySpaceMB = 200MByte
+		compute ExpectedMemorySpace : integer 
+		description "The model should allocate defined memory space"
+		description "Evidence Solution (Verification Activity): Analysis of memory used during execution"
+		rationale "Optimize resources used during simulation."
+		value predicate #SimultionParametres::MemorySpace <= MemorySpaceMB
+		see goal AEBSystemGoals.g1
+		category Quality.MemoryUtilization
+	]
+	
+]
+
+
+system requirements UpStreamReqComp14DOF for  aebsystem::VD14DOFVariant::VehicleDynamics14DOF[
+	
+	
+	requirement RSteeringAngle: "VDM-UPSTREAM-FID-INTERFACE-01-Exists" [
+		description "The model must have (steering angle) interface"
+		rationale "To get (steering angle) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RAcceleration: "VDM-UPSTREAM-FID-INTERFACE-02-Exists" [
+		description "The model must have (Acceleration) interface"
+		rationale "To get (Acceleration) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RLongitudinal_Velocity: "VDM-UPSTREAM-FID-INTERFACE-03-Exists" [
+		description "The model must have (Longitudinal_Velocity) interface"
+		rationale "To get (Longitudinal_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RLateral_Velocity: "VDM-UPSTREAM-FID-INTERFACE-04-Exists" [
+		description "The model must have (Lateral_Velocity) interface"
+		rationale "To get (Lateral_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RPose: "VDM-UPSTREAM-FID-INTERFACE-05-Exists" [
+		description "The model must have (Pose) interface"
+		rationale "To get (Pose) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	
+	requirement RSteeringAngleTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-01-typedirection" for Steering_Angle[
+		val type = "double"
+		val direction = "in"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (steering angle) input port typed as double"
+		rationale "To get (steering angle) value as input"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+		
+	]
+	
+		
+	requirement RAccelerationTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-02-typedirection" for Acceleration[
+	    val type = "double"
+		val direction = "in"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (acceleration) input port typed as double"
+		rationale "To get (acceleration) value as input"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+
+	
+	requirement RLongitudinal_VelocityTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-03-typedirection" for Longitudinal_Velocity[
+		val type = "double"
+		val direction = "out"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (longitudinal velocity) input port typed as double"
+		rationale "To send (longitudinal velocity) value as output"
+		//value predicate ExpectedType = typeof<type>
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	requirement RLateral_VelocityTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-04-typedirection" for Lateral_Velocity[
+		val type = "double"
+		val direction = "out"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (lateral velocity) input port typed as double"
+		rationale "To send (lateral velocity) value as output"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+
+	
+		requirement RPoseTypeDirection: "VDM-UPSTREAM-FID-INTERFACE-05-typedirection" for Pose[
+		val type = "BusVehiclePose"
+		val direction = "out"
+		compute ExpectedType: string
+		compute ExpectedDirection: string
+		description "The model must have (Pose) input port typed as BusVehiclePose"
+		rationale "To get (Pose) value as input"
+		//value predicate ExpectedType = type
+		//value predicate ExpectedDirection = direction
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	 requirement RNoExtraInterfaces: "VDM-UPSTREAM-FID-NO-EXTRA-INTERFACES"[
+	  	description "Check that there is no extra interfaces ,as inputs or outputs, than required"
+	  	rationale " extra interfaces can take memory space and can affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	  
+	   requirement RNoLessInterfaces: "VDM-UPSTREAM-FID-NO-LESS-INTERFACES"[
+	  	description "Check that there is no less interfaces ,as inputs or outputs, than required"
+	  	rationale " less interfaces affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	
+	]
+
+
+system requirements UpStreamReq14DOF for  aebsystem::VD14DOFVariant::VehicleDynamics14DOF.ImplForUpStream[ 
+	//we should these requirements on both variants
+	description "These are requirements for the Dynamic Vehicle model in the development phase"
+	
+	
+		
+		requirement R1FeatureControlPedal: "VDM-UPSTREAM-FID-FUN-01"[
+		description "The model must control the braking pedal"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To prevent collision when obstacle is detected"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R2FeatureCalcTTC: "VDM-UPSTREAM-FID-FUN-02"[
+		val MinTTC = 5 
+		description "The model must calculate the Time to collision"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To stop the vehicle if TTC is equal to MinTTC" 
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R3Validity:"VDM-UPSTREAM-VAL-01"[
+		val ExpectedConcordance = 90.0 //%
+		//compute #MIC_Properties::ValidityValue
+		description "The model must be validated under AEB operational conditions in the target context"
+		description "Evidence Solution (Verification Activity): Validation against scenarios"
+		rationale "Ensure results are relevant in the target context"
+		value predicate  #MIC_Properties::ValidityValue >= ExpectedConcordance 
+		category Validation.Validity
+		see goal AEBSystemGoals.goalgeneral1	
+	]
+	
+	requirement R4Verification:"VDM-UPSTREAM-VERIF-01"[
+		val coverage = 50.0 //%
+		//compute ExpectedCoverage : integer
+		description "The model must support unit testing and coverage reporting"
+		description "Evidence Solution (Verification Activity): Report generation with Unit Tests or Equivalent"
+		rationale "Allows feasibility testing and correct functional behavior"
+		value predicate #MIC_Properties::VerificationValue >= coverage
+		category Fidelity.CodeVerification
+		see goal AEBSystemGoals.goalgeneral2	
+	]
+	
+	
+	requirement R5Maturity:"VDM-UPSTREAM-MAT-01"[
+		val maturity = 1
+		//compute ExpectedMaturityLevel : integer
+		description "The model must have a prototype, documented version history and comments"
+		description "Evidence Solution (Verification Activity): Presence of a Git or other history tracking"
+		rationale "Facilitates maintenance and certification and maturity estimation"
+		value predicate #MIC_Properties::MaturityValue == maturity
+		category Fidelity.Maturity
+		see goal AEBSystemGoals.goalgeneral3		
+	]
+	
+	
+	requirement RPerformaceSimuTime: "VDM-UP-PERF-01"[
+		val simuTime = 100 ms
+		//compute ExpectedSimutime : integer 
+		description "The model should be executed during the defined runTime"
+		description "Evidence Solution (Verification Activity): Measurement of simulation time on a standard scenario"
+		rationale "Allows you to quickly test several concepts with few resources"
+		value predicate #SimultionParametres::SimulationTime <= simuTime
+		see goal AEBSystemGoals.g1
+		category Quality.Timing Quality.CPUUtilization
+	]
+
+	requirement RPerformanceMemSpace: "VDM-UP-PERF-02"[
+		val MemorySpaceMB = 200 MByte
+		compute ExpectedMemorySpace : integer 
+		description "The model should allocate defined memory space"
+		description "Evidence Solution (Verification Activity): Analysis of memory used during execution"
+		rationale "Optimize resources used during simulation."
+		value predicate #SimultionParametres::MemorySpace <= MemorySpaceMB
+		see goal AEBSystemGoals.g1
+		category Quality.MemoryUtilization
+	]		
+]
+
+	
+
+
+

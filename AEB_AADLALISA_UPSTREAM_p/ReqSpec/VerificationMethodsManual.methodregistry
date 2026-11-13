@@ -1,0 +1,66 @@
+verification methods RepresentativityCheckMethods[
+	
+	method FeaturesCoverage(component):
+	"Compare the required features/functions (in the requirements list)
+	 with the features/functions of the model to check what the model covers" [
+	 	//manual CheckModelVerificationReport
+	 	java com.alisa.checks.ListComparator.compareFeaturesList
+	 ]
+	
+	method ModelVerification (component):
+	"Check verification report and analyse the successful tests rate" [
+		//manual CheckModelVerificationReport
+		java com.alisa.checks.VerificationCheck.computeCodeVerificationScore
+	]
+	
+	method CodeGenerationVerification (component):
+	"Check if the Code generated gives the expected behavior of the model in SIL/HIL" [
+		//manual CheckCodeGeneration
+		java com.alisa.checks.VerificationCheck.computeCodeVerificationScore
+	]
+	
+	method InterfacesExistance (feature, portname: string):
+	"Compare the required inputs/outputs number and types with the model's inputs/outputs" [
+		//manual CompareReqInterfacesWithModelInterfacesMIC
+		java com.alisa.checks.ListComparator.comparePortLists
+		
+	]
+	
+	method IsMature (component):
+	 "A model's maturity changes according to the development phase in which the model is and the level of detail and complexity reached"[
+	 	//manual checkMaturityMIC
+	 	java com.alisa.checks.MaturityCheck.getMaturityLevel
+	 ]
+	
+	method IsValid (component, context_uc: string,phase: string):
+	 "A model is valid if it generates accurate results in regard to a property of interest"[
+	 	//manual checkValidityRangeMIC
+	 	java com.alisa.checks.ValidityCheck.computeValidityScore
+	 ]
+	 
+	 method ExpertReview (stakeholder: string):
+	 "Check if the expert review and it domain of expertise"[
+	 	manual checkDomainExpertiseAndExpertReview
+	 	
+	 ]
+	 
+	 method ModelUsageHistory(component):
+	 "Check the treacability of the model's usage"[
+	 	manual checkModelUseHistory
+	 ]
+	 
+	 method SMperformance_time(component):
+	 "Check the estimated simulation time of the model"[
+	 	manual checkRealSimulationTime
+	 ]
+	 
+	 method SMperformance_memory(component):
+	 "Check the estimated memory space by the model"[
+	 	manual checkMemorySpace
+	 ]
+	 
+	 method ModelRepresentativity(component):
+	 "Check the total representativity score of the model"[
+	 	java com.alisa.checks.RepresentativityScorer.computeFinalScore
+	 ]
+]

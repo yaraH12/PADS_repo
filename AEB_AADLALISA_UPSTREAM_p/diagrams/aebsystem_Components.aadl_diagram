@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="2cda3f09-e2f2-4791-a2cd-add7c029505f" manual="true">
+    <element uuid="0afe1cc5-a0ba-4001-a693-d36981c6a181" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>aebcontroller</seg>
+      </bo>
+      <position x="700.0" y="80.0"/>
+      <size width="136.0" height="35.0"/>
+      <contentFilters/>
+    </element>
+    <element uuid="3c39e1ed-59cc-49b5-824f-d38797706ffd" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>aebdecisionlogic</seg>
+      </bo>
+      <position x="180.0" y="410.0"/>
+      <size width="162.0" height="35.0"/>
+      <contentFilters/>
+    </element>
+    <element uuid="cfb3ea3a-4c15-4787-96de-b977aacca5f4" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>aebsensorfusion</seg>
+      </bo>
+      <position x="930.0" y="90.0"/>
+      <size width="161.0" height="35.0"/>
+      <contentFilters/>
+    </element>
+    <element uuid="0e4a7a30-0df5-4434-8b3e-9c4237a08c93" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>metricsassessment</seg>
+      </bo>
+      <position x="890.0" y="420.0"/>
+      <size width="168.0" height="35.0"/>
+      <contentFilters/>
+    </element>
+    <element uuid="89b6cb80-950a-473d-a7a1-410544941687" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>sensorenv</seg>
+      </bo>
+      <position x="70.0" y="30.0"/>
+      <size width="323.0" height="282.0"/>
+      <contentFilters/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>aebsystem::components</seg>
+    </bo>
+    <position/>
+    <size width="1150.0" height="620.0"/>
+    <contentFilters/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>aebsystem::components</seg>
+    </context>
+  </config>
+</diagram:Diagram>

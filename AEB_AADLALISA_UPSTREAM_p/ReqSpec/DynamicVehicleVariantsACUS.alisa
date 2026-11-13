@@ -1,0 +1,43 @@
+assurance case DynamicVehicleCaseUSp for aebsystem::Components::VehicleDynamicsxDOF [
+	assurance plan UpStream3DOFVariant_AP for aebsystem::VD3DOFVariant::VehicleDynamics3DOF.ImplForUpStream [
+		//Assure: optional list of references to verification plans for the system. 
+		//This list can be derived by the workbench or explicitly specified.		
+		assure UpStreamPhasefor3DOF_VP_Comp UpStreamPhasefor3DOF_VP
+]
+
+	assurance plan UpStream14DOFVariant_AP for aebsystem::VD14DOFVariant::VehicleDynamics14DOF.ImplForUpStream[
+		assure UpStreamPhasefor14DOF_VP_Comp UpStreamPhasefor14DOF_VP
+		//assure subsystem 
+		
+]
+
+	//Assurance tasks specify a set of filter criteria for a focused verification of a subset of 
+	//requirements, verification activities, and methods according to specified category labels. 
+	//The assurance tasks apply to the assurance case they are contained in.
+	assurance task UpStreamInterfaceExistanceCategory : "Interface Existence Req"
+	[
+		description "Check the requirements that are related to the category -interface existence- of the RAS"
+		category Fidelity.Interfacesexistance
+	
+	]
+	assurance task UpStreamFunctionCoverageCategory : "Function Coverage Req"
+	[
+		description "Check the requirements that are related to the category -Function Coverage- of the RAS"
+		category Fidelity.FunctionsCoverage
+	
+	]
+	assurance task UpStreamCodeVerificationCategory : "Code Verification Req"
+	[
+		description "Check the requirements that are related to the category -Code Verification- of the RAS"
+		category Fidelity.CodeVerification
+	
+	]
+	assurance task UpStreamMaturityCategory : "Maturity Req"
+	[
+		description "Check the requirements that are related to the category -Maturity- of the RAS"
+		category Fidelity.Maturity
+	
+	]
+	
+	 
+]

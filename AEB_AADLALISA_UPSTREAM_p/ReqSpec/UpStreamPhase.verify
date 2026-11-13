@@ -1,0 +1,252 @@
+verification plan UpStreamPhasefor3DOF_VP_Comp : "verification test on the component" for UpStreamReqComp3DOF[
+	
+	
+	claim RSteeringAngle: "Steering angle exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Steering_Angle")
+	
+	]
+	
+	claim RAcceleration: "Acceleration exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Acceleration")
+		
+		rationale "This claim is to validate the requirement 1 of category Interface Existance"
+		issues "issues encountered may be the non existance of this interface"
+		
+	]
+	
+	claim RLongitudinal_Velocity: "Longitudinal Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Longitudinal_Velocity")
+		[category Fidelity.Interfacesexistance]
+	
+	
+	]
+	
+	claim RLateral_Velocity: "Lateral Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Lateral_Velocity")
+		
+	
+	]
+	
+	claim RPose: "Pose exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Pose")
+	
+	]
+	claim RSteeringAngleTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-01"[
+		activities
+		//SteeringAngleInput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+		
+	]
+	
+	
+	claim RAccelerationTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-02"[
+		activities
+		//AccelerationInput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RLongitudinal_VelocityTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-03"[ 
+		activities
+		//LongitudinalVelocityOutput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RLateral_VelocityTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-04"[
+		activities
+		//LateralVelocityOutput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	
+	claim RPoseTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-05"[
+		activities
+		//PoseOutput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsBusVehiclePose()
+	]
+	
+	claim RNoExtraInterfaces : "Claim for VDM-UPSTREAM-FID-NO-EXTRA-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoExtraINterfacesExists(5)
+	]
+	
+	claim RNoLessInterfaces : "Claim for VDM-UPSTREAM-FID-NO-LESS-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoLessINterfacesExists(5)
+	]
+	
+	
+]
+
+verification plan UpStreamPhasefor3DOF_VP: "Verify if the 3DOF DV model 
+is representative for our simulation need in the upstream phase" for UpStreamReq [
+	
+	description "For upstream phase we have defined 12 requirements related to the model's fidelity for the real-system
+, it's validity and it's built to ensure the simulation requirements are met"
+	
+	claim R1FeatureControlPedal : "Claim for VDM-UPSTREAM-FID-FUN-01"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("SimpleDriveLineAndBrakes")
+		DoesItExist: resoluteMethods.GetFunctionFeature("BicycleModel_NED")
+		
+	]
+	claim R2FeatureCalcTTC : "Claim for VDM-UPSTREAM-FID-FUN-02"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("BicycleModel_NED")
+		DoesItExist: resoluteMethods.GetFunctionFeature("PackEgoActor")
+		DoesItExist: resoluteMethods.GetFunctionFeature("NED2NWU")
+		
+		
+	]
+	claim R3Validity : "Claim for VDM-UPSTREAM-VAL-01"[
+		//activities
+		//ValidityRange: RepresentativityCheckMethods.IsValid("Pedestrian Crossing", "Upstream Phase")
+	]
+	claim R4Verification : "Claim for VDM-UPSTREAM-VERIF-01"[
+//		activities
+//		DVModelVerification: RepresentativityCheckMethods.ModelVerification()
+	]
+	claim R5Maturity : "Claim for VDM-UPSTREAM-MAT-01"[
+//		activities
+//		DVMaturity: RepresentativityCheckMethods.IsMature()
+	]
+	
+	claim RPerformaceSimuTime : "Claim for VDM-UP-PERF-01"[
+//		activities
+//		SimulationTime: RepresentativityCheckMethods.SMperformance_time()
+	]
+	
+	claim RPerformanceMemSpace : "Claim for VDM-UP-PERF-02"[
+//		activities
+//		MemorySpace: RepresentativityCheckMethods.SMperformance_memory()
+	]
+]
+
+
+verification plan UpStreamPhasefor14DOF_VP_Comp : "verification test on the component" for UpStreamReqComp14DOF[
+	
+		claim RSteeringAngle: "Steering angle exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Steering_Angle")
+	
+	]
+	
+	
+	claim RAcceleration: "Acceleration exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Acceleration")
+	
+	]
+	
+	claim RLongitudinal_Velocity: "Longitudinal Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Longitudinal_Velocity")
+	
+	]
+	
+	claim RLateral_Velocity: "Lateral Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Lateral_Velocity")
+	
+	]
+	
+	claim RPose: "Pose exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Pose")
+	
+	]
+	
+	
+	claim RSteeringAngleTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-01"[
+		activities
+		//SteeringAngleInput: RepresentativityCheckMethods.InterfacesExistance("steering angle")
+		//SteeringAngleInput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RAccelerationTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-02"[
+		activities
+		//AccelerationInput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RLongitudinal_VelocityTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-03"[
+		activities
+		//LongitudinalVelocityOutput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RLateral_VelocityTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-04"[
+		activities
+		//LateralVelocityOutput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	
+	claim RPoseTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-05"[
+		activities
+		//PoseOutput: resoluteMethods.CheckIfSpecificInterfaceExist(this)
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsBusVehiclePose()
+	]
+	
+		claim RNoExtraInterfaces : "Claim for VDM-UPSTREAM-FID-NO-EXTRA-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoExtraINterfacesExists(5)
+	]
+	
+	claim RNoLessInterfaces : "Claim for VDM-UPSTREAM-FID-NO-LESS-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoLessINterfacesExists(5)
+	]
+]
+
+
+verification plan UpStreamPhasefor14DOF_VP: "Verify if the 14DOF DV model 
+is representative for our simulation need in the upstream phase" for UpStreamReq14DOF [
+	
+	description "For upstream phase we have defined 12 requirements related to the model's fidelity for the real-system
+, it's validity and it's built to ensure the simulation requirements are met"
+
+	claim R1FeatureControlPedal : "Claim for VDM-UPSTREAM-FID-FUN-01"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+		DoesItExist: resoluteMethods.GetFunctionFeature("SignalBreakOut")
+		
+	]
+	claim R2FeatureCalcTTC : "Claim for VDM-UPSTREAM-FID-FUN-02"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+		DoesItExist: resoluteMethods.GetFunctionFeature("NED2NWU")
+		DoesItExist: resoluteMethods.GetFunctionFeature("PackEgoActor")
+	]
+	claim R3Validity : "Claim for VDM-UPSTREAM-VAL-01"[
+//		activities
+//		ValidityRange: RepresentativityCheckMethods.IsValid("Pedestrian Crossing", "Upstream Phase")
+	]
+	claim R4Verification : "Claim for VDM-UPSTREAM-VERIF-01"[
+//		activities
+//		DVModelVerification: RepresentativityCheckMethods.ModelVerification()
+	]
+	claim R5Maturity : "Claim for VDM-UPSTREAM-MAT-01"[
+//		activities
+//		DVMaturity: RepresentativityCheckMethods.IsMature()
+	]
+	
+	
+	claim RPerformaceSimuTime : "Claim for VDM-UP-PERF-01"[
+//		activities
+//		SimulationTime: RepresentativityCheckMethods.SMperformance_time()
+	]
+	claim RPerformanceMemSpace : "Claim for VDM-UP-PERF-02"[
+//		activities
+//		MemorySpace: RepresentativityCheckMethods.SMperformance_memory()
+	]
+	
+]

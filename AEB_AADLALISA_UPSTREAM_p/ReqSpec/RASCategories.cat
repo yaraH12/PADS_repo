@@ -1,0 +1,22 @@
+Fidelity[
+	FunctionsCoverage
+	Interfacesexistance
+	CodeVerification
+	Maturity
+]
+
+Validation[
+	Validity
+]
+
+Support[
+	ExpertsReview
+	UseHistory
+]
+
+Simulation[
+	Performance
+	RealTime
+	Precision
+	ExecutionTime
+]

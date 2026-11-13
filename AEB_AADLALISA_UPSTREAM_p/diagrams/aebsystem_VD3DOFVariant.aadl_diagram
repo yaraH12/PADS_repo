@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="26eaf789-5b4c-4b15-9b05-94907fd6df1d" manual="true">
+    <element uuid="9a9c380b-12a5-4e97-82ee-1d5371702e63" manual="true">
+      <bo>
+        <seg>classifier</seg>
+        <seg>vehicledynamics3dof</seg>
+      </bo>
+      <position x="4270.0" y="480.0"/>
+      <size width="195.0" height="35.0"/>
+      <contentFilters/>
+    </element>
+    <element uuid="3cf28d06-bf65-4c64-848f-b613d6424c57" manual="true">
+      <element uuid="b80e063d-3531-422c-84fe-504ac6424608" manual="true">
+        <element uuid="b205c754-99fe-415f-ab15-57e564a8e939" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="cc834d4e-2ce0-4c16-9942-79e8c38bb26b" manual="true">
+        <element uuid="2fa277d6-a5c8-438c-98b7-a705226b87bd" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection10</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="3a468c2d-025b-48d3-9f70-6e8b7e78d5e7" manual="true">
+        <element uuid="342bc178-cf69-4878-aa4b-a9444ee19447" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection11</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="1c052c3b-d040-41bf-97db-e4ce678a7b6b" manual="true">
+        <element uuid="3c66b156-7eba-450e-ba4c-6d22f60fa0d7" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection12</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="d1a30c39-c12b-4e59-9580-5abc7566cfa3" manual="true">
+        <element uuid="538238e9-5e33-4ff0-8d3a-58e1ec5259db" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection13</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="014361ae-44a6-4061-aae6-ce4001bae3e9" manual="true">
+        <element uuid="4487d6eb-d19f-4b4d-ab9d-6931099ab899" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection14</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="d4fce961-0f3c-492b-8835-382a748e4667" manual="true">
+        <element uuid="fc659ded-0f7f-4948-a1c0-3eba5897065a" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection15</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="7f2da850-062c-4b8d-988e-cb64aae581ae" manual="true">
+        <element uuid="0a8c3978-9a15-47e2-aaf7-5052617f5096" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection16</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="2f488ed5-f5a2-4fda-b3ca-87120598bc09" manual="true">
+        <element uuid="c5432d4f-5e25-4d5e-b44d-e0cc61911ba2" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection17</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="709c5ef6-2969-423e-b36d-27ab340d8380" manual="true">
+        <element uuid="f49a24f4-5dcd-4d30-8680-11000e6704f5" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection18</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="1d44e4c7-150b-4fa6-9612-cc9da1a96f51" manual="true">
+        <element uuid="7e98e1a6-b587-4e72-a873-304679432553" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection19</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="74a5620f-4a44-442a-af95-36028ff45827" manual="true">
+        <element uuid="6ea24f95-db49-459e-a1c1-2d8c97d9546f" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection2</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="1effa584-dcfe-42ac-84df-cdf37d3239e4" manual="true">
+        <element uuid="14ec4999-e88a-4ac4-91cf-eee9fb189167" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection20</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="17af0050-c46d-4ea0-aec0-046a67fe9e70" manual="true">
+        <element uuid="9b84fd4d-56d1-420d-a552-a551f51f32a9" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection21</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="4d218b37-f06e-478a-9cfc-66cb54d07fed" manual="true">
+        <element uuid="15002044-6a2f-4b93-bf01-6eec7092df58" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection22</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="8babf0b5-9239-4d4a-a232-c25ee3b715ca" manual="true">
+        <element uuid="eedd0342-0c09-4d81-b99b-561a63159dc9" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection23</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="07d2d368-3b01-4de7-ac1f-8ee9cfa1befb" manual="true">
+        <element uuid="8a48f4ee-0292-48bb-a7cf-acad5ec328fc" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection24</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="f7d694c4-0524-403b-8971-f129916f4059" manual="true">
+        <element uuid="9a5b635b-c328-4787-bef2-933487e86065" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection25</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="fe3f8e8e-1434-4744-a4ab-126aaf29f779" manual="true">
+        <element uuid="507fa7a3-8e93-4a69-979b-4b8ccf0cf6e4" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection26</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="157e0278-666d-43f3-be8a-1e02ee46c953" manual="true">
+        <element uuid="004e57f0-8657-41d3-91a7-acdd1f9607e9" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection27</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="9542978b-54d0-4f13-9955-2c48b642ab27" manual="true">
+        <element uuid="45244428-6b08-4220-8477-75af62417dad" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection28</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="49c3203c-787c-4cc1-acf3-aeac3e711862" manual="true">
+        <element uuid="b33d27f6-c880-478f-a8f4-623ea9b1db33" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection29</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="963ce825-929f-4568-8fd3-fc0df479fed6" manual="true">
+        <element uuid="05a0f665-52bc-4bfd-bf2e-d9c9f7136b1c" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection3</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="47d408c5-653f-4495-bff0-1d1877c97e9d" manual="true">
+        <element uuid="1775b745-de45-46fa-b451-a3292361836b" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection30</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="f4ddcadb-d9c2-4bdd-b027-5b9ec1ae9c40" manual="true">
+        <element uuid="2f11b1f7-a44e-4696-a5d6-bb169fcda412" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection31</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="55a2360b-49d3-40d8-918f-d9b4dbf5a122" manual="true">
+        <element uuid="6e856805-9210-4b69-a036-849a1b4756e9" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection32</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="b4f1686b-2052-4acd-a81e-81b1a9cfd866" manual="true">
+        <element uuid="716db1db-7eec-4719-8b5e-d4323bf20366" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection33</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="7efec444-4cd5-44af-acf5-8ee4d7d03fa4" manual="true">
+        <element uuid="9ea2861e-cb29-46dc-8a83-5bc467dedbdf" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection34</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="7433da35-1b35-426c-b527-ab53a50c6e21" manual="true">
+        <element uuid="b2efa53d-6c09-4903-90cc-d46bf76ce260" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection4</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="ebc6395d-b09c-4a6e-b9e2-e03052052080" manual="true">
+        <element uuid="cf5f902f-b7be-4a53-8d89-a57477dd2ddc" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection5</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="fb797e64-0c2e-4521-acbe-b6ba292a3b09" manual="true">
+        <element uuid="4d6c8d39-10b6-4a4a-bf3a-3941db43d775" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection6</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="f0446dc8-1fa3-4274-bf3f-f12a11095924" manual="true">
+        <element uuid="2395f163-326d-4c66-8dfa-d25152b51daa" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection7</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="c37b41cc-dc98-4c87-8bf2-ec3b19181bcf" manual="true">
+        <element uuid="0f6974b5-e447-4097-92a6-98d2fc76847e" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection8</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="0e23b803-b35d-4287-9aa5-047ea3a3d59d" manual="true">
+        <element uuid="6616272d-0aec-401c-b627-5c6afcabbdbf" manual="true">
+          <bo>
+            <seg>tag</seg>
+            <seg>unidirectional</seg>
+          </bo>
+          <contentFilters/>
+        </element>
+        <bo>
+          <seg>connection</seg>
+          <seg>vehicledynamics3dof_impl_new_connection9</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="521c9afe-2b09-43e2-85bc-bec019389b4f" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>acceleration</seg>
+        </bo>
+        <position y="85.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="d5594be3-c175-493e-a3b4-ebe209110991" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>lateral_velocity</seg>
+        </bo>
+        <position x="1050.0" y="90.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="11f2f2c4-081b-4a7c-a747-03931d4b31c8" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>longitudinal_velocity</seg>
+        </bo>
+        <position x="1016.0" y="45.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="5686890e-4ccb-4d6f-8dc7-85f6d83ecbfa" manual="true" dockArea="right">
+        <bo>
+          <seg>feature</seg>
+          <seg>pose</seg>
+        </bo>
+        <position x="1113.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="c422064b-57ab-4e7f-8d68-1c61bc26be2c" manual="true" dockArea="left">
+        <bo>
+          <seg>feature</seg>
+          <seg>steering_angle</seg>
+        </bo>
+        <position y="130.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="f9f892eb-f34e-42ba-a0b0-eddca680c634" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <contentFilters/>
+      </element>
+      <element uuid="b04d140a-2ef4-457c-8153-2c0cbd3fe4cd" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>bicyclemodel_ned</seg>
+        </bo>
+        <position x="530.0" y="235.0"/>
+        <size width="171.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="c09d8975-3934-42c6-9604-59ed7ce87ac0" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>busselector</seg>
+        </bo>
+        <position x="530.0" y="150.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="d4140ea7-c4b0-4b20-9568-0c8396e97366" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>dtconv</seg>
+        </bo>
+        <position x="236.0" y="87.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="763ec8e0-9f0f-417c-b1c5-5d80fff79b16" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>foh</seg>
+        </bo>
+        <position x="390.0" y="200.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="79ee860d-c0a8-4773-a1b1-5b4e76d1dbc7" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>foh1</seg>
+        </bo>
+        <position x="104.0" y="185.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="21dedce7-77e6-4d54-b52c-d425c5a87a7c" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>foh2</seg>
+        </bo>
+        <position x="101.0" y="240.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="8bf4a700-652e-44a4-8286-7be0e006afc7" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>forwardgear</seg>
+        </bo>
+        <position x="270.0" y="35.0"/>
+        <size width="136.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="388b0198-8c9f-4891-bd6c-98544a7d57fa" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>gain</seg>
+        </bo>
+        <position x="717.0" y="132.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="70d2927a-959f-41b8-a522-19a9c446d9da" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>mux1</seg>
+        </bo>
+        <position x="390.0" y="87.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="43b110a9-f216-4b41-8666-78c2f6bcfc6f" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>mux2</seg>
+        </bo>
+        <position x="650.0" y="47.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="2fdfac32-c897-4d56-b404-307ca43db20b" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>ned2nwu</seg>
+        </bo>
+        <position x="650.0" y="168.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="c3d62519-9390-4f1b-a95b-06bfe081c187" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>packegoactor</seg>
+        </bo>
+        <position x="230.0" y="168.0"/>
+        <size width="142.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="f420e931-2105-4d71-863f-9fdba7f4a74c" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>saturation1</seg>
+        </bo>
+        <position x="571.0" y="115.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="d342b76d-4678-4d3b-b595-0a85ad0825be" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>saturation2</seg>
+        </bo>
+        <position x="500.0" y="55.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="30b73b63-0abd-40c5-bac1-64d2001720fb" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>simpledrivelineandbrakes</seg>
+        </bo>
+        <position x="240.0" y="250.0"/>
+        <size width="219.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="01bafe92-404c-44e0-9794-d293c65cb946" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>transision1</seg>
+        </bo>
+        <position x="379.0" y="132.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="62f92aaf-f6f4-4390-a68f-17ff2f27b9c7" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>uconv1</seg>
+        </bo>
+        <position x="740.0" y="230.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <element uuid="98b10bb6-1d75-4dc1-a933-eacdb51443a3" manual="true">
+        <bo>
+          <seg>subcomponent</seg>
+          <seg>uconv2</seg>
+        </bo>
+        <position x="250.0" y="200.0"/>
+        <size width="130.0" height="36.0"/>
+        <contentFilters/>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>vehicledynamics3dof.implforupstream</seg>
+      </bo>
+      <position x="460.0" y="170.0"/>
+      <size width="1160.0" height="345.0"/>
+      <contentFilters/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>aebsystem::vd3dofvariant</seg>
+    </bo>
+    <position/>
+    <size width="7519.0" height="650.0"/>
+    <contentFilters>
+      <filter>classifiers</filter>
+    </contentFilters>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>aebsystem::vd3dofvariant</seg>
+    </context>
+  </config>
+</diagram:Diagram>

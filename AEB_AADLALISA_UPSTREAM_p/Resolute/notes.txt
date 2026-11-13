@@ -1,0 +1,25 @@
+
+		--  get_Subcomponent(pc: component, subname: string): component =
+		 get_Function_Feature(pc: component, subname: string): bool =
+		 let subs : {component} = subcomponents(pc);
+		 let filtered :{component} = {cn for  (cn:subs) | name(cn) = subname};
+		 if size(filtered) > 0 
+		 then
+			 true
+		 	--head(as_list(filtered))
+		 else
+			 false
+		 --pc
+
+	 
+	 	--get_Feature(pc: component, cp: feature, subname: string): feature =
+		 get_Interface(pc: component, subname: string): bool =
+		 let subs : {feature} = features(pc);
+		 let filtered :{feature} = {cn for  (cn:subs) | name(cn) = subname};
+		 if size(filtered) > 0 
+		 then
+		 	true
+		 	--head(as_list(filtered))
+		 else
+		    --cp
+		 	false
