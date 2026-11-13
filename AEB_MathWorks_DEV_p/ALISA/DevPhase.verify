@@ -1,0 +1,270 @@
+verification plan DevPhasefor3DOF_VP_Comp : "verification test on the component" for DevReqComp3DOF[
+	claim RSteeringAngle: "Steering angle exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Steering_Angle")
+	
+	]
+	
+	claim RAcceleration: "Acceleration exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Acceleration")
+	
+	]
+	
+	claim RWheelsElevation: "Wheels Elevation exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Wheelselevation")
+	
+	]
+	
+	
+	claim RLongitudinal_Velocity: "Longitudinal Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Longitudinal_Velocity")
+	
+	]
+	
+	claim RLateral_Velocity: "Lateral Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Lateral_Velocity")
+	
+	]
+	
+	claim RPose: "Pose exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Pose")
+	
+	]
+	
+	claim RVehFdbk: "VehFdbk exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("VehFdbk")
+	
+	]
+	
+	
+		claim RSteeringAngleTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-01"[
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+		
+	]
+	
+	
+	claim RAccelerationTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-02"[
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	
+		claim RWheelsElevationTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-03"[
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsBoolean()
+	]
+	claim RLongitudinal_VelocityTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-04"[ 
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RLateral_VelocityTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-05"[
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	
+	claim RPoseTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-06"[
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsBusVehiclePose()
+	]
+	
+	claim RVehFdbkTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-07"[
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsVector8()
+	]
+	claim RNoExtraInterfaces : "Claim for VDM-UPSTREAM-FID-NO-EXTRA-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoExtraINterfacesExists(7)
+	]
+	
+	claim RNoLessInterfaces : "Claim for VDM-UPSTREAM-FID-NO-LESS-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoLessINterfacesExists(7)
+	]
+]
+
+
+verification plan DevPhasefor3DOF_VP_Impl : "Verify if the 3DOF DV model 
+is representative for our simulation need in the development phase" for DevReq[
+	
+	description "For development phase we have defined 17 requirements related to the model's fidelity for the real-system
+, it's validity and it's built to ensure the simulation requirements are met"
+
+	claim R1RealisticSimu : "Claim for VDM-DEV-FID-FUN-01"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+	]
+	claim R2Suspension : "Claim for VDM-DEV-FID-FUN-02"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+		
+	]
+	claim R3FeatureControlPedal : "Claim for VDM-DEV-FID-FUN-03"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("SimpleDriveLineAndBrakes")
+		DoesItExist: resoluteMethods.GetFunctionFeature("BicycleModel_NED")
+		
+	]
+	claim R4FeatureCalcTTC : "Claim for VDM-DEV-FID-FUN-04"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("BicycleModel_NED")
+		DoesItExist: resoluteMethods.GetFunctionFeature("PackEgoActor")
+		DoesItExist: resoluteMethods.GetFunctionFeature("NED2NWU")
+		
+	]
+	
+	claim R5Validity : "Claim for VDM-DEV-VAL-01"[]
+	claim R6Verification : "Claim for VDM-DEV-VERIF-01"[]
+	claim R7Verification2 : "Claim for VDM-DEV-VERIF-02"[]
+	claim R8Maturity : "Claim for VDM-DEV-MAT-01"[]
+	claim RPerformaceSimuTime : "Claim for VDM-UP-PERF-01"[]
+	claim RPerformanceMemSpace : "Claim for VDM-UP-PERF-02"[]
+]
+
+
+verification plan DevPhasefor14DOF_VP_Comp : "verification test on the component" for DevReqComp14DOF[
+		claim RSteeringAngle: "Steering angle exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Steering_Angle")
+	
+	]
+	
+	claim RAcceleration: "Acceleration exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Acceleration")
+	
+	]
+	
+	claim RWheelsElevation: "Wheels Elevation exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Wheelselevation")
+	
+	]
+	
+	
+	claim RLongitudinal_Velocity: "Longitudinal Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Longitudinal_Velocity")
+	
+	]
+	
+	claim RLateral_Velocity: "Lateral Velocity exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Lateral_Velocity")
+	
+	]
+	
+	claim RPose: "Pose exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("Pose")
+	
+	]
+	
+	claim RVehFdbk: "VehFdbk exists?"[
+		activities 
+		DoesItExist: resoluteMethods.GetInterface("VehFdbk")
+	
+	]
+	
+	
+		claim RSteeringAngleTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-01"[
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+		
+	]
+	
+	
+	claim RAccelerationTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-02"[
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	
+		claim RWheelsElevationTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-03"[
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsBoolean()
+	]
+	claim RLongitudinal_VelocityTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-04"[ 
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	claim RLateral_VelocityTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-05"[
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsFloat64()
+	]
+	
+	claim RPoseTypeDirection : "Claim for VDM-UPSTREAM-FID-INTERFACE-06"[
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsBusVehiclePose()
+	]
+	
+	claim RVehFdbkTypeDirection : "Claim for VDM-DEV-FID-INTERFACE-07"[
+		activities
+		checkifInput: resoluteMethods.IsOutgoing()
+		checkType: FeaturesTypes.IsVector8()
+	]
+	claim RNoExtraInterfaces : "Claim for VDM-UPSTREAM-FID-NO-EXTRA-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoExtraINterfacesExists(7)
+	]
+	
+	claim RNoLessInterfaces : "Claim for VDM-UPSTREAM-FID-NO-LESS-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoLessINterfacesExists(7)
+	]
+]
+
+
+verification plan DevPhasefor14DOF_VP : "Verify if the 14DOF DV model 
+is representative for our simulation need in the development phase" for DevReq14DOF[
+	
+	description "For development phase we have defined 17 requirements related to the model's fidelity for the real-system
+, it's validity and it's built to ensure the simulation requirements are met"
+
+	claim R1RealisticSimu : "Claim for VDM-DEV-FID-FUN-01"[
+		activities
+		
+			DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+	]
+	claim R2Suspension : "Claim for VDM-DEV-FID-FUN-02"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+		
+	]
+	claim R3FeatureControlPedal : "Claim for VDM-DEV-FID-FUN-03"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+		DoesItExist: resoluteMethods.GetFunctionFeature("SignalBreakOut")
+	]
+	claim R4FeatureCalcTTC : "Claim for VDM-DEV-FID-FUN-04"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("VehDyn14DOF")
+		DoesItExist: resoluteMethods.GetFunctionFeature("SignalBreakOut")
+		
+	]
+	
+	
+	claim R5Validity : "Claim for VDM-DEV-VAL-01"[]
+	claim R6Verification : "Claim for VDM-DEV-VERIF-01"[]
+	claim R7Verification2 : "Claim for VDM-DEV-VERIF-02"[]
+	claim R8Maturity : "Claim for VDM-DEV-MAT-01"[]
+	claim RPerformaceSimuTime : "Claim for VDM-UP-PERF-01"[]
+	claim RPerformanceMemSpace : "Claim for VDM-UP-PERF-02"[]
+]

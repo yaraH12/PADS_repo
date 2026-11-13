@@ -1,0 +1,79 @@
+package aebsystem::TestBench
+public
+
+	with aebsystem::Components;
+	with aebsystem::VD14DOFVariant;
+	with aebsystem::VD3DOFVariant;
+	
+	system TestbenchC
+	end TestbenchC;
+	
+	system implementation TestbenchC.impl1
+	subcomponents
+		aeb_sensors_environment: abstract aebsystem::Components::SensorEnv;
+		aeb_sensor_fusion_tracking: abstract aebsystem::Components::AEBSensorFusion;
+		aeb_decision_logic: abstract aebsystem::Components::AEBDecisionLogic;
+		aeb_controller: abstract aebsystem::Components::AEBController;
+		DV3DOF: system aebsystem::VD3DOFVariant::VehicleDynamics3DOF;
+		metrics_assessment: abstract aebsystem::Components::MetricsAssessment;
+		aeb_mio_tracks: abstract aebsystem::Components::MIOTrack;
+
+	connections
+		TestbenchC_impl_new_connection: feature aeb_sensors_environment.Vision -> aeb_sensor_fusion_tracking.Vision;
+		TestbenchC_impl_new_connection2: feature aeb_sensors_environment.Radar -> aeb_sensor_fusion_tracking.Radar;
+		TestbenchC_impl_new_connection3: feature aeb_sensors_environment.System_Time -> aeb_sensor_fusion_tracking.System_Time;
+		TestbenchC_impl_new_connection4: feature DV3DOF.Pose -> aeb_sensors_environment.Ego;
+		TestbenchC_impl_new_connection5: feature DV3DOF.Pose -> aeb_decision_logic.Ego;
+		TestbenchC_impl_new_connection6: feature aeb_sensors_environment.Reference_Path -> aeb_decision_logic.Reference_Path;
+		TestbenchC_impl_new_connection7: feature aeb_sensor_fusion_tracking.Tracks -> aeb_decision_logic.Tracks;
+		TestbenchC_impl_new_connection8: feature aeb_decision_logic.Relative_Distance -> aeb_controller.Relative_Distance;
+		TestbenchC_impl_new_connection9: feature aeb_decision_logic.Relative_Velocity -> aeb_controller.Relative_Velocity;
+		TestbenchC_impl_new_connection10: feature aeb_decision_logic.Curvature_Sequence -> aeb_controller.Curvature_Sequence;
+		TestbenchC_impl_new_connection11: feature aeb_decision_logic.Lateral_Deviation -> aeb_controller.Lateral_Deviation;
+		TestbenchC_impl_new_connection12: feature aeb_decision_logic.Relative_Yaw_Angle -> aeb_controller.Relative_Yaw_Angle;
+		TestbenchC_impl_new_connection13: feature aeb_controller.Steering_Angle -> DV3DOF.Steering_Angle;
+		TestbenchC_impl_new_connection14: feature aeb_controller.Throttle -> DV3DOF.Acceleration;
+		TestbenchC_impl_new_connection15: feature DV3DOF.Longitudinal_Velocity -> aeb_controller.Longitudinal_Velocity;
+		TestbenchC_impl_new_connection16: feature aeb_controller.Ego_Car_Stop -> metrics_assessment.Ego_Car_Stop;
+		TestbenchC_impl_new_connection17: feature DV3DOF.Longitudinal_Velocity -> metrics_assessment.Ego_Velocity;
+		TestbenchC_impl_new_connection18: feature aeb_sensors_environment.Actors -> metrics_assessment.Actors;
+		TestbenchC_impl_new_connection19: feature aeb_decision_logic.MIO_Track -> aeb_mio_tracks.MIO_Index;
+		TestbenchC_impl_new_connection20: feature aeb_sensor_fusion_tracking.Tracks -> aeb_mio_tracks.Tracks;
+		TestbenchC_impl1_new_connection: feature aeb_decision_logic.Goal_Reached -> metrics_assessment.Goal_Reached;
+end TestbenchC.impl1;
+	
+	system implementation TestbenchC.impl2
+	subcomponents
+		aeb_sensors_environment: abstract aebsystem::Components::SensorEnv;
+		aeb_sensor_fusion_tracking: abstract aebsystem::Components::AEBSensorFusion;
+		aeb_decision_logic: abstract aebsystem::Components::AEBDecisionLogic;
+		aeb_controller: abstract aebsystem::Components::AEBController;
+		DV14DOF: system aebsystem::VD14DOFVariant::VehicleDynamics14DOF;
+		metrics_assessment: abstract aebsystem::Components::MetricsAssessment;
+		aeb_mio_tracks: abstract aebsystem::Components::MIOTrack;
+
+	connections
+		TestbenchC_impl_new_connection: feature aeb_sensors_environment.Vision -> aeb_sensor_fusion_tracking.Vision;
+		TestbenchC_impl_new_connection2: feature aeb_sensors_environment.Radar -> aeb_sensor_fusion_tracking.Radar;
+		TestbenchC_impl_new_connection3: feature aeb_sensors_environment.System_Time -> aeb_sensor_fusion_tracking.System_Time;
+		TestbenchC_impl_new_connection4: feature DV14DOF.Pose -> aeb_sensors_environment.Ego;
+		TestbenchC_impl_new_connection5: feature DV14DOF.Pose -> aeb_decision_logic.Ego;
+		TestbenchC_impl_new_connection6: feature aeb_sensors_environment.Reference_Path -> aeb_decision_logic.Reference_Path;
+		TestbenchC_impl_new_connection7: feature aeb_sensor_fusion_tracking.Tracks -> aeb_decision_logic.Tracks;
+		TestbenchC_impl_new_connection8: feature aeb_decision_logic.Relative_Distance -> aeb_controller.Relative_Distance;
+		TestbenchC_impl_new_connection9: feature aeb_decision_logic.Relative_Velocity -> aeb_controller.Relative_Velocity;
+		TestbenchC_impl_new_connection10: feature aeb_decision_logic.Curvature_Sequence -> aeb_controller.Curvature_Sequence;
+		TestbenchC_impl_new_connection11: feature aeb_decision_logic.Lateral_Deviation -> aeb_controller.Lateral_Deviation;
+		TestbenchC_impl_new_connection12: feature aeb_decision_logic.Relative_Yaw_Angle -> aeb_controller.Relative_Yaw_Angle;
+		TestbenchC_impl_new_connection13: feature aeb_controller.Steering_Angle -> DV14DOF.Steering_Angle;
+		TestbenchC_impl_new_connection14: feature aeb_controller.Throttle -> DV14DOF.Acceleration;
+		TestbenchC_impl_new_connection15: feature DV14DOF.Longitudinal_Velocity -> aeb_controller.Longitudinal_Velocity;
+		TestbenchC_impl_new_connection16: feature aeb_controller.Ego_Car_Stop -> metrics_assessment.Ego_Car_Stop;
+		TestbenchC_impl_new_connection17: feature DV14DOF.Longitudinal_Velocity -> metrics_assessment.Ego_Velocity;
+		TestbenchC_impl_new_connection18: feature aeb_sensors_environment.Actors -> metrics_assessment.Actors;
+		TestbenchC_impl_new_connection19: feature aeb_decision_logic.MIO_Track -> aeb_mio_tracks.MIO_Index;
+		TestbenchC_impl_new_connection20: feature aeb_sensor_fusion_tracking.Tracks -> aeb_mio_tracks.Tracks;
+		TestbenchC_impl2_new_connection: feature aeb_decision_logic.Goal_Reached -> DV14DOF.Wheelselevation;
+		TestbenchC_impl2_new_connection2: feature aeb_decision_logic.Goal_Reached -> metrics_assessment.Goal_Reached;
+end TestbenchC.impl2;
+end aebsystem::TestBench;

@@ -1,0 +1,115 @@
+
+property set Values_Property is
+		ConstantValue: aadlreal applies to (abstract,system);
+		ComplexityLevel: aadlstring applies to (abstract);
+		environment: aadlstring applies to (abstract);
+		ArrayFields: record (
+     X : aadlreal;
+     Y : aadlreal;
+     Z : aadlreal;
+  	) applies to (abstract);
+		VectorFields: record (
+     X : aadlreal;
+     Y : aadlreal;
+     Z : aadlreal;
+  	) applies to (abstract);
+  	
+  	InfoFields : record (
+  		field1: record(
+  			field1:record(
+  				Disp:record(
+  					X: aadlreal;
+  					Y: aadlreal;
+  					Z: aadlreal;
+  				);
+  				Vel:record(
+  					Xdot: aadlreal;
+  					Ydot: aadlreal;
+  					Zdot: aadlreal;
+  				);
+  				Ang:record(
+  					phi: aadlreal;
+  					theta: aadlreal;
+  					psi: aadlreal;
+  				);
+  			);
+  			field2:record(
+  				Disp:record(
+  					X: aadlreal;
+  					Y: aadlreal;
+  					Z: aadlreal;
+  				);
+  				Vel:record(
+  					Xdot: aadlreal;
+  					Ydot: aadlreal;
+  					Zdot: aadlreal;
+  				);
+  			);
+  			field3:record(
+  				Disp:record(
+  					X: aadlreal;
+  					Y: aadlreal;
+  					Z: aadlreal;
+  				);
+  				Vel:record(
+  					Xdot: aadlreal;
+  					Ydot: aadlreal;
+  					Zdot: aadlreal;
+  				);
+  			);
+  			field4:record(
+  				Disp:record(
+  					X: aadlreal;
+  					Y: aadlreal;
+  					Z: aadlreal;
+  				);
+  				Vel:record(
+  					Xdot: aadlreal;
+  					Ydot: aadlreal;
+  					Zdot: aadlreal;
+  				);
+  			);
+  			field5:record(
+  				Disp:record(
+  					X: aadlreal;
+  					Y: aadlreal;
+  					Z: aadlreal;
+  				);
+  				Vel:record(
+  					Xdot: aadlreal;
+  					Ydot: aadlreal;
+  					Zdot: aadlreal;
+  				);
+  			);
+  		);
+  		field3: record(
+  			field1:record(
+  				X: aadlreal;
+  				Y: aadlreal;
+  				Z: aadlreal;
+  				X: aadlreal;
+  				Y: aadlreal;
+  				Z: aadlreal;
+  				X: aadlreal;
+  			);
+  			field2:record(
+  				X: aadlreal;
+  				Y: aadlreal;
+  				Z: aadlreal;
+  			);
+  			field3:record(
+  				X: aadlreal;
+  				Y: aadlreal;
+  				Z: aadlreal;
+  				X: aadlreal;
+  			);
+  		);	
+  	)applies to (abstract);
+  	
+end Values_Property;
+
+
+
+
+
+

@@ -1,0 +1,1182 @@
+	\documentclass{article}
+	\usepackage{graphicx} 
+	\usepackage{fontenc}
+	\usepackage{hyperref}
+	\usepackage{pdflscape}
+	\usepackage{array}
+	\usepackage[table]{xcolor}
+	\usepackage{adjustbox}
+	\usepackage{todonotes}
+	\usepackage{xcolor}
+	\usepackage{subcaption}
+
+	\definecolor{level0}{RGB}{220,220,220}
+	\definecolor{level1}{RGB}{255,200,200}
+	\definecolor{level2}{RGB}{255,230,180}
+	\definecolor{level3}{RGB}{200,255,200}
+
+	\title{Assurance Case Report MWDynamicVehicleCaseDEV}
+	\author{x}
+	\begin{document}
+	\maketitle
+	\section{Introduction}
+	This assurance-case report presents the results of the 
+	representativity evaluation performed on the different model variants considered for 
+	the simulation need. The document is structured to provide a clear and traceable view of how 
+	each model was assessed. For every model variant, the report lists all associated requirements
+	 and specifies whether each requirement has been successfully satisfied. Based on these 
+	individual outcomes, the report then summarizes the performance of each model using the 
+	representativity factors defined in our framework, expressed both as percentage scores 
+	and corresponding levels on the assessment scale. These elements allow the reader to understand 
+	the strengths and limitations of each variant.
+	 
+	\section{Model Results}
+    Found 2 modelResults
+		
+			\section{Model Result Details} 
+			\paragraph{Model Summary}
+			Number of claims: 26
+			Number of subsystems: 18
+			Metrics:
+			- Success: 24
+			- Fail: 9
+			- Error: 2
+			
+	
+
+					\subsection{Category Success Ratios}
+						
+						\begin{table}
+						\centering
+						\caption{Score Ratio table for each factor with total nb of requirements and achieved nb of requirements}
+						\begin{tabular}{|l|c|c|c|}
+						\hline
+						Category & Total Reqs & Successful Reqs & Success Ratio (\%) \\
+						\hline
+
+							    SimulatorCompatibility & 2 & 2 & 100 \% \\
+							 
+
+							    ModelVerification & 2 & 0 & 0 \% \\
+							 
+
+							    Validity & 1 & 1 & 100 \% \\
+							 
+
+							    Interfacesexistance & 16 & 11 & 69 \% \\
+							 
+
+							    FunctionsCoverage & 4 & 2 & 50 \% \\
+							 
+
+							    Maturity & 1 & 0 & 0 \% \\
+							 
+					
+						
+						\hline
+						\end{tabular}
+						\end{table}
+
+
+
+
+										
+								
+
+			
+
+
+
+		\subsection{Representativity Assessment Scale}
+			\begin{table}
+			    \centering
+				\caption{Representativity Assessment Scale with achieved levels highlighted}
+			    \adjustbox{max width=\textwidth}{
+			    \renewcommand{\arraystretch}{3}
+			    \begin{tabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2cm}|}
+			    \hline
+			    Level - Factor & Function coverage & Model Verification & Interface existence & Maturity & Validity & Simulation Mean Compatibility 
+			    \\
+			    \hline			
+							
+				    Level 3 & Full Coverage , Realistic Behavior 
+							& No or minor numerical error 
+							& All interfaces,  correctly typed 
+							& Operational 
+							& \cellcolor{level3}Valid in required context	
+							& \cellcolor{level3}Fully compatible
+						
+
+				    \\
+				    \hline
+				    Level 2	& Enough Coverage for Ideal Behavior
+							& Formal error estimation 
+							& \cellcolor{level2}Missing interfaces,  correctly typed 
+							& Pre-deployment 
+							& Valid in similar context 
+							& Compatible with minor adaptions
+							
+				    \\
+				    \hline
+				    Level 1	& \cellcolor{level1}Partial Coverage 
+							& Passes some tests 
+							& Missing interfaces, Incorrectly typed 
+							& Prototype  
+							& Validation in progress 
+							& Partially Compatible
+							
+				    \\
+				    \hline
+				    Level 0	& Insufficient Evidence	
+							& \cellcolor{level0}Insufficient Evidence 
+							& Insufficient Evidence 
+							& \cellcolor{level0}Experimental 
+							& Insufficient Evidence 
+							& Not Compatible
+							
+				    \\
+				    \hline			
+						
+
+			    \end{tabular} 
+			    }
+			\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			\subsection{Claims details}
+			\begin{itemize}
+  				  \item Claim 1
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RSteeringAngle 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (steering angle) interface To get (steering angle) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 2
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RAcceleration 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Acceleration) interface To get (Acceleration) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 3
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: RWheelsElevation 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (WheelsElevation) interface To get (WheelsElevation) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 4
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLongitudinal\_Velocity 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Longitudinal\_Velocity) interface To get (Longitudinal\_Velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 5
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLateral\_Velocity 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Lateral\_Velocity) interface To get (Lateral\_Velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 6
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RPose 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Pose) interface To get (Pose) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 7
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: RVehFdbk 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (VehFdbk) interface To get (VehFdbk) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 8
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RSteeringAngleTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (steering angle) input port typed as double To get (steering angle) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RSteeringAngleTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (steering angle) input port typed as double To get (steering angle) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 9
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RAccelerationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (acceleration) input port typed as double To get (acceleration) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RAccelerationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (acceleration) input port typed as double To get (acceleration) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 10
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? ERROR
+		
+						\item \textbf{Requirement}: RWheelsElevationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (wheels elevation) input port typed as boolean To get (wheels elevation) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: RWheelsElevationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (wheels elevation) input port typed as boolean To get (wheels elevation) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 11
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLongitudinal\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (longitudinal velocity) input port typed as double To send (longitudinal velocity) value as output
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLongitudinal\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (longitudinal velocity) input port typed as double To send (longitudinal velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 12
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLateral\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (lateral velocity) input port typed as double To send (lateral velocity) value as output
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLateral\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (lateral velocity) input port typed as double To send (lateral velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 13
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RPoseTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Pose) input port typed as BusVehiclePose To get (Pose) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RPoseTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Pose) input port typed as BusVehiclePose To get (Pose) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 14
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? ERROR
+		
+						\item \textbf{Requirement}: RVehFdbkTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (VehFdbk) input port typed as Array To send (VehFdbk) value as output
+					
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: RVehFdbkTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (VehFdbk) input port typed as Array To send (VehFdbk) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 15
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RNoExtraInterfaces 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Check that there is no extra interfaces ,as inputs or outputs, than required  extra interfaces can take memory space and can affect the behavior of the system
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 16
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: RNoLessInterfaces 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Check that there is no less interfaces ,as inputs or outputs, than required  less interfaces affect the behavior of the system
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 17
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: R1RealisticSimu 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features covered by the model, analysis of dynamic response in complex scenarios (e.g., cornering under braking, rapid lane change, uneven road surface)  These phenomena directly influence vehicle stability and braking effectiveness in critical driving scenarios
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 18
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? FAILURE
+		
+						\item \textbf{Requirement}: R2Suspension 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model Necessary for simulating extreme situations.Allow a precise analysis of the vehicle behavior on different surfaces
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 19
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R3FeatureControlPedal 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To prevent collision when obstacle is detected
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R3FeatureControlPedal 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To prevent collision when obstacle is detected
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 20
+				\begin{itemize}
+			    	\item Success Count: 3 
+			    	\item Verification Activities: 3
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R4FeatureCalcTTC 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To stop the vehicle if TTC is equal to MinTTC
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R4FeatureCalcTTC 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To stop the vehicle if TTC is equal to MinTTC
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R4FeatureCalcTTC 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To stop the vehicle if TTC is equal to MinTTC
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 21
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: R5Validity 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Validation against EuroNCAP or similar scenarios
+					\end{itemize}
+
+  				  \item Claim 22
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: R6Verification 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Report generation with Unit Tests or Equivalent
+					\end{itemize}
+
+  				  \item Claim 23
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 24
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? FAILURE
+					
+					\item \textbf{Requirement}: R8Maturity 
+					\item \textbf{Requirement category}: Maturity
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Presence of a Git or other history tracking
+					\end{itemize}
+
+  				  \item Claim 25
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: RPerformaceSimuTime 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Measurement of simulation time on a standard scenario
+					\end{itemize}
+
+  				  \item Claim 26
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: RPerformanceMemSpace 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Analysis of memory used during execution
+					\end{itemize}
+
+			\end{itemize}
+
+			\section{Model Result Details} 
+			\paragraph{Model Summary}
+			Number of claims: 26
+			Number of subsystems: 13
+			Metrics:
+			- Success: 34
+			- Fail: 0
+			- Error: 0
+			
+	
+
+					\subsection{Category Success Ratios}
+						
+						\begin{table}
+						\centering
+						\caption{Score Ratio table for each factor with total nb of requirements and achieved nb of requirements}
+						\begin{tabular}{|l|c|c|c|}
+						\hline
+						Category & Total Reqs & Successful Reqs & Success Ratio (\%) \\
+						\hline
+
+							    SimulatorCompatibility & 2 & 2 & 100 \% \\
+							 
+
+							    ModelVerification & 2 & 1 & 50 \% \\
+							 
+
+							    Validity & 1 & 1 & 100 \% \\
+							 
+
+							    Interfacesexistance & 16 & 16 & 100 \% \\
+							 
+
+							    FunctionsCoverage & 4 & 4 & 100 \% \\
+							 
+
+							    Maturity & 1 & 1 & 100 \% \\
+							 
+					
+						
+						\hline
+						\end{tabular}
+						\end{table}
+
+
+
+
+										
+								
+
+			
+
+
+
+		\subsection{Representativity Assessment Scale}
+			\begin{table}
+			    \centering
+				\caption{Representativity Assessment Scale with achieved levels highlighted}
+			    \adjustbox{max width=\textwidth}{
+			    \renewcommand{\arraystretch}{3}
+			    \begin{tabular}{|l|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2.5cm}|p{2cm}|}
+			    \hline
+			    Level - Factor & Function coverage & Model Verification & Interface existence & Maturity & Validity & Simulation Mean Compatibility 
+			    \\
+			    \hline			
+							
+				    Level 3 & \cellcolor{level3}Full Coverage , Realistic Behavior 
+							& No or minor numerical error 
+							& \cellcolor{level3}All interfaces,  correctly typed 
+							& \cellcolor{level3}Operational 
+							& \cellcolor{level3}Valid in required context	
+							& \cellcolor{level3}Fully compatible
+						
+
+				    \\
+				    \hline
+				    Level 2	& Enough Coverage for Ideal Behavior
+							& Formal error estimation 
+							& Missing interfaces,  correctly typed 
+							& Pre-deployment 
+							& Valid in similar context 
+							& Compatible with minor adaptions
+							
+				    \\
+				    \hline
+				    Level 1	& Partial Coverage 
+							& \cellcolor{level1}Passes some tests 
+							& Missing interfaces, Incorrectly typed 
+							& Prototype  
+							& Validation in progress 
+							& Partially Compatible
+							
+				    \\
+				    \hline
+				    Level 0	& Insufficient Evidence	
+							& Insufficient Evidence 
+							& Insufficient Evidence 
+							& Experimental 
+							& Insufficient Evidence 
+							& Not Compatible
+							
+				    \\
+				    \hline			
+						
+
+			    \end{tabular} 
+			    }
+			\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			\subsection{Claims details}
+			\begin{itemize}
+  				  \item Claim 1
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RSteeringAngle 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (steering angle) interface To get (steering angle) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 2
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RAcceleration 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Acceleration) interface To get (Acceleration) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 3
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RWheelsElevation 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (WheelsElevation) interface To get (WheelsElevation) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 4
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLongitudinal\_Velocity 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Longitudinal\_Velocity) interface To get (Longitudinal\_Velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 5
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLateral\_Velocity 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Lateral\_Velocity) interface To get (Lateral\_Velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 6
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RPose 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Pose) interface To get (Pose) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 7
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RVehFdbk 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (VehFdbk) interface To get (VehFdbk) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 8
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RSteeringAngleTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (steering angle) input port typed as double To get (steering angle) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RSteeringAngleTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (steering angle) input port typed as double To get (steering angle) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 9
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RAccelerationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (acceleration) input port typed as double To get (acceleration) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RAccelerationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (acceleration) input port typed as double To get (acceleration) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 10
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RWheelsElevationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (wheels elevation) input port typed as boolean To get (wheels elevation) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RWheelsElevationTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (wheels elevation) input port typed as boolean To get (wheels elevation) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 11
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLongitudinal\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (longitudinal velocity) input port typed as double To send (longitudinal velocity) value as output
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLongitudinal\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (longitudinal velocity) input port typed as double To send (longitudinal velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 12
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLateral\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (lateral velocity) input port typed as double To send (lateral velocity) value as output
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RLateral\_VelocityTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (lateral velocity) input port typed as double To send (lateral velocity) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 13
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RPoseTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Pose) input port typed as BusVehiclePose To get (Pose) value as input
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RPoseTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (Pose) input port typed as BusVehiclePose To get (Pose) value as input
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 14
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RVehFdbkTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (VehFdbk) input port typed as Array To send (VehFdbk) value as output
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RVehFdbkTypeDirection 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: The model must have (VehFdbk) input port typed as Array To send (VehFdbk) value as output
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 15
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RNoExtraInterfaces 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Check that there is no extra interfaces ,as inputs or outputs, than required  extra interfaces can take memory space and can affect the behavior of the system
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 16
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: RNoLessInterfaces 
+						\item \textbf{Requirement category}: Interfacesexistance 
+						\item \textbf{Requirement description}: Check that there is no less interfaces ,as inputs or outputs, than required  less interfaces affect the behavior of the system
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 17
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R1RealisticSimu 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features covered by the model, analysis of dynamic response in complex scenarios (e.g., cornering under braking, rapid lane change, uneven road surface)  These phenomena directly influence vehicle stability and braking effectiveness in critical driving scenarios
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 18
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 1
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R2Suspension 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model Necessary for simulating extreme situations.Allow a precise analysis of the vehicle behavior on different surfaces
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 19
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R3FeatureControlPedal 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To prevent collision when obstacle is detected
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R3FeatureControlPedal 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To prevent collision when obstacle is detected
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 20
+				\begin{itemize}
+			    	\item Success Count: 2 
+			    	\item Verification Activities: 2
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R4FeatureCalcTTC 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To stop the vehicle if TTC is equal to MinTTC
+					
+					\item Verification activity SUCCESS or FAILURE? SUCCESS
+		
+						\item \textbf{Requirement}: R4FeatureCalcTTC 
+						\item \textbf{Requirement category}: FunctionsCoverage 
+						\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Check the features and subsystems covered by the model  To stop the vehicle if TTC is equal to MinTTC
+					
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 21
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: R5Validity 
+					\item \textbf{Requirement category}: Validity
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Validation against EuroNCAP or similar scenarios
+					\end{itemize}
+
+  				  \item Claim 22
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: R6Verification 
+					\item \textbf{Requirement category}: ModelVerification
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Report generation with Unit Tests or Equivalent
+					\end{itemize}
+
+  				  \item Claim 23
+				\begin{itemize}
+			    	\item Success Count: 0 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 0
+
+  				  \item Claim 24
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: R8Maturity 
+					\item \textbf{Requirement category}: Maturity
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Presence of a Git or other history tracking
+					\end{itemize}
+
+  				  \item Claim 25
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: RPerformaceSimuTime 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Measurement of simulation time on a standard scenario
+					\end{itemize}
+
+  				  \item Claim 26
+				\begin{itemize}
+			    	\item Success Count: 1 
+			    	\item Verification Activities: 0
+				\end{itemize}
+				
+									    
+				\item Predicate Results: 1
+					\begin{itemize}				
+					\item Verificaty activity SUCCESS or FAILURE? SUCCESS
+					
+					\item \textbf{Requirement}: RPerformanceMemSpace 
+					\item \textbf{Requirement category}: SimulatorCompatibility
+					\item \textbf{Requirement description}: Evidence Solution (Verification Activity): Analysis of memory used during execution
+					\end{itemize}
+
+			\end{itemize}
+
+		\end{document}

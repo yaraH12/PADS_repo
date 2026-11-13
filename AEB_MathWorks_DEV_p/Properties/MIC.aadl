@@ -1,0 +1,9 @@
+property set MIC_Properties is
+		ValidityValue: aadlreal applies to (abstract,system);
+		MaturityValue: aadlinteger applies to (abstract,system);
+		VerificationValue: aadlreal applies to (abstract,system);
+
+
+
+end MIC_Property;
+

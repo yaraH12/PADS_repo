@@ -1,0 +1,64 @@
+document AEBSystemGoals : "AEB System stake holder goals" [
+	description "This document contains the stake holders goals for an AEB system simulation.
+				We have the platform of the system as whole with Dynamic Vehicle Variants. We are focusing on the representativity of each of these variants 
+				for our simulation need"
+				
+		goal goalgeneral1: "ModelValidinContext"[
+			description "The model should be valid in the simulation context"
+			rationale "To be sure to obtain accurate results"
+			stakeholder SimulationTeam.John	
+		]
+		
+		goal goalgeneral2: "CodeVerified"[
+			description "The model code should be verified, the model should generate a verified code on SIL"
+			rationale "To be sure to obtain accurate results"
+			stakeholder SimulationTeam.John	
+		]
+	
+			goal goalgeneral3: "Mature"[
+			description "The model should be mature"
+			rationale "To be sure to obtain accurate results"
+			stakeholder SimulationTeam.John	
+		]
+		
+		goal goalgeneral4: "CorrectInterfaces"[
+			description "The model should have the required inputs/ouputs"
+			rationale "To be connected to other components and send/receive required info/signal"
+			stakeholder SimulationTeam.John	
+		]
+		
+		goal g1: "Fast Simulation"[
+			description "The DV model should simulate quickly"
+			rationale "In the upstream phase we focus on proving that the model have the wanted
+			behavior without specific details that take more time to be simulated"
+			stakeholder SimulationTeam.John		
+		]
+		goal g2: "Simplicity"[
+			description "The model should not be complex "
+			rationale "In the upstream phase we focus on proving that the model have the wanted
+			behavior without specific details that increases the model's complexity"
+			stakeholder SimulationTeam.John	
+		]
+		goal g3: "Global Behavior Understanding"[
+			description "The model should represent the system's basic behavior"
+			rationale "In this phase, we should define whether the model allow the understanding of the system's behavior"	
+			stakeholder SimulationTeam.John		
+		]
+	
+		goal g4: "Precision"[
+			description ""
+			rationale ""
+			stakeholder SimulationTeam.John	
+		]
+		goal g5: "Realism"[
+			description ""
+			rationale ""
+			stakeholder SimulationTeam.John	
+		]
+		goal g6: "Robustness"[
+			description ""
+			rationale ""
+			stakeholder SimulationTeam.John	
+		]
+
+] 

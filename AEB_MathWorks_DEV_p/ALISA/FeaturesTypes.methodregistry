@@ -1,0 +1,19 @@
+verification methods FeaturesTypes [
+	
+	method IsFloat64(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64
+	]
+	
+	method IsBusVehiclePose(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_BusVehiclePose
+	]
+	
+	method IsBoolean(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Boolean
+	]
+	
+	method IsVector8(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Vector8
+	]
+	
+]

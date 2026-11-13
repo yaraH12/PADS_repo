@@ -1,0 +1,82 @@
+verification methods resoluteMethods [
+
+	method ModelInterfacesList(component):
+	"What are the in/out interfaces of the model"[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.ModelsInterfaces
+	]
+	
+	method ModelSubComponentsList():
+	"What are the subcomponents of the model" [
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.ModelsSubComponents
+	]
+	
+	method ModelsConnectionsList(component):
+	"What are the connections of the model" [
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.ModelsConnections 
+	]
+	
+	method ModelFeatureDirection(feature):
+	"Get the direction of a feature as a string" [
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.FeaturesDirection
+	]
+
+//////////////////////////////////////////IN OUT////////////////////////////////////////////////////////////
+	method IsIncoming(feature):
+	"Check if a feature is an input"[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.is_incoming
+	]
+	
+	method IsOutgoing(feature):
+	"Check if a feature is an input"[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.is_outgoing
+	]
+///////////////////////////////////////////////Check Features and Interfaces////////////////////////////////////////////////////////////
+	
+	
+	method CheckIfFunctionsExist(component, functionslist: model element):
+	" Check if the functions defined in the Specifications are covered by the Model///List des parametres: (comp: component, SpecFunctions: {component})" [
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.does_FunctionsExist
+	]
+	
+
+	method CheckIfSpecificFunctionExist (component, specificfunction: model element):
+	"Check if a specific defined function exists in the model functions List /// (comp: component, SpecFunction: component)" [
+		resolute  ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.does_AFunctionExist
+	]
+	
+	method CheckIfInterfacesExist(feature, compo : model element):
+	" Check if the interfaces defined in the Specifications are covered by the Model///List des parametres: (comp: component, SpecInterfaces: {features})" [
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.does_InterfacesExist
+	]
+	
+	method CheckIfSpecificInterfaceExist (feature, compo : model element):
+	"Check if a specific defined interface exists in the model interfaces List (in, out, inout) /// (comp: component, SpecInterface: string)" [
+		resolute  ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.does_AnInterfaceExist
+	]
+	method GetInterface (component, s:string):
+	"Check if a specific defined interface exists in the model interfaces List "[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.get_Interface
+	]
+	
+	method GetFunctionFeature (component, s:string):
+	"Check if a specific defined function exists in the model functions List "[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.get_Function_Feature
+	]
+	
+	method NoExtraINterfacesExists( component, i:integer):
+	"Check that there is no extra interfaces than required"[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.no_extra_Interfaces
+	]
+	
+	method NoLessINterfacesExists( component, i:integer):
+	"Check that there is no less interfaces than required"[
+		resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.no_less_Interfaces
+	]
+	///////////////////////////////////MIC//////////////////////////////////////////
+	method isValid (component):
+	"Check the validity range of the model"[
+			resolute ReadingtheModel.ReadingtheModel_public.Resolute.Resolute.is_valid
+	]
+]
+		 
+

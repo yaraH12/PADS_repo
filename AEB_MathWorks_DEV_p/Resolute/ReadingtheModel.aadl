@@ -1,0 +1,113 @@
+package ReadingtheModel
+public
+	annex Resolute {**
+		
+		ModelsInterfaces(comp: aadl):{port} = 
+		-- ** "Extract the list of interfaces (features, inputs/outputs) of the model (comp)" **
+		features(comp) 
+		 
+		FeaturesDirection(f: port): string =
+		 --** "return the direction (in, out, inout) of the port " **
+		 direction(f) 
+--		  
+		ModelsSubComponents(comp: component): {component} =
+--		** "Extract the subcomponents of the model" **
+		subcomponents(comp)
+--		
+--		
+		ModelsConnections(comp: aadl): {connection} =
+--		** Extract the connections of the model**
+		connections(comp)	
+--		
+		does_FunctionsExist(comp: component, funclistrequired: {component}) <= 
+		** "Check if the functions required in the specifications exists in the model" **
+		let functions: {component} = ModelsSubComponents(comp);
+		forall (function: funclistrequired).member(function,functions)
+--		
+		does_AFunctionExist(comp: component, SpecFunction: component) <= 
+		** "Check if a function required in the specifications exists in the model"**
+		let modelfunctions: {component} = ModelsSubComponents(comp);
+		member(SpecFunction,modelfunctions)
+--		
+		does_InterfacesExist( SpecInterfaces: {port},comp: aadl) <= 
+		** "Check if the functions required in the specifications exists in the model"**
+		let modelinterfaces: {port} = ModelsInterfaces(comp);
+		forall (interface: SpecInterfaces).member(interface,modelinterfaces)
+--		
+		does_AnInterfaceExist(SpecInterface: port, comp: aadl) <= 
+		** "Check if an interface required in the specifications exists in the model" **
+		let modelinterfaces: {port} = ModelsInterfaces(comp);
+		member(SpecInterface,modelinterfaces)
+		
+		
+		
+		 get_Function_Feature(pc: component, subname: string): bool =
+		 let subs : {component} = subcomponents(pc);
+		 let filtered :{component} = {cn for  (cn:subs) | name(cn) = subname};
+		 if size(filtered) > 0 
+		 then
+			 true
+		 else
+			 false
+		 
+
+	 
+		 get_Interface(pc: component, subname: string): bool =
+		 let subs : {feature} = features(pc);
+		 let filtered :{feature} = {cn for  (cn:subs) | name(cn) = subname};
+		 if size(filtered) > 0 
+		 then
+		 	true
+		 else
+		 	false
+		 
+	 
+	 	 no_extra_Interfaces(pc: component, NbReqInterfaces : int): bool =
+		 let subs : {feature} = features(pc);
+		 if size(subs) > NbReqInterfaces 
+		 then
+			 false
+		 else 
+			true
+	 
+	 
+		 no_less_Interfaces(pc: component, NbReqInterfaces : int): bool =
+			 let subs : {feature} = features(pc);
+			if size(subs) < NbReqInterfaces then
+				 false
+			else 
+				 true
+				 
+-- ///////////////////////////////////////////Check connection source and destination type and check if 2 components are connected/////////////////////////////////////////////////////
+	 			 
+	    is_event_data_port_connection(c : connection) : bool =
+  		source(c) instanceof event_data_port or destination(c) instanceof event_data_port
+	
+ 		-- A connection exists between the components or their features
+		are_connected (comp1 : aadl, comp2 : aadl) : bool =
+		exists (conn : connections (comp1)) . destination_component(conn) = comp2 or source_component(conn) = comp2
+ 	-- ////////////////////////////////////////////////////////////////////////////////////////////////
+ 		
+ 		
+ 		
+ 		
+ 	-- ///////////////////////////////////////////Check the direction of the interface/////////////////////////////////////////////////////
+
+ 		is_incoming(fea: feature): bool =
+		direction(fea) = "in" or direction(fea) = "inout"
+	
+		is_outgoing(fea: feature): bool =
+		direction(fea) = "out" or direction(fea) = "inout"
+	-- ////////////////////////////////////////////////////////////////////////////////////////////////
+ 		
+ 		is_valid(c: component):bool = 
+ 		if has_property(cp, MIC_Properties::ValidityValue) then
+ 			if property (cp, MIC_Properties::ValidityValue) = 70.0 then
+ 				true
+ 			else
+ 				false
+ 		else false
+	
+	**};
+	
+end ReadingtheModel;

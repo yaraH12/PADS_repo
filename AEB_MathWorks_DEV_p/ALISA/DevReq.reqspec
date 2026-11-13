@@ -1,0 +1,464 @@
+//requirements for the 3DOF model abstract component (features, flows,..) in DEV phase
+system requirements DevReqComp3DOF for aebsystem::VD3DOFVariant::VehicleDynamics3DOF[
+	requirement RSteeringAngle: "VDM-DEV-FID-INTERFACE-01-Exists" [
+		description "The model must have (steering angle) interface"
+		rationale "To get (steering angle) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RAcceleration: "VDM-DEV-FID-INTERFACE-02-Exists" [
+		description "The model must have (Acceleration) interface"
+		rationale "To get (Acceleration) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RWheelsElevation: "VDM-DEV-FID-INTERFACE-03-Exists"[
+		description "The model must have (WheelsElevation) interface"
+		rationale "To get (WheelsElevation) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	requirement RLongitudinal_Velocity: "VDM-DEV-FID-INTERFACE-04-Exists" [
+		description "The model must have (Longitudinal_Velocity) interface"
+		rationale "To get (Longitudinal_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RLateral_Velocity: "VDM-DEV-FID-INTERFACE-05-Exists" [
+		description "The model must have (Lateral_Velocity) interface"
+		rationale "To get (Lateral_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RPose: "VDM-DEV-FID-INTERFACE-06-Exists" [
+		description "The model must have (Pose) interface"
+		rationale "To get (Pose) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RVehFdbk:"VDM-DEV-FID-INTERFACE-07-Exists"[
+		description "The model must have (VehFdbk) interface"
+		rationale "To get (VehFdbk) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+		
+	////////////////////////////
+	
+	
+	requirement RSteeringAngleTypeDirection: "VDM-DEV-FID-INTERFACE-01-typedirection" for Steering_Angle[
+		description "The model must have (steering angle) input port typed as double"
+		rationale "To get (steering angle) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+		
+	]
+	
+		
+	requirement RAccelerationTypeDirection: "VDM-DEV-FID-INTERFACE-02-typedirection" for Acceleration[
+	    description "The model must have (acceleration) input port typed as double"
+		rationale "To get (acceleration) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	
+	
+	requirement RWheelsElevationTypeDirection: "VDM-DEV-FID-INTERFACE-03-typedirection" for Wheelselevation[ 
+		description "The model must have (wheels elevation) input port typed as boolean"
+		rationale "To get (wheels elevation) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+
+	
+	requirement RLongitudinal_VelocityTypeDirection: "VDM-DEV-FID-INTERFACE-04-typedirection" for Longitudinal_Velocity[
+		description "The model must have (longitudinal velocity) input port typed as double"
+		rationale "To send (longitudinal velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	requirement RLateral_VelocityTypeDirection: "VDM-DEV-FID-INTERFACE-05-typedirection" for Lateral_Velocity[
+	    description "The model must have (lateral velocity) input port typed as double"
+		rationale "To send (lateral velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+
+	
+		requirement RPoseTypeDirection: "VDM-DEV-FID-INTERFACE-06-typedirection" for Pose[
+		description "The model must have (Pose) input port typed as BusVehiclePose"
+		rationale "To get (Pose) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+		requirement RVehFdbkTypeDirection: "VDM-DEV-FID-INTERFACE-07-typedirection" for VehFdbk [
+		description "The model must have (VehFdbk) input port typed as Array"
+		rationale "To send (VehFdbk) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	  requirement RNoExtraInterfaces: "VDM-DEV-FID-NO-EXTRA-INTERFACES"[
+	  	description "Check that there is no extra interfaces ,as inputs or outputs, than required"
+	  	rationale " extra interfaces can take memory space and can affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	  
+	   requirement RNoLessInterfaces: "VDM-DEV-FID-NO-LESS-INTERFACES"[
+	  	description "Check that there is no less interfaces ,as inputs or outputs, than required"
+	  	rationale " less interfaces affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	
+	
+]
+
+
+
+
+//requirements for the 3DOF model implementation (subcomponents, connections,..) in DEV phase
+system requirements DevReq for  aebsystem::VD3DOFVariant::VehicleDynamics3DOF.ImplForDev[ 
+	
+	requirement R1RealisticSimu: "VDM-DEV-FID-FUN-01" [
+		description "The vehicle dynamics model shall enable realistic simulation of load transfer, pitch and roll effects"
+		description "Evidence Solution (Verification Activity): Check the features covered by the model, analysis of dynamic response in complex scenarios (e.g., cornering under braking, rapid lane change, uneven road surface)"
+		rationale " These phenomena directly influence vehicle stability and braking effectiveness in critical driving scenarios"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+		
+	]
+        
+	requirement R2Suspension: "VDM-DEV-FID-FUN-02"[
+		description "The model must include modeling of nonlinear interactions between suspension, tires, and road surface"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale "Necessary for simulating extreme situations.Allow a precise analysis of the vehicle behavior on different surfaces"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g4
+	]
+	
+	requirement R3FeatureControlPedal: "VDM-DEV-FID-FUN-03"[
+		description "The model must control the braking pedal"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To prevent collision when obstacle is detected"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R4FeatureCalcTTC: "VDM-DEV-FID-FUN-04"[
+		description "The model must calculate the Time to collision"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To stop the vehicle if TTC is equal to MinTTC" 
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R5Validity:"VDM-DEV-VAL-01"[
+		val ExpectedConcordance = 70.0 //%
+		description "The model must be validated under AEB operational conditions in the target context"
+		description "Evidence Solution (Verification Activity): Validation against EuroNCAP or similar scenarios"
+		rationale "Ensure results are relevant in the target context"
+		value predicate  #MIC_Properties::ValidityValue >= ExpectedConcordance 
+		category Validation.Validity
+		see goal AEBSystemGoals.goalgeneral1	
+	]
+	
+	requirement R6Verification:"VDM-DEV-VERIF-01"[
+		val coverage = 80.0 //%
+		description "The model must support unit testing and coverage reporting"
+		description "Evidence Solution (Verification Activity): Report generation with Unit Tests or Equivalent"
+		rationale "Allows quality monitoring in an industrial environment (SIL/HIL)"
+		value predicate #MIC_Properties::VerificationValue >= coverage
+		category Fidelity.ModelVerification
+		see goal AEBSystemGoals.goalgeneral2	
+	]
+	
+	requirement R7Verification2:"VDM-DEV-VERIF-02"[
+		description "The model must be compatible with SIL code generation "
+		description "Evidence Solution (Verification Activity): Code generated without error, Correlation Study"
+		rationale "Ensures that the model is verifiable in SIL/HIL simulation later"
+		category Fidelity.ModelVerification
+		see goal AEBSystemGoals.goalgeneral2	
+	]
+	
+	requirement R8Maturity:"VDM-DEV-MAT-01"[
+		val maturity = 3
+		description "The model must have a prototype, documented version history and comments"
+		description "Evidence Solution (Verification Activity): Presence of a Git or other history tracking"
+		rationale "Facilitates maintenance and certification and maturity estimation"
+		value predicate #MIC_Properties::MaturityValue == maturity
+		category Fidelity.Maturity
+		see goal AEBSystemGoals.goalgeneral3		
+	]
+	
+	
+	
+	requirement RPerformaceSimuTime: "VDM-DEV-PERF-01"[
+		val simuTime = 250 ms
+		description "The model should be executed during the defined runTime"
+		description "Evidence Solution (Verification Activity): Measurement of simulation time on a standard scenario"
+		rationale "Allows you to quickly test several concepts with few resources"
+		value predicate #SimultionParametres::SimulationTime <= simuTime
+		category Simulation.SimulatorCompatibility
+		see goal AEBSystemGoals.g1 
+	]
+
+	requirement RPerformanceMemSpace: "VDM-DEV-PERF-02"[
+		val MemorySpaceMB = 1000 MByte
+		compute ExpectedMemorySpace : integer 
+		description "The model should allocate defined memory space"
+		description "Evidence Solution (Verification Activity): Analysis of memory used during execution"
+		rationale "Optimize resources used during simulation."
+		value predicate #SimultionParametres::MemorySpace <= MemorySpaceMB
+		category Simulation.SimulatorCompatibility
+		see goal AEBSystemGoals.g1
+	]
+	
+]
+
+
+//requirements for the 14DOF model abstract component (features, flows,..) in DEV phase
+system requirements DevReqComp14DOF for  aebsystem::VD14DOFVariant::VehicleDynamics14DOF[
+		requirement RSteeringAngle: "VDM-DEV-FID-INTERFACE-01-Exists" [
+		description "The model must have (steering angle) interface"
+		rationale "To get (steering angle) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RAcceleration: "VDM-DEV-FID-INTERFACE-02-Exists" [
+		description "The model must have (Acceleration) interface"
+		rationale "To get (Acceleration) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RWheelsElevation: "VDM-DEV-FID-INTERFACE-03-Exists"[
+		description "The model must have (WheelsElevation) interface"
+		rationale "To get (WheelsElevation) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	requirement RLongitudinal_Velocity: "VDM-DEV-FID-INTERFACE-04-Exists" [
+		description "The model must have (Longitudinal_Velocity) interface"
+		rationale "To get (Longitudinal_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RLateral_Velocity: "VDM-DEV-FID-INTERFACE-05-Exists" [
+		description "The model must have (Lateral_Velocity) interface"
+		rationale "To get (Lateral_Velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	requirement RPose: "VDM-DEV-FID-INTERFACE-06-Exists" [
+		description "The model must have (Pose) interface"
+		rationale "To get (Pose) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+
+	]
+	
+	requirement RVehFdbk:"VDM-DEV-FID-INTERFACE-07-Exists"[
+		description "The model must have (VehFdbk) interface"
+		rationale "To get (VehFdbk) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+		
+	////////////////////////////
+	
+	
+	requirement RSteeringAngleTypeDirection: "VDM-DEV-FID-INTERFACE-01-typedirection" for Steering_Angle[
+		description "The model must have (steering angle) input port typed as double"
+		rationale "To get (steering angle) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+		
+	]
+	
+		
+	requirement RAccelerationTypeDirection: "VDM-DEV-FID-INTERFACE-02-typedirection" for Acceleration[
+	   description "The model must have (acceleration) input port typed as double"
+		rationale "To get (acceleration) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	
+	
+	requirement RWheelsElevationTypeDirection: "VDM-DEV-FID-INTERFACE-03-typedirection" for Wheelselevation[ 
+		description "The model must have (wheels elevation) input port typed as boolean"
+		rationale "To get (wheels elevation) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+
+	
+	requirement RLongitudinal_VelocityTypeDirection: "VDM-DEV-FID-INTERFACE-04-typedirection" for Longitudinal_Velocity[
+	    description "The model must have (longitudinal velocity) input port typed as double"
+		rationale "To send (longitudinal velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	requirement RLateral_VelocityTypeDirection: "VDM-DEV-FID-INTERFACE-05-typedirection" for Lateral_Velocity[
+		description "The model must have (lateral velocity) input port typed as double"
+		rationale "To send (lateral velocity) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+
+	
+		requirement RPoseTypeDirection: "VDM-DEV-FID-INTERFACE-06-typedirection" for Pose[
+		description "The model must have (Pose) input port typed as BusVehiclePose"
+		rationale "To get (Pose) value as input"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+		requirement RVehFdbkTypeDirection: "VDM-DEV-FID-INTERFACE-07-typedirection" for VehFdbk [
+	    description "The model must have (VehFdbk) input port typed as Array"
+		rationale "To send (VehFdbk) value as output"
+		category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	]
+	
+	  requirement RNoExtraInterfaces: "VDM-DEV-FID-NO-EXTRA-INTERFACES"[
+	  	description "Check that there is no extra interfaces ,as inputs or outputs, than required"
+	  	rationale " extra interfaces can take memory space and can affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+	  
+	   requirement RNoLessInterfaces: "VDM-DEV-FID-NO-LESS-INTERFACES"[
+	  	description "Check that there is no less interfaces ,as inputs or outputs, than required"
+	  	rationale " less interfaces affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+		see goal AEBSystemGoals.goalgeneral4
+	  ]
+]
+
+
+//requirements for the 14DOF model implementation (subcomponents, connections,..) in DEV phase
+system requirements DevReq14DOF for  aebsystem::VD14DOFVariant::VehicleDynamics14DOF.ImplForDev[ 
+	description "These are requirements for the Dynamic Vehicle model in the development phase"
+	
+		requirement R1RealisticSimu: "VDM-DEV-FID-FUN-01" [
+		description "The vehicle dynamics model shall enable realistic simulation of load transfer, pitch and roll effects"
+		description "Evidence Solution (Verification Activity): Check the features covered by the model, analysis of dynamic response in complex scenarios (e.g., cornering under braking, rapid lane change, uneven road surface)"
+		rationale " These phenomena directly influence vehicle stability and braking effectiveness in critical driving scenarios"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+		
+	]
+        
+	requirement R2Suspension: "VDM-DEV-FID-FUN-02"[
+		description "The model must include modeling of nonlinear interactions between suspension, tires, and road surface"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale "Necessary for simulating extreme situations.Allow a precise analysis of the vehicle behavior on different surfaces"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g4
+	]
+	
+	requirement R3FeatureControlPedal: "VDM-DEV-FID-FUN-03"[
+		description "The model must control the braking pedal"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To prevent collision when obstacle is detected"
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R4FeatureCalcTTC: "VDM-DEV-FID-FUN-04"[
+		description "The model must calculate the Time to collision"
+		description "Evidence Solution (Verification Activity): Check the features and subsystems covered by the model"
+		rationale " To stop the vehicle if TTC is equal to MinTTC" 
+		category  Fidelity.FunctionsCoverage
+		see goal AEBSystemGoals.g5
+	]
+	
+	requirement R5Validity:"VDM-DEV-VAL-01"[
+		val ExpectedConcordance = 70.0 //%
+		description "The model must be validated under AEB operational conditions in the target context"
+		description "Evidence Solution (Verification Activity): Validation against EuroNCAP or similar scenarios"
+		rationale "Ensure results are relevant in the target context"
+		value predicate  #MIC_Properties::ValidityValue >= ExpectedConcordance 
+		category Validation.Validity
+		see goal AEBSystemGoals.goalgeneral1	
+	]
+	
+	requirement R6Verification:"VDM-DEV-VERIF-01"[
+		val coverage = 80.0 //%
+		description "The model must support unit testing and coverage reporting"
+		description "Evidence Solution (Verification Activity): Report generation with Unit Tests or Equivalent"
+		rationale "Allows quality monitoring in an industrial environment (SIL/HIL)"
+		value predicate #MIC_Properties::VerificationValue >= coverage
+		category Fidelity.ModelVerification
+		see goal AEBSystemGoals.goalgeneral2	
+	]
+	
+	requirement R7Verification2:"VDM-DEV-VERIF-02"[
+		description "The model must be compatible with SIL code generation "
+		description "Evidence Solution (Verification Activity): Code generated without error, Correlation Study"
+		rationale "Ensures that the model is verifiable in SIL/HIL simulation later"
+		category Fidelity.ModelVerification
+		see goal AEBSystemGoals.goalgeneral2	
+	]
+	
+	requirement R8Maturity:"VDM-DEV-MAT-01"[
+		val maturity = 3
+		description "The model must have a prototype, documented version history and comments"
+		description "Evidence Solution (Verification Activity): Presence of a Git or other history tracking"
+		rationale "Facilitates maintenance and certification and maturity estimation"
+		value predicate #MIC_Properties::MaturityValue == maturity
+		category Fidelity.Maturity
+		see goal AEBSystemGoals.goalgeneral3		
+	]
+	
+	
+	
+	requirement RPerformaceSimuTime: "VDM-DEV-PERF-01"[
+		val simuTime = 250 ms
+		description "The model should be executed during the defined runTime"
+		description "Evidence Solution (Verification Activity): Measurement of simulation time on a standard scenario"
+		rationale "Allows you to quickly test several concepts with few resources"
+		value predicate #SimultionParametres::SimulationTime <= simuTime
+		category Simulation.SimulatorCompatibility
+		see goal AEBSystemGoals.g1 
+	]
+
+	requirement RPerformanceMemSpace: "VDM-DEV-PERF-02"[
+		val MemorySpaceMB = 1000 MByte
+		compute ExpectedMemorySpace : integer 
+		description "The model should allocate defined memory space"
+		description "Evidence Solution (Verification Activity): Analysis of memory used during execution"
+		rationale "Optimize resources used during simulation."
+		value predicate #SimultionParametres::MemorySpace <= MemorySpaceMB
+		category Simulation.SimulatorCompatibility
+		see goal AEBSystemGoals.g1
+	]
+]
+
+
+
+

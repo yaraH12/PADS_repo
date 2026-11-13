@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<diagram:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://osate.org/diagram" formatVersion="7">
+  <element uuid="df317ba6-55e9-4050-bb9c-717d3807a050" manual="true">
+    <element uuid="2b9a70dc-6ab4-4930-a11f-37357e3b0439" manual="true">
+      <element uuid="597c826f-7adb-44fe-9078-b8ac28e6b02e" manual="true">
+        <bo>
+          <seg>type_extension</seg>
+        </bo>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>VehicleDynamics14DOF</seg>
+      </bo>
+      <position x="535.9608917236328" y="38.16666666666667"/>
+      <size width="395.8410949707031" height="52.0"/>
+    </element>
+    <element uuid="7dcbdd0f-760f-4dc0-b950-a1821db2f8ce" manual="true">
+      <element uuid="f0b3a96b-d266-476b-ae4d-ee84cc322dd3" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="519.9608764648438" y="55.5"/>
+          <point x="531.9608764648438" y="55.5"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>VehicleDynamics14DOF.ImplForDev</seg>
+      </bo>
+      <position x="240.93357849121094" y="38.0"/>
+      <size width="275.0273132324219" height="35.0"/>
+    </element>
+    <element uuid="2c1ae105-8383-43e1-8787-2be414479911" manual="true">
+      <element uuid="e5b674c8-dff9-4cb3-a79d-c987af07f275" manual="true">
+        <bo>
+          <seg>realization</seg>
+        </bo>
+        <bendpoints>
+          <point x="519.9608764648438" y="110.5"/>
+          <point x="525.9608764648438" y="110.5"/>
+          <point x="525.9608764648438" y="72.83333587646484"/>
+          <point x="531.9608764648438" y="72.83333587646484"/>
+        </bendpoints>
+      </element>
+      <bo>
+        <seg>classifier</seg>
+        <seg>VehicleDynamics14DOF.ImplForUpStream</seg>
+      </bo>
+      <position x="204.62498474121094" y="93.0"/>
+      <size width="311.3359069824219" height="35.0"/>
+    </element>
+    <bo>
+      <seg>package</seg>
+      <seg>aebsystem::VD14DOFVariant</seg>
+    </bo>
+    <position/>
+    <size width="943.8019866943359" height="140.0"/>
+  </element>
+  <config type="package" connectionPrimaryLabelsVisible="false">
+    <enabledAadlProperties/>
+    <context>
+      <seg>package</seg>
+      <seg>aebsystem::VD14DOFVariant</seg>
+    </context>
+  </config>
+</diagram:Diagram>

@@ -1,0 +1,30 @@
+package New_Types
+public
+	
+	data Auto
+	end Auto;
+	
+	data ActorObject
+	end ActorObject;
+
+	data Array
+	end Array;
+	
+	data Vector8 extends Array
+	end Vector8;
+	
+	Bus BusVision
+	end BusVision;
+	
+	Bus BusRadar
+	end BusRadar;
+	
+	Bus BusEgoRefPath
+	end BusEgoRefPath;
+		
+	Bus BusMultiObjectTracker1
+	end BusMultiObjectTracker1;
+	
+	Bus BusVehiclePose
+	end BusVehiclePose;
+end New_Types;

@@ -1,0 +1,27 @@
+package FeaturesTypesCheckFunctions
+public
+	annex Resolute {**
+
+		is_Float64(cp: port)<=
+	    ** "Type of " cp " is float64" **
+ 		type(cp) = Base_Types::Float_64
+
+
+		is_BusVehiclePose(cp: port)<=
+	    ** "Type of " cp " is BusVehiclePose" **
+ 		type(cp) = New_Types::BusVehiclePose
+ 		
+ 		
+ 		is_Boolean(cp: port)<=
+	    ** "Type of " cp " is float64" **
+ 		type(cp) = Base_Types::Boolean
+ 		
+ 		is_Vector8(cp: port)<=
+	    ** "Type of " cp " is float64" **
+ 		type(cp) = New_Types::Vector8
+	**};
+	
+end FeaturesTypesCheckFunctions;
+
+
+	

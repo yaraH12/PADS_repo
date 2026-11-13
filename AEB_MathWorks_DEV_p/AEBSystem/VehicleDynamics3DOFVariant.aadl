@@ -1,0 +1,81 @@
+package  aebsystem::VD3DOFVariant
+public
+	
+	with aebsystem::Components;
+	with aebsystem::VehicleDynamicsComponents;
+	with Values_Property;
+	with MIC_Properties;
+	with SimultionParametres;
+		
+	system VehicleDynamics3DOF extends aebsystem::Components::VehicleDynamicsxDOF
+	end VehicleDynamics3DOF;
+		
+	
+	system implementation VehicleDynamics3DOF.ImplForDev
+	subcomponents
+		Saturation1: abstract aebsystem::VehicleDynamicsComponents::SaturationElement;
+		Saturation2: abstract aebsystem::VehicleDynamicsComponents::SaturationElement;
+		Gain: abstract aebsystem::VehicleDynamicsComponents::GainElement;
+		FOH: abstract aebsystem::VehicleDynamicsComponents::FirstOrderHoldElement;
+		FOH1: abstract aebsystem::VehicleDynamicsComponents::FirstOrderHoldElement;
+		FOH2: abstract aebsystem::VehicleDynamicsComponents::FirstOrderHoldElement;
+		ForwardGear: abstract aebsystem::VehicleDynamicsComponents::ConstantElement;
+		SimpleDriveLineAndBrakes: abstract aebsystem::VehicleDynamicsComponents::SimpleDriveLineAndBrakes;
+		BicycleModel_NED: abstract aebsystem::VehicleDynamicsComponents::BicycleModel;
+		UConv1: abstract aebsystem::VehicleDynamicsComponents::UnitConversionElement;
+		UConv2: abstract aebsystem::VehicleDynamicsComponents::UnitConversionElement;
+		NED2NWU: abstract aebsystem::VehicleDynamicsComponents::NED2NWU;
+		PackEgoActor: abstract aebsystem::VehicleDynamicsComponents::PackEgoActor;
+		DTConv: abstract aebsystem::VehicleDynamicsComponents::DoubleataTypeConversionElement;
+		Transision1: abstract aebsystem::VehicleDynamicsComponents::RateTransitionElement;
+		BusSelector: abstract aebsystem::VehicleDynamicsComponents::BusSelectorElement;
+		MUX1: abstract aebsystem::VehicleDynamicsComponents::MUX2Element;
+		MUX2: abstract aebsystem::VehicleDynamicsComponents::MUX2Element;
+	connections
+		VehicleDynamics3DOF_Impl_new_connection: feature Steering_Angle -> FOH.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection2: feature FOH.Element_Output -> BicycleModel_NED.WhlAngF;
+		VehicleDynamics3DOF_Impl_new_connection3: feature Acceleration -> Saturation1.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection4: feature Acceleration -> Saturation2.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection5: feature Saturation1.Element_Output -> FOH1.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection6: feature FOH1.Element_Output -> SimpleDriveLineAndBrakes.Accel;
+		VehicleDynamics3DOF_Impl_new_connection7: feature Saturation2.Element_Output -> Gain.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection8: feature Gain.Element_Output -> FOH2.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection9: feature FOH2.Element_Output -> SimpleDriveLineAndBrakes.Decel;
+		VehicleDynamics3DOF_Impl_new_connection10: feature ForwardGear.Element_Output -> SimpleDriveLineAndBrakes.Gear;
+		VehicleDynamics3DOF_Impl_new_connection11: feature ForwardGear.Element_Output -> SimpleDriveLineAndBrakes.Gear;
+
+		VehicleDynamics3DOF_Impl_new_connection13: feature SimpleDriveLineAndBrakes.FrontForce -> BicycleModel_NED.FxF;
+		VehicleDynamics3DOF_Impl_new_connection14: feature SimpleDriveLineAndBrakes.RearForce -> BicycleModel_NED.FxR;
+		VehicleDynamics3DOF_Impl_new_connection12: feature BicycleModel_NED.Info -> BusSelector.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection15: feature BusSelector.Element_Output -> MUX1.Element_Input2;
+		VehicleDynamics3DOF_Impl_new_connection16: feature BusSelector.Element_Output -> MUX1.Element_Input1;
+		VehicleDynamics3DOF_Impl_new_connection17: feature BusSelector.Element_Output -> MUX2.Element_Input2;
+		VehicleDynamics3DOF_Impl_new_connection18: feature BusSelector.Element_Output -> MUX2.Element_Input1;
+		VehicleDynamics3DOF_Impl_new_connection19: feature BicycleModel_NED.r -> UConv2.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection20: feature BicycleModel_NED.psi -> UConv1.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection21: feature BicycleModel_NED.xdot -> DTConv.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection22: feature BicycleModel_NED.ydot -> Lateral_Velocity;
+		VehicleDynamics3DOF_Impl_new_connection23: feature DTConv.Element_Output -> Longitudinal_Velocity;
+		VehicleDynamics3DOF_Impl_new_connection24: feature MUX1.Element_Output -> NED2NWU.Position;
+		VehicleDynamics3DOF_Impl_new_connection25: feature MUX2.Element_Output -> NED2NWU.Velocity;
+		VehicleDynamics3DOF_Impl_new_connection26: feature UConv1.Element_Output -> NED2NWU.YawAngle;
+		VehicleDynamics3DOF_Impl_new_connection27: feature UConv2.Element_Output -> NED2NWU.YawRate;
+		VehicleDynamics3DOF_Impl_new_connection28: feature NED2NWU.NED2NWU_1 -> PackEgoActor.pos;
+		VehicleDynamics3DOF_Impl_new_connection29: feature NED2NWU.NED2NWU_2 -> PackEgoActor.vel;
+		VehicleDynamics3DOF_Impl_new_connection30: feature NED2NWU.NED2NWU_3 -> PackEgoActor.yaw;
+		VehicleDynamics3DOF_Impl_new_connection31: feature NED2NWU.NED2NWU_4 -> PackEgoActor.yawRate;
+		VehicleDynamics3DOF_Impl_new_connection32: feature PackEgoActor.a -> Transision1.Element_Input;
+		VehicleDynamics3DOF_Impl_new_connection33: feature Transision1.Element_Output -> Pose;
+		VehicleDynamics3DOF_Impl_new_connection34: feature DTConv.Element_Output -> SimpleDriveLineAndBrakes.xdot;
+		
+			properties
+			Values_Property::ConstantValue => 3.0 applies to ForwardGear;
+			MIC_Properties::ValidityValue => 90.0;
+			MIC_Properties::VerificationValue => 70.0;
+			MIC_Properties::MaturityValue => 1;
+			SimultionParametres::SimulationTime => 90 ms;
+			SimultionParametres::MemorySpace => 200 MByte;
+end VehicleDynamics3DOF.ImplForDev;
+	
+	
+end aebsystem::VD3DOFVariant;

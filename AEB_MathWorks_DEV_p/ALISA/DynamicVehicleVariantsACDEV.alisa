@@ -1,0 +1,13 @@
+assurance case MWDynamicVehicleCaseDEVp for aebsystem::Components::VehicleDynamicsxDOF [
+	
+	assurance plan Dev3DOFVariant_AP for aebsystem::VD3DOFVariant::VehicleDynamics3DOF.ImplForDev [
+		assure DevPhasefor3DOF_VP_Comp DevPhasefor3DOF_VP_Impl
+		
+				
+]
+	assurance plan Dev14DOFVariant_AP for aebsystem::VD14DOFVariant::VehicleDynamics14DOF.ImplForDev [
+		assure DevPhasefor14DOF_VP_Comp DevPhasefor14DOF_VP
+
+		
+] 
+]

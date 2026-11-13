@@ -1,0 +1,1387 @@
+<?xml version="1.0" encoding="ASCII"?>
+<assure:AssuranceCaseResult xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:assure="http://www.osate.org/assure/Assure" name="MWDynamicVehicleCaseDEVp">
+  <metrics successCount="58" failCount="9" errorCount="2"/>
+  <modelResult>
+    <metrics successCount="24" failCount="9" errorCount="2"/>
+    <plan href="../ALISA/DynamicVehicleVariantsACDEV.alisa#//@assurancePlans.0"/>
+    <target xsi:type="aadl2:SystemImplementation" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#aebsystem.VD3DOFVariant.VehicleDynamics3DOF.ImplForDev"/>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.0"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="535"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.0"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.0/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.1"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="9"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.1"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.1/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.2"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="16"/>
+        <results message="XXX" resultType="FAILURE"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.2/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.3"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="7"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.3/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.4"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="7"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.4"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.4/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.5"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="9"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.5"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.5/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.6"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="15"/>
+        <results message="XXX" resultType="FAILURE"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.6"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.6/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.7"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.0"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="14"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.7"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.7/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="22"/>
+        <results message="Type of Steering_Angle is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.7"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.7/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.8"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.1"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="11"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.8"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.8/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="9"/>
+        <results message="Type of Acceleration is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.8"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.8/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1" errorCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.9"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:Property" href="../ALISA/DevReq.reqspec#|21"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="ERROR">
+        <metrics errorCount="1" executionTime="17"/>
+        <issues diagnosticType="ERROR" message="org.osate.aadl2.instance.impl.SystemInstanceImpl cannot be cast to org.osate.aadl2.instance.FeatureInstance"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.9"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.9/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="8"/>
+        <results message="Type of VehicleDynamics3DOF_ImplForDev_Instance : aebsystem::VD3DOFVariant::VehicleDynamics3DOF.ImplForDev is float64" resultType="FAILURE">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Boolean"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.9"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.9/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.10"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.3"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="15"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.10"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.10/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="Type of Longitudinal_Velocity is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.10"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.10/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.11"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.4"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.11"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.11/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="12"/>
+        <results message="Type of Lateral_Velocity is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.11"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.11/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.12"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.2"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="8"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.12"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.12/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="12"/>
+        <results message="Type of Pose is BusVehiclePose" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_BusVehiclePose"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.12"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.12/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1" errorCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.13"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:Property" href="../ALISA/DevReq.reqspec#|33"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="ERROR">
+        <metrics errorCount="1" executionTime="13"/>
+        <issues diagnosticType="ERROR" message="org.osate.aadl2.instance.impl.SystemInstanceImpl cannot be cast to org.osate.aadl2.instance.FeatureInstance"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.13"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.13/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="12"/>
+        <results message="Type of VehicleDynamics3DOF_ImplForDev_Instance : aebsystem::VD3DOFVariant::VehicleDynamics3DOF.ImplForDev is float64" resultType="FAILURE">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Vector8"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.13"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.13/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.14"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="9"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.14"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.14/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.15"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="7"/>
+        <results message="XXX" resultType="FAILURE"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.0"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.0/@requirements.15"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.0/@claim.15/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.0"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="17"/>
+        <results message="XXX" resultType="FAILURE"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.0"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.0/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.1"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="FAILURE">
+        <metrics failCount="1" executionTime="9"/>
+        <results message="XXX" resultType="FAILURE"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.1"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.1/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.2"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="8"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.2/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="11"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.2/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="3"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.3"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="17"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.3/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="12"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.3/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="17"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.1/@claim.3/@activities.2"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.4"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.4"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.5"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="FAILURE">
+        <metrics failCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.5"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.6"/>
+        </requirement>
+      </targetReference>
+    </claimResult>
+    <claimResult>
+      <metrics failCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.7"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="FAILURE">
+        <metrics failCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.7"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.8"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.8"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.9"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.1"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.1/@requirements.9"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.0"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.1"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.2"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.3"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.4"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.5"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.6"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.7"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.8"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.9"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.10"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.11"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.12"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.13"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.14"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.15"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.16"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics3DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.17"/>
+    </subsystemResult>
+  </modelResult>
+  <modelResult>
+    <metrics successCount="34"/>
+    <plan href="../ALISA/DynamicVehicleVariantsACDEV.alisa#//@assurancePlans.1"/>
+    <target xsi:type="aadl2:SystemImplementation" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#aebsystem.VD14DOFVariant.VehicleDynamics14DOF.ImplForDev"/>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.0"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="390"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.0"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.0/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.1"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="6"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.1"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.1/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.2"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.2/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.3"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="11"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.3/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.4"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="15"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.4"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.4/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.5"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="11"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.5"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.5/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.6"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="7"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.6"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.6/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.7"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.0"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="9"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.7"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.7/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="8"/>
+        <results message="Type of Steering_Angle is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.7"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.7/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.8"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.1"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="16"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.8"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.8/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="7"/>
+        <results message="Type of Acceleration is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.8"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.8/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.9"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.0"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="14"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.9"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.9/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="3"/>
+        <results message="Type of Wheelselevation is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Boolean"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.9"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.9/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.10"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.3"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="15"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.10"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.10/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="Type of Longitudinal_Velocity is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.10"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.10/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.11"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.4"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="6"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.11"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.11/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="15"/>
+        <results message="Type of Lateral_Velocity is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Float64"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.11"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.11/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.12"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/Components.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedAbstractFeature.2"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="4"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.12"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.12/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="12"/>
+        <results message="Type of Pose is BusVehiclePose" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_BusVehiclePose"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.12"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.12/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.13"/>
+        </requirement>
+      </targetReference>
+      <modelElement xsi:type="aadl2:AbstractFeature" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.1"/>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="18"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.13"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.13/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="Type of VehFdbk is float64" resultType="SUCCESS">
+          <modelElement href="../Resolute/FeaturesTypesCheckFunctions.aadl#FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.is_Vector8"/>
+        </results>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.13"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.13/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.14"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.14"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.14/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.15"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="20"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.2"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.2/@requirements.15"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.2/@claim.15/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.0"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.0"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.3/@claim.0/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.1"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="12"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.1"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.3/@claim.1/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.2"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="11"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.3/@claim.2/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="12"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.2"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.3/@claim.2/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="2"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.3"/>
+        </requirement>
+      </targetReference>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.3/@claim.3/@activities.0"/>
+        </targetReference>
+      </verificationActivityResult>
+      <verificationActivityResult xsi:type="assure:VerificationActivityResult" type="SUCCESS">
+        <metrics successCount="1" executionTime="10"/>
+        <results message="XXX" resultType="SUCCESS"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.3"/>
+          </requirement>
+          <verificationActivity href="../ALISA/DevPhase.verify#//@contents.3/@claim.3/@activities.1"/>
+        </targetReference>
+      </verificationActivityResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.4"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.4"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.5"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.5"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.6"/>
+        </requirement>
+      </targetReference>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.7"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.7"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.8"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.8"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <claimResult>
+      <metrics successCount="1"/>
+      <targetReference>
+        <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+        <requirement>
+          <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.9"/>
+        </requirement>
+      </targetReference>
+      <predicateResult xsi:type="assure:PredicateResult" type="SUCCESS">
+        <metrics successCount="1"/>
+        <targetReference>
+          <verificationPlan href="../ALISA/DevPhase.verify#//@contents.3"/>
+          <requirement>
+            <requirement href="../ALISA/DevReq.reqspec#//@parts.3/@requirements.9"/>
+          </requirement>
+        </targetReference>
+      </predicateResult>
+    </claimResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.0"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.1"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.2"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.3"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.4"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.5"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.6"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.7"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.8"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.9"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.10"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.11"/>
+    </subsystemResult>
+    <subsystemResult>
+      <metrics/>
+      <targetSystem xsi:type="aadl2:AbstractSubcomponent" href="../AEBSystem/VehicleDynamics14DOFVariant.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.12"/>
+    </subsystemResult>
+  </modelResult>
+</assure:AssuranceCaseResult>

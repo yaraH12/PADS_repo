@@ -1,0 +1,6 @@
+property set SimultionParametres is
+
+		SimulationTime: Time applies to (abstract, system);
+		MemorySpace: Size applies to (abstract, system);
+			
+end SimultionParametres;

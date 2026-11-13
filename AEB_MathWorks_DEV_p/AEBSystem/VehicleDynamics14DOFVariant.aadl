@@ -1,0 +1,74 @@
+package  aebsystem::VD14DOFVariant
+public
+	
+	with aebsystem::Components;
+	with Base_Types;
+	with New_Types;
+	with aebsystem::VehicleDynamicsComponents;
+	with Values_Property;
+	with MIC_Properties;
+	with SimultionParametres;
+	
+	system VehicleDynamics14DOF extends aebsystem::Components::VehicleDynamicsxDOF
+		features
+			Wheelselevation: in feature  Base_Types::Boolean;
+			VehFdbk: out feature New_Types::Vector8;
+		properties
+			Values_Property::ConstantValue => 3.0;
+	end VehicleDynamics14DOF;
+		
+	system implementation VehicleDynamics14DOF.ImplForDev
+	subcomponents
+		Saturation1: abstract aebsystem::VehicleDynamicsComponents::SaturationElement;
+		Saturation2: abstract aebsystem::VehicleDynamicsComponents::SaturationElement;
+		FOH: abstract aebsystem::VehicleDynamicsComponents::FirstOrderHoldElement;
+		FOH1: abstract aebsystem::VehicleDynamicsComponents::FirstOrderHoldElement;
+		FOH2: abstract aebsystem::VehicleDynamicsComponents::FirstOrderHoldElement;
+		UnaryMinus: abstract aebsystem::VehicleDynamicsComponents::UnaryMinusElement;
+		VehDyn14DOF: abstract aebsystem::VehicleDynamicsComponents::fullOrderVehDyn14DOF;
+		SignalBreakOut: abstract aebsystem::VehicleDynamicsComponents::signalBreakout;
+		NED2NWU: abstract aebsystem::VehicleDynamicsComponents::NED2NWU14DOF;
+		PackEgoActor: abstract aebsystem::VehicleDynamicsComponents::PackEgoActor14DOF;
+		Transition: abstract aebsystem::VehicleDynamicsComponents::RateTransitionElement;
+		Transition1: abstract aebsystem::VehicleDynamicsComponents::RateTransitionElement;
+		Transition2: abstract aebsystem::VehicleDynamicsComponents::RateTransitionElement;
+	connections
+		VehicleDynamics14DOF_Impl_new_connection: feature Steering_Angle -> FOH.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection2: feature FOH.Element_Output -> VehDyn14DOF.Steering;
+		VehicleDynamics14DOF_Impl_new_connection3: feature Acceleration -> Saturation1.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection4: feature Saturation1.Element_Output -> FOH1.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection5: feature FOH1.Element_Output -> VehDyn14DOF.Acceleration;
+		VehicleDynamics14DOF_Impl_new_connection6: feature Acceleration -> Saturation2.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection7: feature Saturation2.Element_Output -> UnaryMinus.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection8: feature UnaryMinus.Element_Output -> FOH2.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection9: feature FOH2.Element_Output -> VehDyn14DOF.Decelaration;
+		VehicleDynamics14DOF_Impl_new_connection10: feature Wheelselevation -> VehDyn14DOF.WheelsElevation;
+		VehicleDynamics14DOF_Impl_new_connection11: feature VehDyn14DOF.VehFdbk -> SignalBreakOut.VehFdbk;
+		VehicleDynamics14DOF_Impl_new_connection12: feature SignalBreakOut.XYZ -> NED2NWU.Position;
+		VehicleDynamics14DOF_Impl_new_connection13: feature SignalBreakOut.XdotYdot -> NED2NWU.Velocity;
+		VehicleDynamics14DOF_Impl_new_connection14: feature SignalBreakOut.Roll -> NED2NWU.Roll;
+		VehicleDynamics14DOF_Impl_new_connection15: feature SignalBreakOut.Pitch -> NED2NWU.Pitch;
+		VehicleDynamics14DOF_Impl_new_connection16: feature SignalBreakOut.Yaw -> NED2NWU.YawAngle;
+		VehicleDynamics14DOF_Impl_new_connection17: feature SignalBreakOut.YawRate -> NED2NWU.YawRate;
+		VehicleDynamics14DOF_Impl_new_connection18: feature SignalBreakOut.xdot -> Transition1.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection19: feature SignalBreakOut.ydot -> Transition2.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection20: feature NED2NWU.NED2NWU_1 -> PackEgoActor.pos;
+		VehicleDynamics14DOF_Impl_new_connection21: feature NED2NWU.NED2NWU_2 -> PackEgoActor.vel;
+		VehicleDynamics14DOF_Impl_new_connection22: feature NED2NWU.NED2NWU_3 -> PackEgoActor.yaw;
+		VehicleDynamics14DOF_Impl_new_connection23: feature NED2NWU.NED2NWU_4 -> PackEgoActor.yawRate;
+		VehicleDynamics14DOF_Impl_new_connection24: feature NED2NWU.NED2NWU_5 -> PackEgoActor.roll;
+		VehicleDynamics14DOF_Impl_new_connection25: feature NED2NWU.NED2NWU_6 -> PackEgoActor.pitch;
+		VehicleDynamics14DOF_Impl_new_connection26: feature PackEgoActor.a -> Transition.Element_Input;
+		VehicleDynamics14DOF_Impl_new_connection27: feature Transition.Element_Output -> Pose;
+		VehicleDynamics14DOF_Impl_new_connection28: feature Transition1.Element_Output -> Longitudinal_Velocity;
+		VehicleDynamics14DOF_Impl_new_connection29: feature Transition2.Element_Output -> Lateral_Velocity;
+		VehicleDynamics14DOF_Impl_new_connection30: feature VehDyn14DOF.VehFdbk -> VehFdbk;
+		
+			properties
+			MIC_Properties::ValidityValue => 70.0;
+			MIC_Properties::VerificationValue => 90.0;
+			MIC_Properties::MaturityValue => 3;
+			SimultionParametres::SimulationTime => 120 ms;
+			SimultionParametres::MemorySpace => 500 MByte;
+	end VehicleDynamics14DOF.ImplForDev;
+end aebsystem::VD14DOFVariant;

@@ -1,0 +1,154 @@
+package aebsystem::VehicleDynamicsComponents
+public
+	
+	with New_Types;
+	with Base_Types;
+	
+	
+	abstract fullOrderVehDyn14DOF 
+	features 
+		Steering: in feature Base_Types::Float_64;
+		Acceleration: in feature Base_Types::Float_64;
+		Decelaration: in feature Base_Types::Float_64;
+		WheelsElevation: in feature Base_Types::Boolean;
+		VehFdbk: out feature New_Types::Vector8;
+	end fullOrderVehDyn14DOF;
+
+	abstract BicycleModel
+	features
+		WhlAngF: in feature Base_Types::Float_64; -- Wheel angle
+		FxF: in feature Base_Types::Float_64; --Force Input: Total longitudinal force on the front axle
+		FxR: in feature Base_Types::Float_64; -- Force Input: Total longitudinal force on the rear axle
+		Info: out feature New_Types::Array;
+		xdot: out feature Base_Types::Float_64; --Vehicle body longitudinal velocity
+		ydot: out feature Base_Types::Float_64; --Vehicle body lateral velocity
+		psi: out feature Base_Types::Float_64; --Yaw
+		r: out feature Base_Types::Float_64; --Yaw Rate
+	end BicycleModel;
+	
+	abstract signalBreakout
+	features
+		VehFdbk: in feature New_Types::Vector8;
+		XYZ: out feature New_Types::Array;
+		XdotYdot: out feature New_Types::Array;
+		Roll: out feature Base_Types::Float_64;
+		Pitch: out feature Base_Types::Float_64;
+		Yaw: out feature Base_Types::Float_64;
+		YawRate: out feature Base_Types::Float_64;
+		xdot: out feature Base_Types::Float_64;
+		ydot: out feature Base_Types::Float_64;
+	end signalBreakout;
+	
+	abstract NED2NWU
+	features
+		Position: in feature New_Types::Array;
+		Velocity: in feature New_Types::Array;
+		YawAngle: in feature Base_Types::Float_64;
+		YawRate: in feature Base_Types::Float_64;
+		NED2NWU_1: out feature New_Types::Array;
+		NED2NWU_2: out feature New_Types::Array;
+		NED2NWU_3: out feature Base_Types::Float_64;
+		NED2NWU_4: out feature Base_Types::Float_64;
+	end NED2NWU;
+	
+	abstract NED2NWU14DOF extends NED2NWU
+	features
+		Roll: in feature Base_Types::Float_64;
+		Pitch: in feature Base_Types::Float_64;
+		NED2NWU_5: out feature Base_Types::Float_64;
+		NED2NWU_6: out feature Base_Types::Float_64;
+	end NED2NWU14DOF;
+	
+	abstract PackEgoActor
+	features
+		pos: in feature New_Types::Array;
+		vel: in feature New_Types::Array;
+		yaw: in feature Base_Types::Float_64;
+		yawRate: in feature Base_Types::Float_64;
+		a: out feature New_Types::ActorObject;
+	end PackEgoActor;
+	
+	abstract PackEgoActor14DOF extends PackEgoActor
+	features
+		roll: in feature Base_Types::Float_64;
+		pitch: in feature Base_Types::Float_64;
+	end PackEgoActor14DOF;
+	
+	abstract SimpleDriveLineAndBrakes
+	features
+		Accel: in feature Base_Types::Float_64;
+		Decel: in feature Base_Types::Float_64;
+		Gear: in feature Base_Types::Float_64;
+		xdot: in feature Base_Types::Float_64;
+		FrontForce: out feature Base_Types::Float_64;
+		RearForce: out feature Base_Types::Float_64;
+	end SimpleDriveLineAndBrakes;
+	
+	
+	
+	
+	-- Elements --
+	abstract RateTransitionElement
+	features
+		Element_Input: in feature;
+		Element_Output: out feature;
+	end RateTransitionElement;
+	
+	abstract SaturationElement
+	features
+		Element_Input: in feature Base_Types::Float_64;
+		Element_Output: out feature Base_Types::Float_64;
+	end SaturationElement;
+	
+	abstract FirstOrderHoldElement
+	features
+		Element_Input: in feature Base_Types::Float_64;
+		Element_Output: out feature Base_Types::Float_64;
+	end FirstOrderHoldElement;
+	
+	abstract UnaryMinusElement
+	features
+		Element_Input: in feature Base_Types::Float_64;
+		Element_Output: out feature Base_Types::Float_64;
+	end UnaryMinusElement;
+	
+	
+	abstract ConstantElement
+	features
+		Element_Output: out feature Base_Types::Float_64;
+	end ConstantElement;
+	
+	abstract GainElement
+	features
+		Element_Input: in feature Base_Types::Float_64;
+		Element_Output: out feature Base_Types::Float_64;
+	end GainElement;
+	
+	abstract UnitConversionElement
+	features
+		Element_Input: in feature Base_Types::Float_64;
+		Element_Output: out feature Base_Types::Float_64;
+	end UnitConversionElement;
+	
+	abstract DoubleataTypeConversionElement
+	features
+		Element_Input: in feature 	Base_Types::Float_64;
+		Element_Output: out feature Base_Types::Float_64;
+	end DoubleataTypeConversionElement;
+	
+	abstract MUX2Element
+	features
+		Element_Input1: in feature;
+		Element_Input2: in feature;
+		Element_Output: out feature New_Types::Array;
+	end MUX2Element;
+	
+	abstract BusSelectorElement
+	features
+		Element_Input: in feature New_Types::Array;
+		Element_Output: out feature;
+	end BusSelectorElement;
+	
+	
+	
+end aebsystem::VehicleDynamicsComponents;

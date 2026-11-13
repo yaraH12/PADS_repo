@@ -1,0 +1,86 @@
+package aebsystem::Components
+public
+	
+	with New_Types;
+	with Base_Types;
+	
+	
+	abstract SensorEnv
+	features
+		Ego: in feature New_Types::BusVehiclePose;
+		Vision: out feature New_Types::BusVision;
+		Radar: out feature New_Types::BusRadar;
+		System_Time: out feature;
+		Actors: out feature;
+		Reference_Path: out feature New_Types::BusEgoRefPath;
+    end SensorEnv;
+	
+	abstract AEBSensorFusion
+		features
+			Vision: in feature New_Types::BusVision;
+			Radar: in feature New_Types::BusRadar;
+			System_Time: in feature;
+			Tracks: out feature New_types::BusMultiObjectTracker1;
+	end AEBSensorFusion;
+	
+	abstract AEBDecisionLogic
+		features
+			Tracks: in feature New_types::BusMultiObjectTracker1;
+			Reference_Path: in feature New_Types::BusEgoRefPath;
+			Ego: in feature New_Types::BusVehiclePose;
+			Relative_Distance: out feature Base_Types::Float_64;
+			Relative_Velocity: out feature Base_Types::Float_64;
+			Curvature_Sequence: out feature Base_Types::Float_64;
+			Lateral_Deviation: out feature Base_Types::Float_64;
+			Relative_Yaw_Angle: out feature Base_Types::Float_64;
+			Goal_Reached: out feature Base_Types::Boolean;
+			MIO_Track: out feature Base_Types::Integer;
+	end AEBDecisionLogic;
+	
+	abstract AEBController
+		features
+			Relative_Distance: in feature Base_Types::Float_64;
+			Relative_Velocity: in feature Base_Types::Float_64;
+			Curvature_Sequence: in feature Base_Types::Float_64;
+			Lateral_Deviation: in feature Base_Types::Float_64;
+			Relative_Yaw_Angle: in feature Base_Types::Float_64;
+			Longitudinal_Velocity: in feature Base_Types::Float_64;
+			AEB_Status: out feature Base_Types::Unsigned_8;
+			Steering_Angle: out feature  Base_Types::Float_64;
+			Throttle: out feature Base_Types::Float_64;
+			FCW_Activate: out feature Base_Types::Boolean;
+			Ego_Car_Stop: out feature Base_Types::Boolean;
+			
+	end AEBController;
+	
+	abstract VehicleDynamicsxDOF
+		features
+			Steering_Angle: in feature Base_Types::Float_64;
+			Acceleration: in feature Base_Types::Float_64;
+			Pose: out feature New_Types::BusVehiclePose;
+			Longitudinal_Velocity: out feature Base_Types::Float_64;
+			Lateral_Velocity: out feature Base_Types::Float_64;
+	end VehicleDynamicsxDOF;
+	
+	
+	
+	abstract MetricsAssessment
+		features
+			Ego_Car_Stop: in feature Base_Types::Boolean;
+			Goal_Reached: in feature Base_Types::Boolean;
+			Actors: in feature;
+			Ego_Velocity: in feature Base_Types::Float_64 ;
+	end MetricsAssessment;
+	
+	
+	abstract MIOTrack
+		features 
+			MIO_Index: in feature Base_Types::Integer;
+			Tracks: in feature New_types::BusMultiObjectTracker1;
+	end MIOTrack;
+	
+end aebsystem::Components;
+
+
+	
+	
