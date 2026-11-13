@@ -1,0 +1,533 @@
+verification plan VehicleDynamicv3_I_O : "verification test on the component" for DynamicVehicleCompREQv3[
+	
+    ///////////////////////////////INPUTS//////////////////////////////////////
+	claim In001: "REQ-VDM-INPUT-01" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+	]
+	claim In002: "REQ-VDM-INPUT-02" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomNm0()
+	]
+	claim In003: "REQ-VDM-INPUT-03" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+		
+	]
+	claim In004: "REQ-VDM-INPUT-04" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomNm0()
+		
+	]
+	claim In005: "REQ-VDM-INPUT-05" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+		
+	]
+	claim In006: "REQ-VDM-INPUT-06" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDegree0()
+	]
+	claim In007: "REQ-VDM-INPUT-07"[
+	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomModeEnum()	
+	]
+	claim In008: "REQ-VDM-INPUT-08" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+	]
+	claim In009: "REQ-VDM-INPUT-09 " [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+	]
+	claim In010: "REQ-VDM-INPUT-10" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomNm0()
+	]
+	claim In011: "REQ-VDM-INPUT-11" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+	]
+	claim In012: "REQ-VDM-INPUT-12" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomNm0()
+	]
+	claim In013: "REQ-VDM-INPUT-13" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+	]
+	claim In014: "REQ-VDM-INPUT-14" [
+		activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+	]
+    claim In015: "REQ-VDM-INPUT-15" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomNm0()
+    ]
+    claim In016: "REQ-VDM-INPUT-16" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+    ]
+    claim In017: "REQ-VDM-INPUT-17" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDouble0()
+    ]
+    claim In018: "REQ-VDM-INPUT-18 " [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+    ]
+    claim In019: "REQ-VDM-INPUT-19" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDouble1()
+    ]
+    claim  In020: "REQ-VDM-INPUT-20" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+    ]
+ 	claim In021: "REQ-VDM-INPUT-21" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomMS20()
+    ]
+    claim In022: "REQ-VDM-INPUT-22" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDouble1()
+    ]
+    claim In023: "REQ-VDM-INPUT-23" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDegree0()
+    ]
+    claim In024: "REQ-VDM-INPUT-24" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+    ]
+    claim In025: "REQ-VDM-INPUT-25" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDegree0()
+    ]
+    claim In026: "REQ-VDM-INPUT-26" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDouble1()
+    ]
+    claim In027: "REQ-VDM-INPUT-27" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomBoolean0()
+    ]
+    claim In028: "REQ-VDM-INPUT-28" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDegree0()
+    ]
+    claim In029: "REQ-VDM-INPUT-29" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDegree0()
+    ]
+    claim In030: "REQ-VDM-INPUT-30" [
+    	activities
+		checkifInput: resoluteMethods.IsIncoming()
+		checkType: FeaturesTypes.IsCustomDouble1()
+    ]
+    ////////////////////////////////OUTPUTS//////////////////////////////////////////
+    claim Out001: "REQ-VDM-OUTPUT-01" [
+    	activities
+    	checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+    ]
+    claim Out002: "REQ-VDM-OUTPUT-02"[
+    	activities
+    	checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+    ]
+	claim Out003: "REQ-VDM-OUTPUT-03"[ 
+		activities
+    	checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+    claim Out004: "REQ-VDM-OUTPUT-04"[
+    	activities
+    	checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+    ]
+	claim Out005: "REQ-VDM-OUTPUT-05"[
+		activities
+    	checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+    ]
+	claim Out006: "REQ-VDM-OUTPUT-06"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomPercentage()
+	]
+	claim Out007: "REQ-VDM-OUTPUT-07"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomPercentage()
+	]
+	claim Out008: "REQ-VDM-OUTPUT-08"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+		
+	] 
+	claim Out009: "REQ-VDM-OUTPUT-09"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out010: "REQ-VDM-OUTPUT-10"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out011: "REQ-VDM-OUTPUT-11"	[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out012: "REQ-VDM-OUTPUT-12"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomDegree()
+	]
+	claim Out013: "REQ-VDM-OUTPUT-13"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomDegree()
+	]
+	claim Out014: "REQ-VDM-OUTPUT-14"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomDegree()
+    ]
+	claim Out015: "REQ-VDM-OUTPUT-15"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out016: "REQ-VDM-OUTPUT-16"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out017: "REQ-VDM-OUTPUT-17"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomDegree()
+	]
+	claim Out018: "REQ-VDM-OUTPUT-18"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomMS()
+	]
+	claim Out019: "REQ-VDM-OUTPUT-19"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out020: "REQ-VDM-OUTPUT-20"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out021: "REQ-VDM-OUTPUT-21"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out022: "REQ-VDM-OUTPUT-22"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+ 	claim Out023: "REQ-VDM-OUTPUT-23"[
+ 		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+ 	]
+ 	claim Out024: "REQ-VDM-OUTPUT-24" [
+ 		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+ 	]
+	claim Out025: "REQ-VDM-OUTPUT-25"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRADperS()
+	]
+	claim Out026: "REQ-VDM-OUTPUT-26"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRADperS()
+	]
+	claim Out027: "REQ-VDM-OUTPUT-27"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRADperS()
+	]
+	claim Out028: "REQ-VDM-OUTPUT-28"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRADperS()
+	]
+	claim Out029: "REQ-VDM-OUTPUT-29"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBar()
+	]
+	claim Out030: "REQ-VDM-OUTPUT-30"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBar()
+    ]
+	claim Out031: "REQ-VDM-OUTPUT-31"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBar()
+	]
+	claim Out032: "REQ-VDM-OUTPUT-32"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBar()
+	]
+	claim Out033: "REQ-VDM-OUTPUT-33"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBar()
+	]
+	claim Out034: "REQ-VDM-OUTPUT-34"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out035: "REQ-VDM-OUTPUT-35"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out036: "REQ-VDM-OUTPUT-36"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out037: "REQ-VDM-OUTPUT-37"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out038: "REQ-VDM-OUTPUT-38"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out039: "REQ-VDM-OUTPUT-39"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out040: "REQ-VDM-OUTPUT-40"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out041: "REQ-VDM-OUTPUT-41"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomNm()
+	]
+	claim Out042: "REQ-VDM-OUTPUT-42"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out043: "REQ-VDM-OUTPUT-43"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomDouble()
+	]
+	claim Out044: "REQ-VDM-OUTPUT-44"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBoolean()
+	]
+	claim Out045: "REQ-VDM-OUTPUT-45"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRAD()
+	]
+	claim Out046: "REQ-VDM-OUTPUT-46"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRAD()
+	]
+	claim Out047: "REQ-VDM-OUTPUT-47"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomRAD()
+	]
+	claim Out048: "REQ-VDM-OUTPUT-48"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomMS()
+	]
+	claim Out049: "REQ-VDM-OUTPUT-49"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomMS2()
+	]
+	claim Out050: "REQ-VDM-OUTPUT-50"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomBar()
+	]
+	claim Out051: "REQ-VDM-OUTPUT-51"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomDouble()
+	]
+	claim Out052: "REQ-VDM-OUTPUT-52"[
+		activities
+		checkifOutput: resoluteMethods.IsOutgoing()
+    	checkType: FeaturesTypes.IsCustomMS2()
+	]
+	
+	
+	claim RNoLessInterfaces : "NO-LESS-INTERFACES"[
+		activities
+		checkInterfacesNumber: resoluteMethods.NoLessINterfacesExists(82)
+	]
+	
+]
+
+
+
+
+
+verification plan VehicleDynamicv3Impl : "verification test on the component" for DynamicVehicleREQv3[
+	claim Func1 : "REQ-VDM-FUNC-01"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function01")
+	]
+	
+	claim Func2:"REQ-VDM-FUNC-02"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function02")
+	]
+	claim Func3: "REQ-VDM-FUNC-03"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function03")
+	]
+	claim Func4: "REQ-VDM-FUNC-04"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function04")
+	]
+	claim Func5: "REQ-VDM-FUNC-05"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function05")
+	]
+	claim Func6: "REQ-VDM-FUNC-06"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function06")
+	]
+	claim Func7: "REQ-VDM-FUNC-07"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function07")
+	]
+	claim Func8: "REQ-VDM-FUNC-08"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function08")
+	]
+	claim Func9: "REQ-VDM-FUNC-09"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function09")
+	]
+	claim Func10: "REQ-VDM-FUNC-10"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function10")
+	]
+	claim Func11: "REQ-VDM-FUNC-11 "[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function11")
+	]
+	claim Func12: "REQ-VDM-FUNC-12"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function12")
+	]
+	claim Func13: "REQ-VDM-FUNC-13"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function13")
+	]
+	claim Func14:  "REQ-VDM-FUNC-14"[
+		activities
+		DoesItExist: resoluteMethods.GetFunctionFeature("Function14")
+	]
+
+
+	claim SimulationToolCompatibilitySim1 : "REQ-VDM-SIM-01" []
+	claim SimulationToolCompatibilityVersionSim2: "REQ-VDM-SIM-02" []
+	claim PlatformInterfaceCompatibilityScanerSim3: "REQ-VDM-SIM-03" []
+	claim NonRealTimeOperationSim4: "REQ-VDM-SIM-04" []
+	claim ModelInstantiabilitySim5: "REQ-VDM-SIM-05" []
+	claim RelativePathsSim6: "REQ-VDM-SIM-06" []
+	claim WindowsCompatibilitySim7: "REQ-VDM-SIM-07" []
+	
+]	
+
+verification plan VehicleDynamicv3 : "verification test on the component" for DynamicVehicleCompREQv3[
+	
+	claim StoppingDistanceAccuracyVal1: "REQ-VDM-VAL-01" []
+	claim BrakingCapabilityWithCustomInputsVal2: "REQ-VDM-VAL-02" []
+	claim ValidateReachSpeedScenarioVal3: "REQ-VDM-VAL-03" []
+	claim ValidateReachSpeedTurningRightScenarioVal4: "REQ-VDM-VAL-04" []
+	claim ValidateReachSpeedTurningLeftScenarioVal5: "REQ-VDM-VAL-05" []
+	claim ValidateAccelerationScenarioVal6: "REQ-VDM-VAL-06" []
+	claim ValidateAEBModerateBrakingScenarioVal7: "REQ-VDM-VAL-07" []
+	claim ValidateAEBFullBrakingScenarioVal8: "REQ-VDM-VAL-08" []
+	claim ValidateAEBPrefillScenarioVal9: "REQ-VDM-VAL-09" []
+	claim TechnicalCheckValidationVer1: "REQ-VDM-VER-01" []
+	claim VehicleAdaptationVer2: "REQ-VDM-VER-02" []
+	claim EngineIntegrationVer3: "REQ-VDM-VER-03" []
+	claim PrototypeCorrelationVer4_1: "REQ-VDM-VER-0401" []
+	claim PrototypeCorrelationVer4_2: "REQ-VDM-VER-0402"[]
+	claim CommunicationFrequencyVer5: "REQ-VDM-VER-05"[]
+	claim TotalMassVer6: "REQ-VDM-VER-06 "[]
+	claim FrontMassDistributionVer7: "REQ-VDM-VER-07"[]
+	claim RearMassDistributionVer8: "REQ-VDM-VER-08"[]
+	claim TireBrandVer9: "REQ-VDM-VER-09"[]
+	claim TireModelVer10: "REQ-VDM-VER-10"[]
+	claim TireDimensionsWidthVer11: "REQ-VDM-VER-11"[] 
+	claim TireDimensionsAspectRatioVer11: "REQ-VDM-VER-11"[]
+	claim TireDimensionsRimDiameterVer11: "REQ-VDM-VER-11"[]
+	claim TirePressureVer12: "REQ-VDM-VER-12 "[]
+	claim DavidStandaloneVer13: "REQ-VDM-VER-13"[]
+	claim CompatibleADASVer14: "REQ-VDM-VER-14"[]
+	claim ModelMaturityMat1: "REQ-VDM-MAT-01"[]
+	 
+	
+]

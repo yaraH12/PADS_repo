@@ -1,0 +1,15 @@
+organization SimulationTeam
+
+stakeholder Validator1 [
+	//Graphs of validation
+]
+
+stakeholder Validator2 [
+	//Technical checks 
+]
+
+stakeholder ArchitectModel[
+	//internal validation
+	//compatibility with tools
+	
+]

@@ -1,0 +1,1935 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" name="VehicleDynamicv3_Impl_Instance">
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.ToleranceMargin"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.0"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.ReachSpeedValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.1"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.ReachSpeedTurnLeftValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.2"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.ReachSpeedTurnRightValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.3"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.AccelerationValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.4"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.ModerateBreakingValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.5"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.FullBreakingValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.6"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.PrefillValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.7"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Validation_Properties.aadl#Validation_Property.CustomInputValid"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.8"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TechnicalChecKCovered"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedPropertyAssociation.9"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.Standalone"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.ADAS"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.VehicleType"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.2"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.EngineType"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="2"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.3"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TT100Correlated"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.4"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TTLCorrelated"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.5"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.Frequency"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="100"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.6"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TiresBrand"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.7"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TiresModel"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.8"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TiresDimensions_width"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="195"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.9"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TiresDimensions_aspectratio"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="60"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.10"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TiresDimensions_rimdiameter"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="16"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.11"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.TiresPressure"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:RealLiteral" value="2.5"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.12"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.VehicleTotalMass"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1715"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.13"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.FrontMassDistribution"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="51"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.14"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Verification_Properties.aadl#Verification_Property.RearMassDistribution"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="49"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.15"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.SimulatorName"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.0"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.SimulatorVersion"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="2304"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.1"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.CompatibilitySimTool2"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.2"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.OSAdapted"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.3"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.NRT"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.4"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.Instantiable"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.5"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Simulator_Properties.aadl#Simulator_Property.PathsTypes"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="1"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.6"/>
+  </ownedPropertyAssociation>
+  <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+    <property href="../../Properties/Maturity_Properties.aadl#Maturity_Property.Complexity"/>
+    <ownedValue>
+      <ownedValue xsi:type="aadl2:IntegerLiteral" value="3"/>
+    </ownedValue>
+    <propertyAssociation href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedPropertyAssociation.7"/>
+  </ownedPropertyAssociation>
+  <featureInstance name="in001" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.0"/>
+  </featureInstance>
+  <featureInstance name="in002" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.1"/>
+  </featureInstance>
+  <featureInstance name="in003" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.2"/>
+  </featureInstance>
+  <featureInstance name="in004" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.3"/>
+  </featureInstance>
+  <featureInstance name="in005" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.4"/>
+  </featureInstance>
+  <featureInstance name="in006" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.5"/>
+  </featureInstance>
+  <featureInstance name="in007" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.3"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Enumerators"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'50'"/>
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'100'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.7/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.6"/>
+  </featureInstance>
+  <featureInstance name="in008" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.7"/>
+  </featureInstance>
+  <featureInstance name="in009" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.8"/>
+  </featureInstance>
+  <featureInstance name="in010" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.9"/>
+  </featureInstance>
+  <featureInstance name="in011" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.10"/>
+  </featureInstance>
+  <featureInstance name="in012" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.11"/>
+  </featureInstance>
+  <featureInstance name="in013" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.12"/>
+  </featureInstance>
+  <featureInstance name="in014" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.13"/>
+  </featureInstance>
+  <featureInstance name="in015" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.9/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.14"/>
+  </featureInstance>
+  <featureInstance name="in016" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.15"/>
+  </featureInstance>
+  <featureInstance name="in017" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.5/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.16"/>
+  </featureInstance>
+  <featureInstance name="in018" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.17"/>
+  </featureInstance>
+  <featureInstance name="in019" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'1'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.18"/>
+  </featureInstance>
+  <featureInstance name="in020" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.19"/>
+  </featureInstance>
+  <featureInstance name="in021" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'m/s^2'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.12/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.20"/>
+  </featureInstance>
+  <featureInstance name="in022" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'1'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.21"/>
+  </featureInstance>
+  <featureInstance name="in023" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.22"/>
+  </featureInstance>
+  <featureInstance name="in024" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.23"/>
+  </featureInstance>
+  <featureInstance name="in025" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.24"/>
+  </featureInstance>
+  <featureInstance name="in026" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'1'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.25"/>
+  </featureInstance>
+  <featureInstance name="in027" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.4/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.26"/>
+  </featureInstance>
+  <featureInstance name="in028" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.27"/>
+  </featureInstance>
+  <featureInstance name="in029" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'0'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.2"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.11/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.28"/>
+  </featureInstance>
+  <featureInstance name="in030" category="abstractFeature">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Initial_Value"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:ListValue">
+          <ownedListElement xsi:type="aadl2:StringLiteral" value="'1'"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.6/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.29"/>
+  </featureInstance>
+  <featureInstance name="out001" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.30"/>
+  </featureInstance>
+  <featureInstance name="out002" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.31"/>
+  </featureInstance>
+  <featureInstance name="out003" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.32"/>
+  </featureInstance>
+  <featureInstance name="out004" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.33"/>
+  </featureInstance>
+  <featureInstance name="out005" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.34"/>
+  </featureInstance>
+  <featureInstance name="out006" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'%'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.35"/>
+  </featureInstance>
+  <featureInstance name="out007" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'%'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.16/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.36"/>
+  </featureInstance>
+  <featureInstance name="out008" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.37"/>
+  </featureInstance>
+  <featureInstance name="out009" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.38"/>
+  </featureInstance>
+  <featureInstance name="out010" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.39"/>
+  </featureInstance>
+  <featureInstance name="out011" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.40"/>
+  </featureInstance>
+  <featureInstance name="out012" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.41"/>
+  </featureInstance>
+  <featureInstance name="out013" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.42"/>
+  </featureInstance>
+  <featureInstance name="out014" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.43"/>
+  </featureInstance>
+  <featureInstance name="out015" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.44"/>
+  </featureInstance>
+  <featureInstance name="out016" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.45"/>
+  </featureInstance>
+  <featureInstance name="out017" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'degree'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.13/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.46"/>
+  </featureInstance>
+  <featureInstance name="out018" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'m/s'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.47"/>
+  </featureInstance>
+  <featureInstance name="out019" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.48"/>
+  </featureInstance>
+  <featureInstance name="out020" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.49"/>
+  </featureInstance>
+  <featureInstance name="out021" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.50"/>
+  </featureInstance>
+  <featureInstance name="out022" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.51"/>
+  </featureInstance>
+  <featureInstance name="out023" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.52"/>
+  </featureInstance>
+  <featureInstance name="out024" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.53"/>
+  </featureInstance>
+  <featureInstance name="out025" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad/s'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.54"/>
+  </featureInstance>
+  <featureInstance name="out026" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad/s'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.55"/>
+  </featureInstance>
+  <featureInstance name="out027" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad/s'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.56"/>
+  </featureInstance>
+  <featureInstance name="out028" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad/s'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.18/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.57"/>
+  </featureInstance>
+  <featureInstance name="out029" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'bar'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.58"/>
+  </featureInstance>
+  <featureInstance name="out030" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'bar'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.59"/>
+  </featureInstance>
+  <featureInstance name="out031" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'bar'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.60"/>
+  </featureInstance>
+  <featureInstance name="out032" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'bar'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.61"/>
+  </featureInstance>
+  <featureInstance name="out033" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'bar'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.62"/>
+  </featureInstance>
+  <featureInstance name="out034" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.63"/>
+  </featureInstance>
+  <featureInstance name="out035" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.64"/>
+  </featureInstance>
+  <featureInstance name="out036" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.65"/>
+  </featureInstance>
+  <featureInstance name="out037" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.66"/>
+  </featureInstance>
+  <featureInstance name="out038" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.67"/>
+  </featureInstance>
+  <featureInstance name="out039" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.68"/>
+  </featureInstance>
+  <featureInstance name="out040" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.69"/>
+  </featureInstance>
+  <featureInstance name="out041" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Nm'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.14/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.70"/>
+  </featureInstance>
+  <featureInstance name="out042" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.71"/>
+  </featureInstance>
+  <featureInstance name="out043" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.72"/>
+  </featureInstance>
+  <featureInstance name="out044" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.1"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.2/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.73"/>
+  </featureInstance>
+  <featureInstance name="out045" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.74"/>
+  </featureInstance>
+  <featureInstance name="out046" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.75"/>
+  </featureInstance>
+  <featureInstance name="out047" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'Rad'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.17/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.76"/>
+  </featureInstance>
+  <featureInstance name="out048" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'m/s'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.20/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.77"/>
+  </featureInstance>
+  <featureInstance name="out049" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.19/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'m/s^2'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.19/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.78"/>
+  </featureInstance>
+  <featureInstance name="out050" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'bar'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.21/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.79"/>
+  </featureInstance>
+  <featureInstance name="out051" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.15/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.80"/>
+  </featureInstance>
+  <featureInstance name="out052" category="abstractFeature" direction="out">
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Data_Representation"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:NamedValue">
+          <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#/0/@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+        </ownedValue>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.19/@ownedPropertyAssociation.0"/>
+    </ownedPropertyAssociation>
+    <ownedPropertyAssociation xsi:type="instance:PropertyAssociationInstance">
+      <property href="../../../../plugin/org.osate.contribution.sei/resources/properties/Data_Model.aadl#Data_Model.Measurement_Unit"/>
+      <ownedValue>
+        <ownedValue xsi:type="aadl2:StringLiteral" value="'m/s^2'"/>
+      </ownedValue>
+      <propertyAssociation href="../../Properties/Custom_Types.aadl#/0/@ownedPublicSection/@ownedClassifier.19/@ownedPropertyAssociation.1"/>
+    </ownedPropertyAssociation>
+    <feature xsi:type="aadl2:AbstractFeature" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.0/@ownedAbstractFeature.81"/>
+  </featureInstance>
+  <componentInstance name="function01">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.0"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function01"/>
+  </componentInstance>
+  <componentInstance name="function02">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.1"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function02"/>
+  </componentInstance>
+  <componentInstance name="function03">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.2"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function03"/>
+  </componentInstance>
+  <componentInstance name="function04">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.3"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function04"/>
+  </componentInstance>
+  <componentInstance name="function05">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.4"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function05"/>
+  </componentInstance>
+  <componentInstance name="function06">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.5"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function06"/>
+  </componentInstance>
+  <componentInstance name="function07">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.6"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function07"/>
+  </componentInstance>
+  <componentInstance name="function08">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.7"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function08"/>
+  </componentInstance>
+  <componentInstance name="function09">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.8"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function09"/>
+  </componentInstance>
+  <componentInstance name="function10">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.9"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function10"/>
+  </componentInstance>
+  <componentInstance name="function11">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.10"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function11"/>
+  </componentInstance>
+  <componentInstance name="function12">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.11"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function12"/>
+  </componentInstance>
+  <componentInstance name="function13">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.12"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function13"/>
+  </componentInstance>
+  <componentInstance name="function14">
+    <subcomponent xsi:type="aadl2:AbstractSubcomponent" href="../DynamicVehicle.aadl#/0/@ownedPublicSection/@ownedClassifier.1/@ownedAbstractSubcomponent.13"/>
+    <index>0</index>
+    <classifier xsi:type="aadl2:AbstractType" href="../DVFeatures.aadl#DVFeatures.Function14"/>
+  </componentInstance>
+  <systemOperationMode name="No Modes"/>
+  <componentImplementation xsi:type="aadl2:AbstractImplementation" href="../DynamicVehicle.aadl#DynamicVehicle.VehicleDynamicv3.Impl"/>
+</instance:SystemInstance>

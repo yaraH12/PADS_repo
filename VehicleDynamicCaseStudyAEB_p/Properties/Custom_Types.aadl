@@ -1,0 +1,137 @@
+package Custom_Types
+public
+	with Data_Model;
+	
+	data Numeric
+		properties
+			Data_Model::Data_Representation => Integer ;
+			Data_Model::Integer_Range =>  0 .. 5;
+	end Numeric;
+	
+	data Analogic
+		properties
+			Data_Model::Data_Representation => Float ;		
+	end Analogic;
+	
+	data CustomBoolean
+		properties 
+			Data_Model::Data_Representation => Boolean;
+	end CustomBoolean;
+	
+	data CustomBoolean1
+		properties 
+			Data_Model::Data_Representation => Boolean;
+			Data_Model::Initial_Value => ('1');
+	end CustomBoolean1;
+	
+	data CustomBoolean0
+		properties 
+			Data_Model::Data_Representation => Boolean;
+			Data_Model::Initial_Value => ('0');
+	end CustomBoolean0;
+	
+	data CustomDouble0
+		properties 
+			Data_Model::Data_Representation => Float;
+			Data_Model::Initial_Value => ('0');
+	end CustomDouble0;
+	
+	data CustomDouble1
+		properties 
+			Data_Model::Data_Representation => Float;
+			Data_Model::Initial_Value => ('1');
+	end CustomDouble1;
+	
+	data CustomModeEnum 
+			properties 
+			Data_Model::Data_Representation => Enum;
+			Data_Model::Enumerators =>('0','50','100');
+			Data_Model::Initial_Value => ('0');
+	end CustomModeEnum;
+	
+	data CustomInteger
+		properties 
+			Data_Model::Data_Representation => Integer;
+	end CustomInteger;
+	
+	data CustomNm0
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'Nm'; 
+			Data_Model::Initial_Value => ('0');
+	end CustomNm0;
+	
+	data CustomNm1
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'Nm'; 
+			Data_Model::Initial_Value => ('1');
+	end CustomNm1;
+	
+	data CustomDegree0
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'degree'; 
+			Data_Model::Initial_Value => ('0');
+	end CustomDegree0;
+	
+	data CustomMS20
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'm/s^2'; 
+			Data_Model::Initial_Value => ('0');
+	end CustomMS20;
+	
+	data CustomDegree
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'degree'; 
+	end CustomDegree;
+	
+	data CustomNm
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'Nm'; 
+	end CustomNm;
+	
+	data CustomDouble
+		properties 
+			Data_Model::Data_Representation => Float;
+	end CustomDouble;
+	
+	data CustomPercentage
+		properties 
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => '%'; 
+	end CustomPercentage;
+	
+	data CustomRAD
+		properties 
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'Rad'; 
+	end CustomRAD;
+	
+	data CustomRADperS
+		properties 
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'Rad/s'; 
+	end CustomRADperS;
+	
+	data CustomMS2
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'm/s^2'; 
+	end CustomMS2;
+	
+	data CustomMS
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'm/s'; 
+	end CustomMS;
+	
+	data CustomBar
+		properties
+			Data_Model::Data_Representation => Float;
+			Data_Model::Measurement_Unit => 'bar'; 
+	end CustomBar;
+end Custom_Types;

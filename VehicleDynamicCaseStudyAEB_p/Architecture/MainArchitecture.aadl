@@ -1,0 +1,58 @@
+package AEBSystem::MainArchitecture
+public
+	with AEBSystem::Components;
+	with DynamicVehicle;
+	
+	------------------------------------------------------------------------------------------------------
+	-- SIMULATION PLATFORMS IMPLEMENTATIONS WITH DIFFERENTS VD MODELS
+	------------------------------------------------------------------------------------------------------
+	
+	system SimulationPlatform
+	end SimulationPlatform;
+	
+	system implementation SimulationPlatform.ImplVDV1
+		subcomponents
+			sensor: abstract AEBSystem::Components::Sensor;
+			scenario: abstract AEBSystem::Components::Scenario;
+			driver: abstract AEBSystem::Components::Driver;
+			AEB : abstract AEBSystem::Components::SUT;
+			DV_Variant1: abstract DynamicVehicle::VehicleDynamicv1;
+	end SimulationPlatform.ImplVDV1;
+		
+	system implementation SimulationPlatform.ImplVDV2
+		subcomponents
+			sensor: abstract AEBSystem::Components::Sensor;
+			scenario: abstract AEBSystem::Components::Scenario;
+			driver: abstract AEBSystem::Components::Driver;
+			AEB : abstract AEBSystem::Components::SUT;
+			DV_Variant2: abstract DynamicVehicle::VehicleDynamicv2;
+	end SimulationPlatform.ImplVDV2;	
+	
+	system implementation SimulationPlatform.ImplVDV3
+		subcomponents
+			sensor: abstract AEBSystem::Components::Sensor;
+			scenario: abstract AEBSystem::Components::Scenario;
+			driver: abstract AEBSystem::Components::Driver;
+			AEB : abstract AEBSystem::Components::SUT;
+			DV_Variant3: abstract DynamicVehicle::VehicleDynamicv3;
+	end SimulationPlatform.ImplVDV3;	
+	
+	system implementation SimulationPlatform.ImplVDV4
+		subcomponents
+			sensor: abstract AEBSystem::Components::Sensor;
+			scenario: abstract AEBSystem::Components::Scenario;
+			driver: abstract AEBSystem::Components::Driver;
+			AEB : abstract AEBSystem::Components::SUT;
+			DV_Variant4: abstract DynamicVehicle::VehicleDynamicv4;
+	end SimulationPlatform.ImplVDV4;
+	
+	system implementation SimulationPlatform.ImplVDV5
+		subcomponents
+			sensor: abstract AEBSystem::Components::Sensor;
+			scenario: abstract AEBSystem::Components::Scenario;
+			driver: abstract AEBSystem::Components::Driver;
+			AEB : abstract AEBSystem::Components::SUT;
+			DV_Variant5: abstract DynamicVehicle::VehicleDynamicv5;
+	end SimulationPlatform.ImplVDV5;
+			
+end AEBSystem::MainArchitecture;

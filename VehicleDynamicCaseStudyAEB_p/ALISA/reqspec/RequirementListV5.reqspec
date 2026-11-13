@@ -1,0 +1,1100 @@
+system requirements DynamicVehicleCompREQv5 for DynamicVehicle::VehicleDynamicv5[
+	
+	
+/////////////////////////////////////////////VALIDATION///////////////////////////////////////////////////////
+  requirement StoppingDistanceAccuracyVal1: "REQ-VDM-VAL-01 The model shall provide a stopping distance prediction with a maximum deviation"[
+    description "The stopping distance computation shall remain within a ±X% error margin when compared to validated reference measurements across all relevant initial speeds. ."
+    rationale  "Accurate stopping distance prediction is essential for validating braking performance, safety functions, and ADAS algorithms relying on vehicle dynamics fidelity."
+    category Validation.Validity
+    val ToleranceMargin = 1
+    value predicate #Validation_Property::ToleranceMargin == ToleranceMargin
+  ]
+
+  requirement BrakingCapabilityWithCustomInputsVal2: "REQ-VDM-VAL-02 The model shall be able to perform braking actions when custom input signals are provided." [
+    description  "The model shall accept external braking commands (e.g., brake pressure, brake torque, deceleration request) and compute the corresponding braking response. It shall support user defined or scenario defined inputs for simulation, testing, and validation purposes."
+    rationale  "Supporting custom braking inputs enables integration with control algorithms, scenario based testing, and validation of braking strategies under diverse conditions."
+    category Validation.Validity
+    val ValidCustomInput = 1
+    value predicate #Validation_Property::CustomInputValid == ValidCustomInput
+  ]
+  
+  requirement ValidateReachSpeedScenarioVal3: "REQ-VDM-VAL-03 The model shall validate reach speed scenarios." [
+	  description "The model shall reproduce vehicle behavior when accelerating to a specified target speed under normal conditions."
+	  rationale "Reach speed scenarios are essential for validating longitudinal dynamics and acceleration performance."
+	  category Validation.Validity
+	  val ReachSpeed = 1
+      value predicate #Validation_Property::ReachSpeedValid == ReachSpeed
+	]
+
+  requirement ValidateReachSpeedTurningRightScenarioVal4: "REQ-VDM-VAL-04 The model shall validate reach speed while turning right scenarios." [
+	  description "The model shall simulate reaching a target speed while performing right steering inputs."
+	  rationale "Combining speed buildup with lateral inputs is necessary to validate coupled longitudinal-lateral dynamics."
+	  category Validation.Validity
+	  val ReachSpeedTunRight = 1
+      value predicate #Validation_Property::ReachSpeedTurnRightValid == ReachSpeedTunRight
+	]
+	
+  requirement ValidateReachSpeedTurningLeftScenarioVal5: "REQ-VDM-VAL-05 The model shall validate reach speed while turning left scenarios." [
+	  description "The model shall simulate reaching a target speed while performing left steering inputs."
+	  rationale "Combining speed buildup with lateral inputs is necessary to validate coupled longitudinal-lateral dynamics."
+	  category Validation.Validity
+	  val ReachSpeedTurnLeft = 1
+      value predicate #Validation_Property::ReachSpeedTurnLeftValid == ReachSpeedTurnLeft
+	]
+
+  requirement ValidateAccelerationScenarioVal6: "REQ-VDM-VAL-06 The model shall validate acceleration scenarios." [
+	  description "The model shall simulate acceleration maneuvers across the relevant operating range."
+	  rationale "Acceleration behavior is a key indicator of propulsion and torque related model fidelity."
+	  category Validation.Validity
+	  val Acceleration = 1
+      value predicate #Validation_Property::AccelerationValid == Acceleration
+	]
+
+  requirement ValidateAEBModerateBrakingScenarioVal7: "REQ-VDM-VAL-07 The model shall validate moderate braking scenarios." [
+	  description "The model shall simulate moderate deceleration events triggered by AEB logic."
+	  rationale "Moderate braking scenarios are required to validate partial intervention behavior of AEB systems."
+	  category Validation.Validity
+	  val ModerateBraking = 1
+      value predicate #Validation_Property::ModerateBreakingValid == ModerateBraking
+	]
+
+  requirement ValidateAEBFullBrakingScenarioVal8: "REQ-VDM-VAL-08 The model shall validate full braking scenarios." [
+	  description "The model shall reproduce full force braking events initiated by AEB activation."
+	  rationale "Full braking scenarios are essential to evaluate emergency stopping performance."
+	  category Validation.Validity
+	  val FullBraking = 1
+      value predicate #Validation_Property::FullBreakingValid == FullBraking
+	]
+
+  requirement ValidateAEBPrefillScenarioVal9: "REQ-VDM-VAL-09 The model shall validate prefill braking scenarios." [
+	  description "The model shall simulate prefill activation and its effect on braking response time."
+	  rationale "Prefill behavior influences braking latency and is critical for accurate AEB performance modeling."
+	  category Validation.Validity
+	  val PrefillScenario = 1
+      value predicate #Validation_Property::PrefillValid == PrefillScenario
+	]
+  
+  
+  ///////////////////////////////////////////////VERIFICATION/////////////////////////////////////
+  requirement TechnicalCheckValidationVer1: "REQ-VDM-VER-01 The model shall support validation of the technical check." [
+	  description "The model shall reproduce the vehicle behavior required to validate technical inspection criteria such as braking performance, stability, and standardized test responses."
+	  rationale "Technical check validation ensures the model can be used to verify compliance with regulatory or internal performance requirements."
+  	  category Fidelity.ModelVerification
+  	  val TechnicalCheck = 1
+      value predicate #Verification_Property::TechnicalChecKCovered == TechnicalCheck
+  ]
+
+	requirement VehicleAdaptationVer2: "REQ-VDM-VER-02 The model shall be adapted to the vehicle." [
+	  description "The model shall incorporate the physical, geometric, and dynamic characteristics specific to the vehicle variant."
+	  rationale "Vehicle-specific adaptation ensures that simulation results reflect the actual behavior of the target vehicle."
+	  category Fidelity.ModelVerification
+	  val Vehicletype = 1
+      value predicate #Verification_Property::VehicleType == Vehicletype
+	]
+
+	requirement EngineIntegrationVer3: "REQ-VDM-VER-03 The model shall incorporate an engine." [
+	  description "The model shall include the torque characteristics, inertia, and dynamic response of the engine."
+	  rationale "Accurate motor modeling is required for propulsion, braking, and energy-related simulations."
+	  category Fidelity.ModelVerification
+	  val Enginetype = 1
+      value predicate #Verification_Property::EngineType == Enginetype
+	  
+	]
+	
+	requirement PrototypeCorrelationVer4_1: "REQ-VDM-VER-0401 The model shall be correlated with prototype measurements." [
+	  description "The model shall be calibrated and validated using prototype data for the performance domains."
+	  rationale "Correlation ensures that the model accurately reproduces real-world prototype behavior."
+	  category Fidelity.ModelVerification
+	  val TT100 = 1
+      value predicate #Verification_Property::TT100Correlated == TT100
+	]
+	
+	requirement PrototypeCorrelationVer4_2: "REQ-VDM-VER-0402 The model shall be correlated with prototype measurements." [
+	  description "The model shall be calibrated and validated using prototype data for the performance domains."
+	  rationale "Correlation ensures that the model accurately reproduces real-world prototype behavior."
+	  category Fidelity.ModelVerification
+	  val TTL = 1
+      value predicate #Verification_Property::TTLCorrelated == TTL
+	]
+	
+	requirement CommunicationFrequencyVer5: "REQ-VDM-VER-05 The model shall communicate at 100 Hz." [
+	  description "The model shall update and transmit its state variables, forces, and kinematic outputs at a fixed rate of 100 Hz."
+	  rationale "A 100 Hz update rate is required for real-time integration with vehicle controllers and simulation platforms."
+	  category Fidelity.ModelVerification
+	  val Frq = 100
+      value predicate #Verification_Property::Frequency == Frq
+	]
+	
+	requirement TotalMassVer6: "REQ-VDM-VER-06 The model shall use a total mass of x kg." [
+	  description "The model shall be parameterized with a total mass of x kg for all dynamic computations."
+	  rationale "Correct mass is essential for accurate longitudinal, lateral, and vertical dynamics."
+	  category Fidelity.ModelVerification
+	  val totalMass = 1715
+      value predicate #Verification_Property::VehicleTotalMass == totalMass
+	]
+	
+	requirement FrontMassDistributionVer7: "REQ-VDM-VER-07 The model shall use a front mass distribution of x%." [
+	  description "The model shall allocate x% of the total mass to the front axle."
+	  rationale "Accurate mass distribution is required for realistic braking, steering, and stability behavior."
+	  category Fidelity.ModelVerification
+	  val FrontMass = 51
+      value predicate #Verification_Property::FrontMassDistribution == FrontMass
+	]
+	
+	requirement RearMassDistributionVer8: "REQ-VDM-VER-08 The model shall use a rear mass distribution of x%." [
+	  description "The model shall allocate x% of the total mass to the rear axle."
+	  rationale "Rear mass distribution affects traction, stability, and vertical dynamics."
+	  category Fidelity.ModelVerification
+	  val RearMass = 49
+      value predicate #Verification_Property::RearMassDistribution == RearMass
+	]
+	
+	requirement TireBrandVer9: "REQ-VDM-VER-09 The model shall use Continental tires." [
+	  description "The tire model shall be parameterized using Continental tire characteristics."
+	  rationale "Tire brand influences friction curves, stiffness, and dynamic response."
+	  category Fidelity.ModelVerification
+	  val TiresBrand = 1
+      value predicate #Verification_Property::TiresBrand == TiresBrand
+	]
+	
+	requirement TireModelVer10: "REQ-VDM-VER-10 The model shall use the tire model." [
+	  description "The model shall incorporate the tire characteristics for force generation."
+	  rationale "Tire model fidelity is essential for accurate longitudinal and lateral dynamics."
+	  category Fidelity.ModelVerification
+	  val Tiresmodel = 1
+      value predicate #Verification_Property::TiresModel == Tiresmodel
+	]
+	
+	requirement TireDimensionsWidthVer11: "REQ-VDM-VER-11 The model shall use tire dimensions 195/60 R16." [
+	  description "The tire model shall be configured with a width of 195 mm."
+	  rationale "Tire dimensions affect stiffness, inertia, and contact patch behavior."
+	  category Fidelity.ModelVerification
+	  val TiresWidth = 195
+      value predicate #Verification_Property::TiresDimensions_width == TiresWidth
+	]
+	
+	requirement TireDimensionsAspectRatioVer11: "REQ-VDM-VER-11 The model shall use tire dimensions 195/60 R16." [
+	  description "The tire model shall be configured with an aspect ratio 60."
+	  rationale "Tire dimensions affect stiffness, inertia, and contact patch behavior."
+	  category Fidelity.ModelVerification
+	  val TiresAR = 60
+      value predicate #Verification_Property::TiresDimensions_aspectratio == TiresAR
+	]
+	requirement TireDimensionsRimDiameterVer11: "REQ-VDM-VER-11 The model shall use tire dimensions 195/60 R16." [
+	  description "The tire model shall be configured with a 16-inch rim diameter."
+	  rationale "Tire dimensions affect stiffness, inertia, and contact patch behavior."
+	  category Fidelity.ModelVerification
+	  val TiresRimD = 16
+      value predicate #Verification_Property::TiresDimensions_rimdiameter == TiresRimD
+	]
+	
+	requirement TirePressureVer12: "REQ-VDM-VER-12 The model shall use a tire pressure of 2.5 bar for all tires." [
+	  description "The model shall apply a uniform pressure of 2.5 bar to all tires for stiffness and load distribution calculations."
+	  rationale "Tire pressure influences vertical stiffness, grip, and rolling resistance."
+	  category Fidelity.ModelVerification
+	  val TiresPressure = 2.5
+      value predicate #Verification_Property::TiresPressure == TiresPressure
+	]
+	  
+	requirement DavidStandaloneVer13: "REQ-VDM-VER-13 The model shall be a standalone version." [
+	  description "The model shall be a standalone version ."
+	  rationale "The need requires a standalone model."
+	  category Fidelity.ModelVerification
+	  val stdalone = 1
+      value predicate #Verification_Property::Standalone == stdalone
+	]
+	  
+	requirement CompatibleADASVer14: "REQ-VDM-VER-14 The model shall be a be adapted for ADAS." [
+	  description "The model shall be constructed to support ADAS related functionalities and system behaviors."
+	  rationale "ADAS functionalities require a model specifically adapted."
+	  category Fidelity.ModelVerification
+	  val ADAS = 1
+      value predicate #Verification_Property::ADAS == ADAS
+	]
+	////////////////////////////////////////////////MATURITY///////////////////////////////////////////////
+	requirement ModelMaturityMat1: "REQ-VDM-MAT-01 The model must be highly mature." [ 
+		description "The model shall demonstrate a high level of development maturity, including stable behavior, complete functional implementation, and readiness for operational use." 
+		rationale "A highly mature model ensures reliability, stability, and confidence in simulation results."
+		category Fidelity.Maturity
+		val complexity = 3
+    	value predicate #Maturity_Property::Complexity == complexity
+	]	
+	//////////////////////////////////////////////////INPUTS////////////////////////////////////////////
+	
+	requirement In001: "REQ-VDM-INPUT-01 The model shall provide the input interface in001" for in001[
+	  description "The model shall include the input interface named in001"
+	  description "The interface shall be of type Boolean" 
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0."
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In002: "REQ-VDM-INPUT-02 The model shall provide the input interface in002" for in002[
+	  description "The model shall include the input interface named in002"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In003: "REQ-VDM-INPUT-03 The model shall provide the input interface in003." for in003 [
+	  description "The model shall include the input interface named in003"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	]
+	
+	requirement In004: "REQ-VDM-INPUT-04 The model shall provide the input interface in004" 
+	for in004 [
+	  description "The model shall include the input interface named in004"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In005: "REQ-VDM-INPUT-05 The model shall provide the input interface in005." 
+	for in005 [
+	  description "The model shall include the input interface named in005"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In006: "REQ-VDM-INPUT-06 The model shall provide the input interface in006" 
+	for in006 [
+	  description "The model shall include the input interface named in006"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Degree"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In007: "REQ-VDM-INPUT-07 The model shall provide the input interface in007." 
+	for in007 [
+	  description "The model shall include the input interface named in007"
+	  description "The interface shall be of type integer"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In008: "REQ-VDM-INPUT-08 The model shall provide the input interface in008." 
+	for in008[
+	  description "The model shall include the input interface named in008"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In009: "REQ-VDM-INPUT-09 The model shall provide the input interface in009." for in009 [
+	  description "The model shall include the input interface named in009"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In010: "REQ-VDM-INPUT-10 The model shall provide the input interface in010." 
+	for in010 [
+	  description "The model shall include the input interface named in010"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface ensures correct integration and consistent communication with the simulation platform."
+	  category Fidelity.Interfacesexistance
+	]
+	
+	requirement In011: "REQ-VDM-INPUT-11 The model shall provide the input interface in011." 
+	for in011 [
+	  description "The model shall include the input interface named in011"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In012: "REQ-VDM-INPUT-12 The model shall provide the input interface in012." 
+	for in012[
+	  description "The model shall include the input interface named in012"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	 category Fidelity.Interfacesexistance
+	 ]
+	
+	requirement In013: "REQ-VDM-INPUT-13 The model shall provide the input interface in013" 
+	for in013[ 
+	  description "The model shall include the input interface named in013_AEB_BrakePumpPrefillOrder"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In014: "REQ-VDM-INPUT-14 The model shall provide the input interface in014" 
+	for in014 [
+	  description "The model shall include the input interface named in014"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  description "It represents the presence of an AEB brake torque request."
+	category Fidelity.Interfacesexistance
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	]
+	
+	requirement In015: "REQ-VDM-INPUT-15 The model shall provide the input interface in015."  
+	for in015 [
+	  description "The model shall include the input interface named in015"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In016: "REQ-VDM-INPUT-16 The model shall provide the input interface in016" 
+	for in016 [	  
+	  description "The model shall include the input interface named in016"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In017: "REQ-VDM-INPUT-17 The model shall provide the input interface in017." 
+	for in017 [ 
+	  description "The model shall include the input interface named in017"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In018: "REQ-VDM-INPUT-18 The model shall provide the input interface in018." 
+	for in018[
+	  description "The model shall include the input interface named in018_HBAWarningRequest"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In019: "REQ-VDM-INPUT-19 The model shall provide the input interface in019" 
+	for in019 [
+	  description "The model shall include the input interface named in019"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 1"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In020: "REQ-VDM-INPUT-20 The model shall provide the input interface in020." 
+	for in020[
+	  description "The model shall include the input interface named in020"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In021: "REQ-VDM-INPUT-21 The model shall provide the input interface in021." 
+	for in021[
+	  description "The model shall include the input interface named in021"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be m/s²"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In022: "REQ-VDM-INPUT-22 The model shall provide the input interface in022." 
+	for in022[
+	  description "The model shall include the input interface named in022"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 1"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In023: "REQ-VDM-INPUT-23 The model shall provide the input interface in023" 
+	for in023[
+	  description "The model shall include the input interface named in023"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In024: "REQ-VDM-INPUT-24 The model shall provide the input interface in024." 
+	for in024 [
+	  description "The model shall include the input interface named in024"
+	  description "The interface shall be of type Scenario"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be scenarioDefault"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In025: "REQ-VDM-INPUT-25 The model shall provide the input interface in025." 
+	for in025[
+	  description "The model shall include the input interface named in025"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Degree"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In026: "REQ-VDM-INPUT-26 The model shall provide the input interface in026." 
+	for in026 [
+	  description "The model shall include the input interface named in026"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 1"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In027: "REQ-VDM-INPUT-27 The model shall provide the input interface in027" 
+	for in027[
+	  description "The model shall include the input interface named in027"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In028: "REQ-VDM-INPUT-28 The model shall provide the input interface in028" 
+	for in028[
+	  description "The model shall include the input interface named in028"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Degree"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement In029: "REQ-VDM-INPUT-29 The model shall provide the input interface in029" 
+	for in029[
+	  description "The model shall include the input interface named in029"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Degree"
+	  description "Its initial value shall be set to 0"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+
+	requirement In030: "REQ-VDM-INPUT-30 The model shall provide the input interface in030" 
+	for in030 [
+	  description "The model shall include the input interface named in030"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  description "Its initial value shall be set to 1"
+	  rationale "Defining the interface name, type, and initial value ensures correct integration and consistent communication with the simulation platform."
+category Fidelity.Interfacesexistance
+	]
+
+	
+	/////////////////////////////////////////////////////OUTPUTS/////////////////////////////////////////////////
+	
+	requirement Out001: "REQ-VDM-OUTPUT-01 The model shall provide the output interface out001." 
+	for out001[
+	  description "The model shall include the output interface named out001"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out002: "REQ-VDM-OUTPUT-02 The model shall provide the output interface out002." 
+	for out002[
+	  description "The model shall include the output interface named out002"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out003: "REQ-VDM-OUTPUT-03 The model shall provide the output interface out003." 
+	for out003[
+	  description "The model shall include the output interface named out003"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out004: "REQ-VDM-OUTPUT-04 The model shall provide the output interface out004." 
+	for out004[
+	  description "The model shall include the output interface named out004"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out005: "REQ-VDM-OUTPUT-05 The model shall provide the output interface out005." 
+	for out005[
+	  description "The model shall include the output interface named out005"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+      category Fidelity.Interfacesexistance
+	]
+	
+	
+	requirement Out006: "REQ-VDM-OUTPUT-06 The model shall provide the output interface out006." 
+	for out006 [
+	  description "The model shall include the output interface named out006"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be percent"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out007: "REQ-VDM-OUTPUT-07 The model shall provide the output interface out007." 
+	for out007[
+	  description "The model shall include the output interface named out007"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be percent"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out008: "REQ-VDM-OUTPUT-08 The model shall provide the output interface out008." for out008[
+	  description "The model shall include the output interface named out008"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out009: "REQ-VDM-OUTPUT-09 The model shall provide the output interface out009." for out009[
+	  description "The model shall include the output interface named out009"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out010: "REQ-VDM-OUTPUT-10 The model shall provide the output interface out010." for out010 [
+	  description "The model shall include the output interface named out010"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out011: "REQ-VDM-OUTPUT-11 The model shall provide the output interface out011." for out011 [
+	  description "The model shall include the output interface named out011"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out012: "REQ-VDM-OUTPUT-12 The model shall provide the output interface out012." for out012 [
+	  description "The model shall include the output interface named out012"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be rad"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out013: "REQ-VDM-OUTPUT-13 The model shall provide the output interface out013." for out013[
+	  description "The model shall include the output interface named out013"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out014: "REQ-VDM-OUTPUT-14 The model shall provide the output interface out014." for out014[
+	  description "The model shall include the output interface named out014"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Degree"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out015: "REQ-VDM-OUTPUT-15 The model shall provide the output interface out015." for out015[
+	  description "The model shall include the output interface named out015"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out016: "REQ-VDM-OUTPUT-16 The model shall provide the output interface out016." for out016[
+	  description "The model shall include the output interface named out016"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out017: "REQ-VDM-OUTPUT-17 The model shall provide the output interface out017." for out017[
+	  description "The model shall include the output interface named out017"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Degree"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out018: "REQ-VDM-OUTPUT-18 The model shall provide the output interface out018." for  out018[
+	  description "The model shall include the output interface named out018"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be DegreePerSecond"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out019: "REQ-VDM-OUTPUT-19 The model shall provide the output interface out019." for out019[
+	  description "The model shall include the output interface named out019"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out020: "REQ-VDM-OUTPUT-20 The model shall provide the output interface out020." for  out020[
+	  description "The model shall include the output interface named out020"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out021: "REQ-VDM-OUTPUT-21 The model shall provide the output interface out021." for out021 [
+	  description "The model shall include the output interface named out021"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out022: "REQ-VDM-OUTPUT-22 The model shall provide the output interface out022." for out022[
+	  description "The model shall include the output interface named out022"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out023: "REQ-VDM-OUTPUT-23 The model shall provide the output interface out023." for out023[
+	  description "The model shall include the output interface named out023"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	
+	requirement Out024: "REQ-VDM-OUTPUT-24 The model shall provide the output interface out024." for out024[
+	  description "The model shall include the output interface named out024"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out025: "REQ-VDM-OUTPUT-25 The model shall provide the output interface out025." for out025[
+	  description "The model shall include the output interface named out025"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be rad/s"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out026: "REQ-VDM-OUTPUT-26 The model shall provide the output interface out026." for out026 [
+	  description "The model shall include the output interface named out026"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be rad/s"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out027: "REQ-VDM-OUTPUT-27 The model shall provide the output interface out027." for out027[
+	  description "The model shall include the output interface named out027"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be rad/s"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out028: "REQ-VDM-OUTPUT-28 The model shall provide the output interface out028." for out028[
+	  description "The model shall include the output interface named out028"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be rad/s"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out029: "REQ-VDM-OUTPUT-29 The model shall provide the output interface out029." for out029 [
+	  description "The model shall include the output interface named out029"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Bar"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out030: "REQ-VDM-OUTPUT-30 The model shall provide the output interface out030." for out030 [
+	  description "The model shall include the output interface named out030"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Bar"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out031: "REQ-VDM-OUTPUT-31 The model shall provide the output interface out031." for out031[
+	  description "The model shall include the output interface named out031"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Bar"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out032: "REQ-VDM-OUTPUT-32 The model shall provide the output interface out032." for out032[
+	  description "The model shall include the output interface named out032"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Bar"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out033: "REQ-VDM-OUTPUT-33 The model shall provide the output interface out033." for out033[
+	  description "The model shall include the output interface named out033"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Bar"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out034: "REQ-VDM-OUTPUT-34 The model shall provide the output interface out034." for  out034[
+	  description "The model shall include the output interface named out034"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out035: "REQ-VDM-OUTPUT-35 The model shall provide the output interface out035." for out035[
+	  description "The model shall include the output interface named out035"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out036: "REQ-VDM-OUTPUT-36 The model shall provide the output interface out036." for out036 [
+	  description "The model shall include the output interface named out036"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out037: "REQ-VDM-OUTPUT-37 The model shall provide the output interface out037." for out037 [
+	  description "The model shall include the output interface named out037"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	requirement Out038: "REQ-VDM-OUTPUT-38 The model shall provide the output interface out038." for out038 [
+	  description "The model shall include the output interface named out038"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out039: "REQ-VDM-OUTPUT-39 The model shall provide the output interface out039." for out039 [
+	  description "The model shall include the output interface named out039"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out040: "REQ-VDM-OUTPUT-40 The model shall provide the output interface out040." for out040 [
+	  description "The model shall include the output interface named out040"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out041: "REQ-VDM-OUTPUT-41 The model shall provide the output interface out041." for out041 [
+	  description "The model shall include the output interface named out041"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Nm"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out042: "REQ-VDM-OUTPUT-42 The model shall provide the output interface out042."  for out042[
+	  description "The model shall include the output interface named out042"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out043: "REQ-VDM-OUTPUT-43 The model shall provide the output interface out043."  for out043[
+	  description "The model shall include the output interface named out043"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out044: "REQ-VDM-OUTPUT-44 The model shall provide the output interface out044."  for out044[
+	  description "The model shall include the output interface named out044"
+	  description "The interface shall be of type Boolean"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out045: "REQ-VDM-OUTPUT-45 The model shall provide the output interface out045."  for out045[
+	  description "The model shall include the output interface named out045"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Rad"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out046: "REQ-VDM-OUTPUT-46 The model shall provide the output interface out046."  for out046[
+	  description "The model shall include the output interface named out046"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Rad"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out047: "REQ-VDM-OUTPUT-47 The model shall provide the output interface out047."  for out047[
+	  description "The model shall include the output interface named out047"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Rad"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out048: "REQ-VDM-OUTPUT-48 The model shall provide the output interface out048."  for out048[
+	  description "The model shall include the output interface named out048"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be m/s"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out049: "REQ-VDM-OUTPUT-49 The model shall provide the output interface out049."  for out049[
+	  description "The model shall include the output interface named out049"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be m/s^2"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out050: "REQ-VDM-OUTPUT-50 The model shall provide the output interface out050."  for out050[
+	  description "The model shall include the output interface named out050"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be Bar"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	
+	requirement Out051: "REQ-VDM-OUTPUT-51 The model shall provide the output interface out051."  for out051[
+	  description "The model shall include the output interface named out051"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be noUnit"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	requirement Out052: "REQ-VDM-OUTPUT-52 The model shall provide the output interface out052."  for out052[
+	  description "The model shall include the output interface named out052"
+	  description "The interface shall be of type Real"
+	  description "Its unit shall be m/s^2"
+	  rationale "Defining the output interface ensures correct integration and consistent communication with the simulation platform."
+	category Fidelity.Interfacesexistance
+	]
+	////////////////////////////////////NB/////////////////////////////////////
+	   requirement RNoLessInterfaces: "NO-LESS-INTERFACES"[
+	  	description "Check that there is no less interfaces ,as inputs or outputs, than required"
+	  	rationale " less interfaces affect the behavior of the system"
+	  	category Fidelity.Interfacesexistance
+	  ]
+]
+
+
+system requirements DynamicVehicleREQv5 for DynamicVehicle::VehicleDynamicv5.Impl[
+	
+
+  requirement Func1: "REQ-VDM-FUNC-01 The system shall manage brake prefill to reduce braking response time" [
+    description  "Prefill management prepares the hydraulic circuit when a potential braking event is detected, improving reaction time." 
+    rationale  "Reducing braking latency enhances vehicle safety during emergency maneuvers."
+   	category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func2:"REQ-VDM-FUNC-02 The system shall manage motor slip reduction (MSR) to prevent excessive wheel slip during deceleration."  [
+    description   "MSR monitors wheel speed and adjusts torque to maintain traction when the vehicle decelerates on low_grip surfaces." 
+    rationale   "Preventing wheel slip during deceleration improves stability and control." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func3: "REQ-VDM-FUNC-03 The system shall manage acceleration slip regulation (ASR) to prevent excessive wheel slip during acceleration." [ 
+    description   "ASR monitors wheel traction and reduces torque when slip exceeds defined limits." 
+    rationale   "Limiting wheel slip during acceleration improves drivability and stability." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func4: "REQ-VDM-FUNC-04 The system shall manage vehicle dynamic control to maintain stability during critical maneuvers."  [    
+    description   "Vehicle dynamic control adjusts braking and torque distribution to counteract understeer or oversteer." 
+    rationale   "Maintaining stability reduces the risk of loss_of_control accidents." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func5: "REQ-VDM-FUNC-05 The system shall prevent wheel blocking during braking through anti_lock braking management."  [
+    description   "The anti_blocking function modulates brake pressure to maintain wheel rotation during heavy braking." 
+    rationale   "Preventing wheel lock preserves steering capability and reduces stopping distance." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func6: "REQ-VDM-FUNC-06 The system shall monitor and manage brake pedal position and activation status." [   
+    description   "This includes detecting pedal travel, force, and activation state for braking logic and diagnostics." 
+    rationale   "Accurate pedal status is essential for correct braking behavior and safety monitoring." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func7: "REQ-VDM-FUNC-07 The system shall compute and provide vehicle speed information to dependent functions."   [ 
+    description   "Vehicle speed is derived from wheel sensors or other sources and distributed to control modules." 
+    rationale   "Accurate speed information is required for braking, stability, and torque control functions." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func8: "REQ-VDM-FUNC-08 The system shall compute and maintain the vehicle's total mileage."  [   
+    description   "Mileage is accumulated from validated speed and distance measurements." 
+    rationale   "Odometer information is required for maintenance, diagnostics, and regulatory compliance." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func9: "REQ-VDM-FUNC-09 The system shall manage assisted parking brake activation and release."  [
+    description "This includes automatic engagement under defined conditions and controlled release when driving off." 
+    rationale   "Automated parking brake improves safety and user convenience."  
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func10: "REQ-VDM-FUNC-10 The system shall acquire and provide steering wheel angle information."  [
+    description   "Steering angle is measured and distributed to dynamic control and torque management functions." 
+    rationale   "Steering angle is essential for stability control and trajectory estimation." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func11: "REQ-VDM-FUNC-11 The system shall elaborate the driver's setpoint based on pedal inputs and driving mode."  [
+    description   "Driver intent is interpreted from accelerator, brake, and mode selections to generate control targets." 
+    rationale   "Correct interpretation of driver intent ensures predictable and safe vehicle behavior."
+    category Fidelity.FunctionsCoverage 
+  ]
+
+  requirement Func12: "REQ-VDM-FUNC-12 The system shall compute wheel torque setpoints based on driver intent and vehicle conditions."  [
+    description   "Torque setpoints consider traction, stability, and powertrain constraints." 
+    rationale   "Accurate torque setpoints ensure smooth and safe propulsion." 
+    category Fidelity.FunctionsCoverage
+  ]
+
+  requirement Func13: "REQ-VDM-FUNC-13 The system shall consolidate shift lever requests and provide a validated gear selection command."  [
+    description   "Shift requests are checked for plausibility and translated into actionable commands." 
+    rationale   "Correct gear selection is essential for drivability and safety."
+    category Fidelity.FunctionsCoverage 
+  ]
+
+  requirement Func14:  "REQ-VDM-FUNC-14 The system shall limit wheel torque setpoints based on safety, traction, and system constraints."  [  
+    description   "Torque limitations ensure that commanded torque remains within safe and feasible bounds." 
+    rationale   "Limiting torque prevents loss of traction, component overload, and unsafe behavior." 
+    category Fidelity.FunctionsCoverage
+  ]
+  ////////////////////////////////////////////Simulator requirements////////////////////////////////////////////
+	requirement SimulationToolCompatibilitySim1: "REQ-VDM-SIM-01 The model shall work on SimTool1." [
+	  description "The model shall be executable within the SimTool1 simulation environment without functional degradation."
+	  rationale "Ensuring compatibility with XTool is necessary for integration into the target simulation workflow."
+	  category Simulation.SimulatorCompatibility
+	  val ExpectedSimulator = 1 
+	  value predicate #Simulator_Property::SimulatorName == ExpectedSimulator
+	]
+	
+	requirement SimulationToolCompatibilityVersionSim2: "REQ-VDM-SIM-02 The model shall work on SimTool1." [
+	  description "The model shall be executable within the SimTool1 simulation environment without functional degradation."
+	  rationale "Ensuring compatibility with XTool is necessary for integration into the target simulation workflow."
+	  category Simulation.SimulatorCompatibility
+	  val ExpectedSimulatorVersion = 2304
+	  value predicate #Simulator_Property::SimulatorVersion == ExpectedSimulatorVersion
+	]
+	
+	requirement PlatformInterfaceCompatibilityScanerSim3: "REQ-VDM-SIM-03 The model shall be compatible with SimTool2 interfaces." [
+	  description "The model shall correctly implement and exchange data through all required SimTool2 interface definitions."
+	  rationale "Interface compatibility ensures correct communication and integration with the simulation platform."
+	  category Simulation.SimulatorCompatibility
+	  val CompatibilitySimTool = 1 //true
+	  value predicate #Simulator_Property::CompatibilitySimTool2 == CompatibilitySimTool 
+	]
+	
+	
+	requirement NonRealTimeOperationSim4: "REQ-VDM-SIM-04 The model shall operate in non-real-time mode NRT." [
+	  description "The model shall be able to execute without realtime constraints, allowing offline or accelerated simulations."
+	  rationale "Non-real-time execution is essential for development, debugging, and large-scale scenario testing."
+	  category Simulation.SimulatorCompatibility 
+	  val NRT = 1 //true
+	  value predicate #Simulator_Property::NRT == NRT 
+	]
+	
+	requirement ModelInstantiabilitySim5: "REQ-VDM-SIM-05 The model shall be instantiable." [
+	  description "The model shall support instantiation as a reusable component within the simulation environment."
+	  rationale "Instantiability enables modularity, reuse, and integration into larger simulation architectures."
+	  category Simulation.SimulatorCompatibility
+	  val Instanciable = 1 //true
+	  value predicate #Simulator_Property::Instantiable == Instanciable
+	]
+	
+	requirement RelativePathsSim6: "REQ-VDM-SIM-06 The model shall use relative paths." [
+	  description "All file references used by the model shall rely on relative paths rather than absolute paths."
+	  rationale "Relative paths ensure portability and avoid environment-dependent configuration issues."
+	  category Simulation.SimulatorCompatibility
+	  val Paths = 1 //true
+	  value predicate #Simulator_Property::PathsTypes == Paths
+	]
+	
+	requirement WindowsCompatibilitySim7: "REQ-VDM-SIM-07 The model shall be compatible with Windows." [
+	  description "The model shall execute correctly on Windows operating systems, including all required dependencies."
+	  rationale "Windows compatibility is necessary for deployment on the target development and simulation machines."
+	  category Simulation.SimulatorCompatibility 
+	  val OS = 1 //true
+	  value predicate #Simulator_Property::OSAdapted == OS
+	]
+	   
+	  
+	
+]

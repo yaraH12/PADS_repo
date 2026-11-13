@@ -1,0 +1,118 @@
+package FeaturesTypesCheckFunctions
+public
+	annex Resolute {**
+
+ 		isNumeric(cp: port)<=
+ 		** "Type of " cp " is Numeric" **
+ 		type(cp) =  Custom_Types::Numeric
+	
+ 		
+		isAnalogic(cp: port)<=
+		** "Type of " cp " is Analogic" **
+		type(cp) =  Custom_Types::Analogic
+	
+		isCustomBoolean(cp: port)<=
+		** "Type of " cp " is CustomBoolean" **
+		type(cp) =  Custom_Types::CustomBoolean
+   
+		
+	    isCustomBoolean1(cp: port)<=
+	    ** "Type of " cp " is CustomBoolean1" **
+	    type(cp) =   Custom_Types::CustomBoolean1
+	
+		
+	    
+		isCustomBoolean0(cp: port)<=
+		** "Type of " cp " is CustomBoolean0" **
+		type(cp) =  Custom_Types::CustomBoolean0
+	
+		
+		isCustomDouble0(cp: port)<=
+		** "Type of " cp " is CustomDouble0" **
+		type(cp) =  Custom_Types::CustomDouble0
+	
+		isCustomDouble1(cp: port)<=
+		** "Type of " cp " is CustomDouble1" **
+		type(cp) =  Custom_Types::CustomDouble1
+	
+		isCustomModeEnum (cp: port)<=
+		** "Type of " cp " is CustomModeEnum" **
+		type(cp) = Custom_Types::CustomModeEnum 
+	 
+		
+		isCustomInteger(cp: port)<=
+		** "Type of " cp " is CustomInteger" **
+		type(cp) =  Custom_Types::CustomInteger
+	
+		
+		isCustomNm0(cp: port)<=
+		** "Type of " cp " is CustomNm0" **
+		type(cp) = Custom_Types::CustomNm0
+     
+		
+	    isCustomNm1(cp: port)<=
+	    ** "Type of " cp " is CustomNm1" **
+	    type(cp) =  Custom_Types::CustomNm1
+	
+	    
+		isCustomDegree0(cp: port)<=
+		** "Type of " cp " is CustomDegree0" **
+		type(cp) =  Custom_Types::CustomDegree0
+	
+		
+		isCustomMS20(cp: port)<=
+		** "Type of " cp " is CustomMS20" **
+		type(cp) =  Custom_Types::CustomMS20
+	
+		
+		isCustomDegree(cp: port)<=
+		** "Type of " cp " is CustomDegree" **
+		type(cp) =  Custom_Types::CustomDegree
+	
+		
+		isCustomNm(cp: port)<=
+		** "Type of " cp " is CustomNm" **
+		type(cp) =  Custom_Types::CustomNm
+	
+		
+		isCustomDouble(cp: port)<=
+		** "Type of " cp " is CustomDouble" **
+		type(cp) =  Custom_Types::CustomDouble
+	
+		
+		isCustomPercentage(cp: port)<=
+		** "Type of " cp " is CustomPercentage" **
+		type(cp) =  Custom_Types::CustomPercentage
+	
+		
+		isCustomRAD(cp: port)<=
+		** "Type of " cp " is CustomRAD" **
+		type(cp) =  Custom_Types::CustomRAD
+		
+		isCustomRADperS(cp: port)<=
+		** "Type of " cp " is CustomRAD" **
+		type(cp) =  Custom_Types::CustomRADperS
+	
+		
+		isCustomMS2(cp: port)<=
+		** "Type of " cp " is 	CustomMS2" **
+		type(cp) =  Custom_Types::CustomMS2
+	
+		
+		isCustomMS(cp: port)<=
+		** "Type of " cp " is CustomMS" **
+		type(cp) =  Custom_Types::CustomMS
+	
+		
+		isCustomBar(cp: port)<=
+		** "Type of " cp " is CustomBar" **
+		type(cp) =  Custom_Types::CustomBar
+	 		
+	**};
+	
+end FeaturesTypesCheckFunctions;
+
+	
+		
+		
+	

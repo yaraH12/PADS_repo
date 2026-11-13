@@ -1,0 +1,9 @@
+property set Simulator_Property is
+	SimulatorName: aadlinteger applies to (abstract, system);
+	SimulatorVersion: aadlinteger applies to (abstract, system);
+	CompatibilitySimTool2 : aadlinteger applies to (abstract, system);
+	OSAdapted: aadlinteger applies to (abstract, system);
+	NRT: aadlinteger applies to (abstract, system);
+	Instantiable: aadlinteger applies to (abstract, system);
+	PathsTypes: aadlinteger applies to (abstract, system);
+end Simulator_Property;

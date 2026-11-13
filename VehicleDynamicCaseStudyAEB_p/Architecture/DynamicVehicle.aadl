@@ -1,0 +1,418 @@
+---------------------------------------------------------------------------------------
+-- DYNAMIC VEHICLE VARIANTS &  THEIR IMPLIMENTATIONS
+---------------------------------------------------------------------------------------
+package DynamicVehicle
+public
+	with Custom_Types;
+	with Validation_Property;
+	with Verification_Property;
+	with Maturity_Property;
+	with Simulator_Property;
+	with DVFeatures;
+	
+	abstract VehicleDynamicStandalone
+		features
+			--inputs
+			in001: in feature Custom_Types::CustomBoolean0 ;
+			in002: in feature Custom_Types::CustomNm0;
+			in003: in feature Custom_Types::CustomBoolean0;
+			in004: in feature Custom_Types::CustomNm0;
+			in005: in feature Custom_Types::CustomBoolean0;
+			in006: in feature Custom_Types::CustomDegree0;
+			in007: in feature Custom_Types::CustomModeEnum;
+			in008: in feature Custom_Types::CustomBoolean0;
+			in009: in feature Custom_Types::CustomBoolean0;
+			in010: in feature Custom_Types::CustomNm0;
+			in011: in feature Custom_Types::CustomBoolean0;
+			in012: in feature Custom_Types::CustomNm0;
+			in013: in feature Custom_Types::CustomBoolean0;
+			in014: in feature Custom_Types::CustomBoolean0;
+			in015: in feature Custom_Types::CustomNm0;
+			in016: in feature Custom_Types::CustomBoolean0;
+			in017: in feature Custom_Types::CustomDouble0;
+			in018: in feature Custom_Types::CustomBoolean0;
+			in019: in feature Custom_Types::CustomDouble1 ;
+			in020: in feature Custom_Types::CustomBoolean0; 
+			in021: in feature Custom_Types::CustomMS20;
+			in022: in feature Custom_Types::CustomDouble1;
+			in023: in feature Custom_Types::CustomDegree0;
+			in024: in feature Custom_Types::CustomBoolean0;
+			in025: in feature Custom_Types::CustomDegree0;
+			in026: in feature Custom_Types::CustomDouble1;
+			in027: in feature Custom_Types::CustomBoolean0;
+			in028: in feature Custom_Types::CustomDegree0;
+			in029: in feature Custom_Types::CustomDegree0;
+			in030: in feature Custom_Types::CustomDouble1;
+			--outputs
+			out001: out feature Custom_Types::CustomNm;
+			out002: out feature Custom_Types::CustomNm;
+			out003: out feature Custom_Types::CustomNm;
+			out004: out feature Custom_Types::CustomNm;
+			out005: out feature Custom_Types::CustomNm;
+			out006: out feature Custom_Types::CustomPercentage;
+			out007: out feature Custom_Types::CustomPercentage;
+			out008: out feature Custom_Types::CustomNm;
+			out009: out feature Custom_Types::CustomBoolean;
+			out010: out feature Custom_Types::CustomNm;
+			out011: out feature Custom_Types::CustomBoolean;
+			out012: out feature Custom_Types::CustomDegree;
+			out013: out feature Custom_Types::CustomDegree;
+			out014: out feature Custom_Types::CustomDegree;
+			out015: out feature Custom_Types::CustomNm;
+			out016: out feature Custom_Types::CustomBoolean;
+			out017: out feature Custom_Types::CustomDegree;
+			out018: out feature Custom_Types::CustomMS;
+			out019: out feature Custom_Types::CustomNm;
+			out020: out feature Custom_Types::CustomNm;
+			out021: out feature Custom_Types::CustomNm;
+			out022: out feature Custom_Types::CustomNm;
+			out023: out feature Custom_Types::CustomBoolean;
+			out024: out feature Custom_Types::CustomNm;
+			out025: out feature Custom_Types::CustomRADperS;
+			out026: out feature Custom_Types::CustomRADperS;
+			out027: out feature Custom_Types::CustomRADperS;
+			out028: out feature Custom_Types::CustomRADperS;
+			out029: out feature Custom_Types::CustomBar;
+			out030: out feature Custom_Types::CustomBar;
+			out031: out feature Custom_Types::CustomBar;
+			out032: out feature Custom_Types::CustomBar;
+			out033: out feature Custom_Types::CustomBar;
+			out034: out feature Custom_Types::CustomBoolean;
+			out035: out feature Custom_Types::CustomBoolean;
+			out036: out feature Custom_Types::CustomBoolean;
+			out037: out feature Custom_Types::CustomBoolean;
+			out038: out feature Custom_Types::CustomNm;
+			out039: out feature Custom_Types::CustomNm;
+			out040: out feature Custom_Types::CustomNm;
+			out041: out feature Custom_Types::CustomNm;
+			out042: out feature Custom_Types::CustomBoolean;
+			out043: out feature Custom_Types::CustomDouble;
+			out044: out feature Custom_Types::CustomBoolean;
+			out045: out feature Custom_Types::CustomRAD;
+			out046: out feature Custom_Types::CustomRAD;
+			out047: out feature Custom_Types::CustomRAD;
+			out048: out feature Custom_Types::CustomMS;
+			out049: out feature Custom_Types::CustomMS2;
+			out050: out feature Custom_Types::CustomBar;
+			out051: out feature Custom_Types::CustomDouble;
+			out052: out feature Custom_Types::CustomMS2;	
+			
+			properties
+			Simulator_Property::SimulatorName => 1 ;
+			Simulator_Property::SimulatorVersion => 2304;
+			Simulator_Property::CompatibilitySimTool2 => 1 ;
+			Simulator_Property::OSAdapted => 1 ;
+			Simulator_Property::NRT => 1 ;
+			Simulator_Property::Instantiable => 1;
+			Simulator_Property::PathsTypes => 1;
+			Maturity_Property::Complexity => 3;
+	end VehicleDynamicStandalone;
+	abstract implementation VehicleDynamicStandalone.Impl
+		subcomponents
+			function01: abstract DVFeatures::Function01; 
+			function02: abstract DVFeatures::Function02;
+			function03 : abstract DVFeatures::Function03;
+			function04: abstract DVFeatures::Function04;
+			function05 : abstract DVFeatures::Function05;
+			function06 : abstract DVFeatures::Function06;
+			function07 : abstract DVFeatures::Function07;
+			function08 : abstract DVFeatures::Function08;
+			function09: abstract DVFeatures::Function09;
+			function10: abstract DVFeatures::Function10;
+			function11 : abstract DVFeatures::Function11;
+			function12 : abstract DVFeatures::Function12;
+			function13 : abstract DVFeatures::Function13;
+			function14: abstract DVFeatures::Function14;
+				
+		properties
+			Validation_Property::ToleranceMargin => 1;
+			Validation_Property::ReachSpeedValid => 1;
+			Validation_Property::ReachSpeedTurnLeftValid => 1;
+			Validation_Property::ReachSpeedTurnRightValid => 1;
+			Validation_Property::AccelerationValid => 1;
+			Validation_Property::ModerateBreakingValid => 1;
+			Validation_Property::FullBreakingValid => 1;
+			Validation_Property::PrefillValid => 1;
+			Validation_Property::CustomInputValid => 1;
+			Verification_Property::TechnicalChecKCovered => 1;
+	end VehicleDynamicStandalone.Impl;
+
+	---------------------------------------------------------------------------------------
+	-- DV variant 1 : No ADAS 
+	---------------------------------------------------------------------------------------
+	
+	abstract VehicleDynamicv1 
+		features
+			--inputs
+			in001: in feature Custom_Types::CustomBoolean0 ;
+			in002: in feature Custom_Types::CustomNm0;
+			in003: in feature Custom_Types::CustomBoolean0;
+			in004: in feature Custom_Types::CustomNm0;
+			in005: in feature Custom_Types::CustomBoolean0;
+			in006: in feature Custom_Types::CustomDegree0;
+			in007: in feature Custom_Types::CustomModeEnum;
+			in008: in feature Custom_Types::CustomBoolean0;
+			in009: in feature Custom_Types::CustomBoolean0;
+			in010: in feature Custom_Types::CustomNm0;
+			in011: in feature Custom_Types::CustomBoolean0;
+			in012: in feature Custom_Types::CustomNm0;
+			in013: in feature Custom_Types::CustomBoolean0;
+			in014: in feature Custom_Types::CustomBoolean0;
+			in015: in feature Custom_Types::CustomNm0;
+			in016: in feature Custom_Types::CustomBoolean0;
+			in017: in feature Custom_Types::CustomDouble0;
+			in018: in feature Custom_Types::CustomBoolean0;
+			in019: in feature Custom_Types::CustomDouble1 ;
+			in020: in feature Custom_Types::CustomBoolean0; 
+			in021: in feature Custom_Types::CustomMS20;
+			in022: in feature Custom_Types::CustomDouble1;
+			in029: in feature Custom_Types::CustomDegree0;
+			in030: in feature Custom_Types::CustomDouble1;
+			--outputs
+			out001: out feature Custom_Types::CustomNm;
+			out002: out feature Custom_Types::CustomNm;
+			out003: out feature Custom_Types::CustomNm;
+			out004: out feature Custom_Types::CustomNm;
+			out005: out feature Custom_Types::CustomNm;
+			out006: out feature Custom_Types::CustomPercentage;
+			out007: out feature Custom_Types::CustomPercentage;
+			out008: out feature Custom_Types::CustomNm;
+			out009: out feature Custom_Types::CustomBoolean;
+			out010: out feature Custom_Types::CustomNm;
+			out011: out feature Custom_Types::CustomBoolean;
+			out012: out feature Custom_Types::CustomDegree;
+			out013: out feature Custom_Types::CustomDegree;
+			out014: out feature Custom_Types::CustomDegree;
+			out015: out feature Custom_Types::CustomNm;
+			out016: out feature Custom_Types::CustomBoolean;
+			out017: out feature Custom_Types::CustomDegree;
+			out018: out feature Custom_Types::CustomMS;
+			out019: out feature Custom_Types::CustomNm;
+			out020: out feature Custom_Types::CustomNm;
+			out021: out feature Custom_Types::CustomNm;
+			out022: out feature Custom_Types::CustomNm;
+			out023: out feature Custom_Types::CustomBoolean;
+			out024: out feature Custom_Types::CustomNm;
+			out025: out feature Custom_Types::CustomRADperS;
+			out026: out feature Custom_Types::CustomRADperS;
+			out027: out feature Custom_Types::CustomRADperS;
+			out028: out feature Custom_Types::CustomRADperS;
+			out029: out feature Custom_Types::CustomBar;
+			out030: out feature Custom_Types::CustomBar;
+			out031: out feature Custom_Types::CustomBar;
+			out032: out feature Custom_Types::CustomBar;
+			out033: out feature Custom_Types::CustomBar;
+			out034: out feature Custom_Types::CustomBoolean;
+			out035: out feature Custom_Types::CustomBoolean;
+			out036: out feature Custom_Types::CustomBoolean;
+			out037: out feature Custom_Types::CustomBoolean;
+			out042: out feature Custom_Types::CustomDouble;
+			out043: out feature Custom_Types::CustomDouble;
+			out044: out feature Custom_Types::CustomBoolean;
+			out045: out feature Custom_Types::CustomRAD;
+			out046: out feature Custom_Types::CustomRAD;
+			out047: out feature Custom_Types::CustomRAD;
+			out048: out feature Custom_Types::CustomMS;
+			out049: out feature Custom_Types::CustomMS2;
+			out050: out feature Custom_Types::CustomBar;
+			out051: out feature Custom_Types::CustomDouble;
+			out052: out feature Custom_Types::CustomMS2;	
+			
+			properties
+			Simulator_Property::SimulatorName => 1 ;
+			Simulator_Property::SimulatorVersion => 2304;
+			Simulator_Property::OSAdapted => 1 ;
+			Simulator_Property::NRT => 1 ;
+			Simulator_Property::PathsTypes => 1;
+			Maturity_Property::Complexity => 3;
+			Verification_Property::Standalone => 1;
+			Verification_Property::ADAS => 0;
+			Verification_Property::VehicleType => 1;
+			Verification_Property::EngineType => 2 ;
+			Verification_Property::TT100Correlated => 1 ;
+			Verification_Property::TTLCorrelated => 1;
+			Verification_Property::Frequency => 100;
+			Verification_Property::TiresBrand => 1;
+			Verification_Property::TiresModel => 1;
+			Verification_Property::TiresDimensions_width => 195;
+			Verification_Property::TiresDimensions_aspectratio => 60 ;
+			Verification_Property::TiresDimensions_rimdiameter => 16 ;
+			Verification_Property::TiresPressure => 2.5 ;
+			Verification_Property::TechnicalChecKCovered => 0;
+			Verification_Property::VehicleTotalMass => 1715 ;
+			Verification_Property::FrontMassDistribution => 51 ;
+			Verification_Property::RearMassDistribution => 49 ;
+			Simulator_Property::CompatibilitySimTool2 => 0 ;
+			Simulator_Property::Instantiable => 0;
+			
+	end VehicleDynamicv1;
+	
+	abstract implementation VehicleDynamicv1.Impl
+		subcomponents
+			function01: abstract DVFeatures::Function01; 
+			function02: abstract DVFeatures::Function02;
+			function03 : abstract DVFeatures::Function03;
+			function04: abstract DVFeatures::Function04;
+			function05 : abstract DVFeatures::Function05;
+			function06 : abstract DVFeatures::Function06;
+			function07 : abstract DVFeatures::Function07;
+			function08 : abstract DVFeatures::Function08;
+			function10: abstract DVFeatures::Function10;
+			function11 : abstract DVFeatures::Function11;
+			function12 : abstract DVFeatures::Function12;
+			function13 : abstract DVFeatures::Function13;
+			function14: abstract DVFeatures::Function14;			
+		properties
+			Validation_Property::ToleranceMargin => 1;
+			Validation_Property::ReachSpeedValid => 1;
+			Validation_Property::AccelerationValid => 1;
+			Validation_Property::ModerateBreakingValid => 0;
+			Validation_Property::FullBreakingValid => 0;
+			Validation_Property::ReachSpeedTurnLeftValid => 0;
+			Validation_Property::ReachSpeedTurnRightValid => 0;
+			Validation_Property::PrefillValid => 1;
+			Validation_Property::CustomInputValid => 1;
+			Verification_Property::TechnicalChecKCovered => 1;
+			
+			
+	end VehicleDynamicv1.Impl;
+	
+	---------------------------------------------------------------------------------------
+	-- DV variant 2 : Not Compatible Vehicle 
+	---------------------------------------------------------------------------------------
+	
+	abstract VehicleDynamicv2 extends VehicleDynamicStandalone 
+		properties
+			Verification_Property::Standalone => 1;
+			Verification_Property::ADAS => 1;
+			Verification_Property::VehicleType => 2;
+			Verification_Property::EngineType => 1 ;
+			Verification_Property::TT100Correlated => 1 ;
+			Verification_Property::TTLCorrelated => 1;
+			Verification_Property::Frequency => 100;
+			Verification_Property::TiresBrand => 1;
+			Verification_Property::TiresModel => 1;
+			Verification_Property::TiresDimensions_width => 195;
+			Verification_Property::TiresDimensions_aspectratio => 60 ;
+			Verification_Property::TiresDimensions_rimdiameter => 16 ;
+			Verification_Property::TiresPressure => 2.5 ;
+			Verification_Property::VehicleTotalMass => 1715 ;
+			Verification_Property::FrontMassDistribution => 51 ;
+			Verification_Property::RearMassDistribution => 49 ;
+	end VehicleDynamicv2;
+	
+	abstract implementation VehicleDynamicv2.Impl extends VehicleDynamicStandalone.Impl
+				
+	end VehicleDynamicv2.Impl;
+	
+	
+	---------------------------------------------------------------------------------------
+	-- DV variant 3 : Not Compatible engine
+	---------------------------------------------------------------------------------------
+	
+	abstract VehicleDynamicv3 extends VehicleDynamicStandalone
+		properties
+			Verification_Property::Standalone => 1;
+			Verification_Property::ADAS => 1;
+			Verification_Property::VehicleType => 1;
+			Verification_Property::EngineType => 2 ;
+			Verification_Property::TT100Correlated => 1 ;
+			Verification_Property::TTLCorrelated => 1;
+			Verification_Property::Frequency => 100;
+			Verification_Property::TiresBrand => 1;
+			Verification_Property::TiresModel => 1;
+			Verification_Property::TiresDimensions_width => 195;
+			Verification_Property::TiresDimensions_aspectratio => 60 ;
+			Verification_Property::TiresDimensions_rimdiameter => 16 ;
+			Verification_Property::TiresPressure => 2.5 ;
+			Verification_Property::VehicleTotalMass => 1715 ;
+			Verification_Property::FrontMassDistribution => 51 ;
+			Verification_Property::RearMassDistribution => 49 ;
+	end VehicleDynamicv3;
+	
+	abstract implementation VehicleDynamicv3.Impl extends VehicleDynamicStandalone.Impl
+		
+	end VehicleDynamicv3.Impl;
+	
+	---------------------------------------------------------------------------------------
+	-- DV variant 4
+	---------------------------------------------------------------------------------------
+	abstract VehicleDynamicv4 extends VehicleDynamicStandalone
+		properties
+			Verification_Property::Standalone => 1;
+			Verification_Property::ADAS => 1;
+			Verification_Property::VehicleType => 1;
+			Verification_Property::EngineType => 1 ;
+			Verification_Property::TT100Correlated => 1 ;
+			Verification_Property::TTLCorrelated => 1;
+			Verification_Property::Frequency => 100;
+			Verification_Property::TiresBrand => 1;
+			Verification_Property::TiresModel => 1;
+			Verification_Property::TiresDimensions_width => 195;
+			Verification_Property::TiresDimensions_aspectratio => 60 ;
+			Verification_Property::TiresDimensions_rimdiameter => 16 ;
+			Verification_Property::TiresPressure => 2.5 ;
+			Verification_Property::VehicleTotalMass => 1715 ;
+			Verification_Property::FrontMassDistribution => 51 ;
+			Verification_Property::RearMassDistribution => 49 ;
+	end VehicleDynamicv4;
+	
+	abstract implementation VehicleDynamicv4.Impl extends VehicleDynamicStandalone.Impl			
+	end VehicleDynamicv4.Impl;
+	
+	
+	
+	---------------------------------------------------------------------------------------
+	-- DV variant 5 
+	---------------------------------------------------------------------------------------
+	
+	abstract VehicleDynamicv5 extends VehicleDynamicStandalone
+		properties
+			Verification_Property::Standalone => 0;
+			Verification_Property::ADAS => 1;
+			Verification_Property::VehicleType => 1;
+			Verification_Property::EngineType => 2 ;
+			Verification_Property::TT100Correlated => 1 ;
+			Verification_Property::TTLCorrelated => 1;
+			Verification_Property::Frequency => 100;
+			Verification_Property::TiresBrand => 1;
+			Verification_Property::TiresModel => 1;
+			Verification_Property::TiresDimensions_width => 195;
+			Verification_Property::TiresDimensions_aspectratio => 60 ;
+			Verification_Property::TiresDimensions_rimdiameter => 16 ;
+			Verification_Property::TiresPressure => 2.5 ;
+			Verification_Property::VehicleTotalMass => 1787 ;
+			Verification_Property::FrontMassDistribution => 53 ;
+			Verification_Property::RearMassDistribution => 47 ;			
+			Simulator_Property::SimulatorVersion => 2302;
+			Simulator_Property::Instantiable => 0;
+			
+	end VehicleDynamicv5;
+	
+	abstract implementation VehicleDynamicv5.Impl 
+		subcomponents
+			function01: abstract DVFeatures::Function01; 
+			function02: abstract DVFeatures::Function02;
+			function03 : abstract DVFeatures::Function03;
+			function04: abstract DVFeatures::Function04;
+			function05 : abstract DVFeatures::Function05;
+			function08 : abstract DVFeatures::Function08;
+			function10: abstract DVFeatures::Function10;
+			function11 : abstract DVFeatures::Function11;
+			function12 : abstract DVFeatures::Function12;
+			function13 : abstract DVFeatures::Function13;
+			function14: abstract DVFeatures::Function14;
+		properties
+			Validation_Property::ToleranceMargin => 1;
+			Validation_Property::ReachSpeedValid => 1;
+			Validation_Property::ReachSpeedTurnLeftValid => 1;
+			Validation_Property::ReachSpeedTurnRightValid => 1;
+			Validation_Property::AccelerationValid => 1;
+			Validation_Property::ModerateBreakingValid => 1;
+			Validation_Property::FullBreakingValid => 1;
+			Validation_Property::PrefillValid => 1;
+			Validation_Property::CustomInputValid => 1;
+			Verification_Property::TechnicalChecKCovered => 1;			
+	end VehicleDynamicv5.Impl;
+	
+end DynamicVehicle;

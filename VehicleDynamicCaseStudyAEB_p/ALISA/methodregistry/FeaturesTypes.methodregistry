@@ -1,0 +1,92 @@
+verification methods FeaturesTypes [
+	
+	method IsNumeric(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isNumeric
+	]
+	
+	
+	method IsAnalogic(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isAnalogic
+	]
+	
+	method IsCustomBoolean(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomBoolean
+	]
+	
+	method IsCustomBoolean1(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomBoolean1
+	]
+	
+	method IsCustomBoolean0(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomBoolean0
+	]
+	
+	method IsCustomDouble0(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomDouble0
+	]
+	
+	method IsCustomDouble1(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomDouble1
+	]
+	
+	method IsCustomModeEnum(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomModeEnum
+	]
+	
+	method IsCustomInteger(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomInteger
+	]
+	
+	method IsCustomNm0(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomNm0
+	]
+	
+	method IsCustomNm1(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomNm1
+	]
+	
+	method IsCustomDegree0(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomDegree0
+	]
+	
+	method IsCustomMS20(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomMS20
+	]
+	
+	method IsCustomDegree(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomDegree
+	]
+	
+	method IsCustomNm(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomNm
+	]
+	
+	method IsCustomDouble(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomDouble
+	]
+	
+	method IsCustomPercentage(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomPercentage
+	]
+	
+	method IsCustomRAD(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomRAD
+	]
+	
+	method IsCustomRADperS(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomRADperS
+	]
+	
+	method IsCustomMS2(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomMS2
+	]
+	
+	method IsCustomMS(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomMS
+	]
+	
+	method IsCustomBar(feature)[
+		resolute FeaturesTypesCheckFunctions.FeaturesTypesCheckFunctions_public.Resolute.Resolute.isCustomBar
+	]
+	
+]

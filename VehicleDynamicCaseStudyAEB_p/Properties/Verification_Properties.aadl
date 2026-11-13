@@ -1,0 +1,19 @@
+property set Verification_Property is
+	Standalone: aadlinteger applies to (abstract, system); 
+	ADAS: aadlinteger applies to (abstract, system); 
+	TechnicalChecKCovered: aadlinteger applies to (abstract, system); 
+	VehicleType: aadlinteger applies to (abstract, system);
+	EngineType: aadlinteger applies to (abstract, system); 
+	TT100Correlated: aadlinteger applies to (abstract, system); 
+	TTLCorrelated: aadlinteger applies to (abstract, system);
+	Frequency : aadlinteger applies to (abstract, system);
+	TiresBrand: aadlinteger applies to (abstract, system);
+	TiresModel: aadlinteger applies to (abstract, system); 
+	TiresDimensions_width: aadlinteger applies to (abstract, system);
+	TiresDimensions_aspectratio: aadlinteger applies to (abstract, system);
+	TiresDimensions_rimdiameter:  aadlinteger applies to (abstract, system);
+	TiresPressure: aadlreal applies to (abstract, system);
+	VehicleTotalMass: aadlinteger applies to (abstract, system);
+	FrontMassDistribution: aadlinteger applies to (abstract, system);
+	RearMassDistribution: aadlinteger applies to (abstract, system);
+end Verification_Property;

@@ -1,0 +1,6 @@
+property set Maturity_Property is
+
+	Complexity: aadlinteger applies to (abstract, system); 
+	
+	
+end Maturity_Property;

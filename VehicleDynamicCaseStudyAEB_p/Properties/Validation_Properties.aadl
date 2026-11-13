@@ -1,0 +1,19 @@
+property set Validation_Property is
+	
+	ToleranceMargin: aadlinteger applies to (abstract, system); 
+	ReachSpeedValid: aadlinteger applies to (abstract, system); 
+	ReachSpeedTurnLeftValid: aadlinteger applies to (abstract, system); 
+	ReachSpeedTurnRightValid: aadlinteger applies to (abstract, system);
+	AccelerationValid: aadlinteger applies to (abstract, system); 
+	ModerateBreakingValid: aadlinteger applies to (abstract, system);
+	FullBreakingValid: aadlinteger applies to (abstract, system); 
+	PrefillValid: aadlinteger applies to (abstract, system); 
+	CustomInputValid: aadlinteger applies to (abstract, system);
+	
+end Validation_Property;
+		
+
+
+
+		
+

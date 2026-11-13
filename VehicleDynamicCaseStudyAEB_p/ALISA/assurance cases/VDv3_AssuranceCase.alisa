@@ -1,0 +1,9 @@
+assurance case DynamicVehicleAEB3p for DynamicVehicle::VehicleDynamicStandalone [
+	
+	
+	assurance plan DynamicVehicleV3_AP for DynamicVehicle::VehicleDynamicv3.Impl [
+	assure VehicleDynamicv3_I_O VehicleDynamicv3 VehicleDynamicv3Impl
+	
+	]
+	
+]
